@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Career Galaxy — Skill match graph</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&amp;family=Roboto:wght@400;500;700&amp;family=Roboto+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:inherit;text-decoration:none}a:hover{color:inherit}
+.cg{--bg:#fbfaff;--bg-alt:#f3f0fb;--surface:#ffffff;--surface-2:#f6f3fd;--line:#e5dff2;--line-2:#d2c9e8;--ink:#15121f;--ink-2:#4b5466;--ink-3:#5f6878;--accent:#6d3cff;--accent-ink:#ffffff;--accent-text:#5a2be0;--accent-soft:#ede6ff;--dot:rgba(70,50,140,.12);--shadow:rgba(60,40,120,.24);--have:#16a34a;--miss:#ea7a0c;--faint:rgba(90,80,140,.16);font-family:Roboto,system-ui,sans-serif;color:var(--ink);background:var(--bg)}
+.cg[data-theme=dark]{--bg:#111019;--bg-alt:#17151f;--surface:#1e1b28;--surface-2:#262233;--line:#2e2a3d;--line-2:#433d57;--ink:#ffffff;--ink-2:#b6bdcc;--ink-3:#9aa2b3;--accent:#7a52ff;--accent-ink:#ffffff;--accent-text:#bba6ff;--accent-soft:#2b2346;--dot:rgba(220,210,255,.08);--shadow:rgba(0,0,0,.6);--have:#4ade80;--miss:#fb923c;--faint:rgba(200,190,255,.12)}
+.mono{font-family:'Roboto Mono',ui-monospace,monospace}
+.eyebrow{font:500 12px/1.4 'Roboto Mono',monospace;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-3);margin:0}
+.field{position:relative;overflow:hidden;background-color:var(--bg-alt);background-image:radial-gradient(var(--dot) 1.2px,transparent 1.4px);background-size:22px 22px}
+.t-violet{--c1:#dccbff;--c2:#8b5cf6;--c3:#4c1fc0}.t-cyan{--c1:#c8f7ff;--c2:#22c3e6;--c3:#0a6f93}.t-pink{--c1:#ffc4d7;--c2:#f43f72;--c3:#a50f3a}.t-teal{--c1:#c8f8ef;--c2:#14b8a6;--c3:#076b60}.t-blue{--c1:#d0e1ff;--c2:#3b82f6;--c3:#1846b8}.t-orange{--c1:#ffe2bb;--c2:#f59e0b;--c3:#a84a05}.t-green{--c1:#c9f7d8;--c2:#22c55e;--c3:#11713a}.t-pearl{--c1:#ffffff;--c2:#e9e4f7;--c3:#a59cc7}
+.sphere{display:block;border-radius:50%;flex:none;background:radial-gradient(circle at 33% 27%,rgba(255,255,255,.95) 0,rgba(255,255,255,.95) 3%,rgba(255,255,255,.25) 11%,rgba(255,255,255,0) 22%),radial-gradient(circle at 42% 36%,var(--c1) 0,var(--c2) 48%,var(--c3) 100%)}
+.ibtn{min-height:42px;min-width:42px;display:inline-flex;align-items:center;justify-content:center;gap:8px;border-radius:999px;border:1px solid var(--line-2);background:var(--surface);color:var(--ink);font:500 14px Outfit,sans-serif;padding:0 14px;cursor:pointer}
+.sk{min-height:38px;display:inline-flex;align-items:center;gap:8px;border-radius:999px;border:1px solid var(--line-2);background:var(--surface);color:var(--ink-2);font:500 14px Outfit,sans-serif;padding:0 12px 0 8px;cursor:pointer}
+.sk.on{border-color:var(--have);color:var(--ink);background:var(--surface)}
+.node{position:absolute;transform:translate(-50%,-50%);border:0;padding:0;background:transparent;cursor:pointer;border-radius:50%;filter:drop-shadow(0 8px 8px var(--shadow))}
+.node:focus-visible,.mrow:focus-visible,.sk:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.nl{position:absolute;top:50%;translate:0 -50%;white-space:nowrap;font:500 13px/1 Outfit,sans-serif;color:var(--ink);background:var(--surface);border:1px solid var(--line);padding:5px 9px;border-radius:999px}
+.mrow{display:flex;align-items:center;gap:12px;width:100%;min-height:52px;padding:0 12px;border-radius:16px;border:1px solid var(--line);background:var(--surface);color:var(--ink);text-align:left;cursor:pointer;box-sizing:border-box}
+.mrow.on{border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-soft)}
+.pill{font:500 13px/1 Outfit,sans-serif;border-radius:999px;padding:7px 10px}
+</style>
+</helmet>
+<div class="cg" data-theme="{{theme}}" style="height: 900px; display: flex; flex-direction: column">
+<header style="display: flex; flex-wrap: wrap; align-items: center; gap: 12px 16px; padding: 14px 24px; border-bottom: 1px solid var(--line)">
+<a href="Main.dc.html" style="display: flex; align-items: center; gap: 10px; font: 800 21px/1 Outfit, sans-serif; letter-spacing: -.03em"><span class="sphere t-violet" style="width: 28px; height: 28px" aria-hidden="true"></span>Career Galaxy</a>
+<nav aria-label="Primary" style="display: flex; gap: 4px; margin-left: 12px; font: 500 15px Outfit, sans-serif"><a href="Galaxy.dc.html" style="padding: 10px 12px">Galaxy</a><a href="Library.dc.html" style="padding: 10px 12px">Library</a><a href="SkillGraph.dc.html" style="padding: 10px 12px; color: var(--accent-text)">Skill match</a></nav>
+<div style="flex: 1 1 0"></div>
+<button type="button" class="ibtn" onClick="{{toggleTheme}}"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"></path></svg>{{themeLabel}}</button>
+</header>
+
+<div style="flex: 1; min-height: 0; display: flex; overflow: hidden">
+<aside aria-label="Your skills" style="flex: 0 0 300px; padding: 22px 20px; box-sizing: border-box; border-right: 1px solid var(--line); overflow: hidden">
+<h1 style="font: 800 30px/1.05 Outfit, sans-serif; letter-spacing: -.03em; margin: 0">What do you already know?</h1>
+<p style="margin: 8px 0 14px; font: 400 14px/1.5 Roboto, sans-serif; color: var(--ink-2)">Tap skills or start from a preset. Lines show which careers each skill unlocks.</p>
+<p class="eyebrow" style="margin-bottom: 8px">Presets</p>
+<div style="display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 16px">
+<sc-for list="{{presets}}" as="p" hint-placeholder-count="3"><button type="button" class="sk" onClick="{{p.go}}" style="padding: 0 12px">{{p.name}}</button></sc-for>
+</div>
+<p class="eyebrow" style="margin-bottom: 8px">My skills · {{haveCount}}</p>
+<div style="display: flex; flex-wrap: wrap; gap: 6px">
+<sc-for list="{{skillChips}}" as="k" hint-placeholder-count="16"><button type="button" class="{{k.cls}}" onClick="{{k.go}}" aria-pressed="{{k.pressed}}"><span class="sphere {{k.tint}}" style="width: 14px; height: 14px"></span>{{k.name}}</button></sc-for>
+</div>
+</aside>
+
+<main class="field" style="flex: 1 1 auto; min-width: 0; position: relative" aria-label="Skill to career graph">
+<svg width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true" style="position: absolute; inset: 0">
+<sc-for list="{{edges}}" as="e" hint-placeholder-count="30"><path d="{{e.d}}" fill="none" stroke="{{e.color}}" stroke-width="{{e.w}}" stroke-dasharray="{{e.dash}}" vector-effect="non-scaling-stroke"></path></sc-for>
+</svg>
+<sc-for list="{{skillNodes}}" as="n" hint-placeholder-count="16"><button type="button" class="node" style="{{n.style}}" onClick="{{n.go}}" aria-label="{{n.aria}}"><span class="sphere {{n.tint}}" style="width: 100%; height: 100%"></span><span class="nl" style="right: calc(100% + 8px)">{{n.name}}</span></button></sc-for>
+<sc-for list="{{careerNodes}}" as="c" hint-placeholder-count="12"><button type="button" class="node" style="{{c.style}}" onClick="{{c.go}}" aria-label="{{c.aria}}"><span class="sphere {{c.tint}}" style="width: 100%; height: 100%"></span><span class="nl" style="{{c.labelStyle}}">{{c.label}}</span></button></sc-for>
+<p class="mono" style="position: absolute; left: 16px; bottom: 12px; margin: 0; font-size: 12px; letter-spacing: .12em; color: var(--ink-3)">SKILLS → CAREERS · SIZE = MATCH · <span style="color: var(--have)">━ YOU HAVE</span> · <span style="color: var(--miss)">┅ MISSING</span></p>
+</main>
+
+<aside aria-label="Matches" style="flex: 0 0 380px; padding: 22px 22px; box-sizing: border-box; border-left: 1px solid var(--line); overflow: hidden; display: flex; flex-direction: column; gap: 8px">
+<p class="eyebrow">Best matches for you</p>
+<sc-for list="{{ranked}}" as="r" hint-placeholder-count="5"><button type="button" class="{{r.cls}}" onClick="{{r.go}}"><span class="sphere {{r.tint}}" style="width: 26px; height: 26px"></span><span style="flex: 1; min-width: 0"><span style="display: block; font: 600 15px Outfit, sans-serif">{{r.name}}</span><span style="display: block; height: 6px; border-radius: 3px; background: var(--line); margin-top: 6px"><span style="{{r.bar}}"></span></span></span><span style="font: 700 16px Outfit, sans-serif">{{r.pct}}%</span></button></sc-for>
+<div style="margin-top: 8px; padding: 18px; border-radius: 20px; background: var(--surface-2)">
+<div style="font: 800 24px/1.1 Outfit, sans-serif; letter-spacing: -.02em">{{selName}}</div>
+<p class="eyebrow" style="margin: 12px 0 6px">You have</p>
+<div style="display: flex; flex-wrap: wrap; gap: 6px"><sc-for list="{{selHave}}" as="h" hint-placeholder-count="3"><span class="pill" style="background: var(--surface); color: var(--have); border: 1px solid var(--have)">✓ {{h}}</span></sc-for></div>
+<p class="eyebrow" style="margin: 12px 0 6px">To learn</p>
+<div style="display: flex; flex-wrap: wrap; gap: 6px"><sc-for list="{{selMiss}}" as="m" hint-placeholder-count="2"><span class="pill" style="background: var(--surface); color: var(--miss); border: 1px dashed var(--miss)">+ {{m}}</span></sc-for></div>
+<a href="Roadmap.dc.html" style="margin-top: 14px; display: flex; align-items: center; justify-content: center; gap: 8px; min-height: 48px; border-radius: 999px; background: var(--accent); color: var(--accent-ink); font: 600 15px Outfit, sans-serif; box-shadow: 0 14px 30px -14px var(--accent)">Switch to this career →</a>
+</div>
+<div style="padding: 14px 16px; border-radius: 18px; border: 1px dashed var(--accent); font: 400 14px/1.5 Roboto, sans-serif; color: var(--ink-2)"><strong style="font: 700 15px Outfit, sans-serif; color: var(--accent-text)">Best next skill: {{nextSkill}}</strong><br>{{nextWhy}}</div>
+</aside>
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"theme":{"editor":"enum","options":["light","dark"],"default":"light"},"$preview":{"width":1440,"height":900}}'>
+class Component extends DCLogic {
+  renderVals() {
+    const s = this.state || {};
+    const theme = s.theme || this.props.theme || 'light';
+    const SK = ['Python', 'JavaScript', 'SQL', 'Git', 'Linux', 'Docker', 'Kubernetes', 'Cloud', 'APIs', 'Testing', 'HTML & CSS', 'React', 'Statistics', 'Machine Learning', 'LLMs', 'Networking'];
+    const C = [
+      ['Frontend Developer', 't-blue', ['JavaScript', 'HTML & CSS', 'React', 'Git', 'Testing']],
+      ['Backend Developer', 't-blue', ['Python', 'SQL', 'APIs', 'Git', 'Docker', 'Testing']],
+      ['Full Stack Developer', 't-blue', ['JavaScript', 'React', 'SQL', 'APIs', 'Git', 'Docker']],
+      ['Data Analyst', 't-teal', ['SQL', 'Python', 'Statistics', 'Git']],
+      ['Data Engineer', 't-teal', ['Python', 'SQL', 'Cloud', 'Docker', 'Linux']],
+      ['Data Scientist', 't-teal', ['Python', 'SQL', 'Statistics', 'Machine Learning']],
+      ['ML Engineer', 't-violet', ['Python', 'Machine Learning', 'Docker', 'Cloud', 'Statistics']],
+      ['Gen AI Engineer', 't-violet', ['Python', 'LLMs', 'APIs', 'Docker', 'Git']],
+      ['AI Agent Engineer', 't-violet', ['Python', 'LLMs', 'APIs', 'Testing']],
+      ['DevOps Engineer', 't-orange', ['Linux', 'Docker', 'Kubernetes', 'Cloud', 'Git']],
+      ['Cloud Engineer', 't-orange', ['Cloud', 'Linux', 'Networking', 'Docker']],
+      ['Penetration Tester', 't-pink', ['Linux', 'Networking', 'Python']]
+    ];
+    const P = { 'Backend dev': ['Python', 'SQL', 'Git', 'APIs', 'Docker', 'Testing'], 'Data analyst': ['SQL', 'Python', 'Statistics', 'Git'], 'Student': ['Python', 'Git', 'HTML & CSS'] };
+    const have = s.have || P['Backend dev'];
+    const H = new Set(have);
+    const match = (c) => c[2].filter((k) => H.has(k)).length / c[2].length;
+    const order = C.map((c, i) => i).sort((a, b) => match(C[b]) - match(C[a]));
+    const sel = s.sel == null ? order.find((i) => match(C[i]) < 1) : s.sel;
+    const toggle = (k) => { const n = new Set(have); n.has(k) ? n.delete(k) : n.add(k); this.setState({ have: Array.from(n) }); };
+    const sy = (i) => 5 + (i / (SK.length - 1)) * 90;
+    const cy = (i) => 6 + (i / (C.length - 1)) * 88;
+    const cx = (i) => 74 + 7 * Math.sin((i / (C.length - 1)) * Math.PI);
+    const SX = 22;
+    const edges = [];
+    C.forEach((c, ci) => c[2].forEach((k) => {
+      const si = SK.indexOf(k); const has = H.has(k); const isSel = ci === sel;
+      if (!has && !isSel) return;
+      const x1 = SX, y1 = sy(si), x2 = cx(ci) - 1.5, y2 = cy(ci);
+      edges.push({ d: 'M' + x1 + ' ' + y1.toFixed(2) + ' C ' + (x1 + 22) + ' ' + y1.toFixed(2) + ', ' + (x2 - 22) + ' ' + y2.toFixed(2) + ', ' + x2.toFixed(2) + ' ' + y2.toFixed(2), color: has ? (isSel ? 'var(--have)' : 'var(--faint)') : 'var(--miss)', w: isSel ? 2.4 : 1.2, dash: has ? '' : '5 5' });
+    }));
+    edges.sort((a, b) => a.w - b.w);
+    let best = null, bestN = 0, bestGain = 0;
+    SK.forEach((k) => { if (H.has(k)) return; let n = 0, g = 0; C.forEach((c) => { if (c[2].includes(k)) { n++; g += 1 / c[2].length; } }); if (g > bestGain) { bestGain = g; bestN = n; best = k; } });
+    const selC = C[sel];
+    return {
+      theme: theme, themeLabel: theme === 'dark' ? 'Light' : 'Dark',
+      toggleTheme: () => this.setState({ theme: theme === 'dark' ? 'light' : 'dark' }),
+      presets: Object.keys(P).map((n) => ({ name: n, go: () => this.setState({ have: P[n], sel: null }) })),
+      haveCount: have.length,
+      skillChips: SK.map((k) => ({ name: k, cls: H.has(k) ? 'sk on' : 'sk', pressed: H.has(k) ? 'true' : 'false', tint: H.has(k) ? 't-green' : 't-pearl', go: () => toggle(k) })),
+      skillNodes: SK.map((k, i) => ({ name: k, aria: (H.has(k) ? 'Remove ' : 'Add ') + k, tint: H.has(k) ? 't-green' : 't-pearl', style: 'left:' + SX + '%;top:' + sy(i).toFixed(2) + '%;width:' + (H.has(k) ? 20 : 15) + 'px;height:' + (H.has(k) ? 20 : 15) + 'px;z-index:3', go: () => toggle(k) })),
+      careerNodes: C.map((c, i) => { const m = match(c); const sz = Math.round(18 + 30 * m) + (i === sel ? 6 : 0); return { aria: 'Show ' + c[0], label: c[0] + ' · ' + Math.round(m * 100) + '%', tint: c[1], labelStyle: 'left:calc(100% + 8px)' + (i === sel ? ';border-color:var(--accent);font-weight:700' : ''), style: 'left:' + cx(i).toFixed(2) + '%;top:' + cy(i).toFixed(2) + '%;width:' + sz + 'px;height:' + sz + 'px;z-index:4' + (i === sel ? ';outline:2px solid var(--accent);outline-offset:4px' : '') + (m === 0 ? ';opacity:.55' : ''), go: () => this.setState({ sel: i }) }; }),
+      edges: edges,
+      ranked: order.slice(0, 5).map((i) => ({ name: C[i][0], tint: C[i][1], pct: Math.round(match(C[i]) * 100), cls: i === sel ? 'mrow on' : 'mrow', bar: 'display:block;height:6px;border-radius:3px;background:var(--accent);width:' + Math.round(match(C[i]) * 100) + '%', go: () => this.setState({ sel: i }) })),
+      selName: selC[0] + ' · ' + Math.round(match(selC) * 100) + '% match',
+      selHave: selC[2].filter((k) => H.has(k)),
+      selMiss: selC[2].filter((k) => !H.has(k)),
+      nextSkill: best || 'You have them all',
+      nextWhy: best ? 'Used by ' + bestN + ' of these 12 careers, so it raises your match across the most paths.' : 'Pick a career and start climbing.'
+    };
+  }
+}
+</script>
+</body>
+</html>

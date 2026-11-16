@@ -1,0 +1,132 @@
+{
+  "id": "devsecops",
+  "title": "DevSecOps / Cloud Security",
+  "domain": "security",
+  "status": "stable",
+  "summary": "Builds security into pipelines, cloud and code.",
+  "duration": "7–9 months",
+  "whatYouDo": [
+    "Build security into pipelines, cloud and code",
+    "Automate checks developers actually use",
+    "Respond to cloud security issues"
+  ],
+  "skills": [
+    "Security",
+    "CI/CD",
+    "Docker",
+    "Kubernetes",
+    "Cloud",
+    "Linux",
+    "Python"
+  ],
+  "next": [
+    "platform-engineer",
+    "cloud-engineer"
+  ],
+  "updated": "2026-11-15",
+  "stages": [
+    {
+      "title": "Foundations",
+      "duration": "4 weeks",
+      "goal": "DevOps basics and security concepts.",
+      "topics": [
+        "Linux",
+        "Git & GitHub",
+        "CI/CD",
+        "Docker",
+        "Security fundamentals"
+      ],
+      "resources": [],
+      "project": "A simple app with a CI pipeline"
+    },
+    {
+      "title": "Application security",
+      "duration": "4 weeks",
+      "goal": "Know what to look for in code.",
+      "topics": [
+        "OWASP Top 10",
+        "Secure coding",
+        "Threat modelling",
+        "Dependency risks",
+        "Secrets in code"
+      ],
+      "resources": [
+        {
+          "title": "OWASP Top 10",
+          "url": "https://owasp.org/www-project-top-ten/"
+        },
+        {
+          "title": "OWASP Juice Shop",
+          "url": "https://owasp.org/www-project-juice-shop/"
+        }
+      ],
+      "project": "Threat model and fix a vulnerable app"
+    },
+    {
+      "title": "Security in pipelines",
+      "duration": "4 weeks",
+      "goal": "Automate checks on every commit.",
+      "topics": [
+        "SAST",
+        "DAST",
+        "Software composition analysis",
+        "Secret scanning",
+        "SBOMs & supply chain"
+      ],
+      "resources": [
+        {
+          "title": "OWASP DevSecOps Guideline",
+          "url": "https://owasp.org/www-project-devsecops-guideline/"
+        }
+      ],
+      "project": "Add four security gates to your pipeline"
+    },
+    {
+      "title": "Containers & Kubernetes",
+      "duration": "4 weeks",
+      "goal": "Secure what runs.",
+      "topics": [
+        "Image scanning",
+        "Kubernetes security",
+        "Policy as code",
+        "Runtime security",
+        "Least privilege"
+      ],
+      "resources": [
+        {
+          "title": "Kubernetes security docs",
+          "url": "https://kubernetes.io/docs/concepts/security/"
+        }
+      ],
+      "project": "Hardened cluster with admission policies"
+    },
+    {
+      "title": "Cloud security",
+      "duration": "4 weeks",
+      "goal": "Protect cloud accounts.",
+      "topics": [
+        "Cloud",
+        "Identity & access",
+        "Network controls",
+        "Logging & detection",
+        "Compliance frameworks"
+      ],
+      "resources": [],
+      "project": "A cloud security baseline in Terraform"
+    },
+    {
+      "title": "Professional",
+      "duration": "3 weeks",
+      "goal": "Work with developers.",
+      "topics": [
+        "Developer enablement",
+        "Metrics",
+        "Incident response",
+        "Certifications",
+        "Interview practice"
+      ],
+      "resources": [],
+      "project": "A security champions playbook"
+    }
+  ]
+}

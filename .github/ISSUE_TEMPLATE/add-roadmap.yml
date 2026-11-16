@@ -1,0 +1,15 @@
+name: Add a library roadmap
+description: Suggest a community roadmap for the library
+title: "Add roadmap: "
+labels: [library]
+body:
+  - type: input
+    id: link
+    attributes: { label: Link }
+    validations: { required: true }
+  - type: input
+    id: career
+    attributes: { label: Which career does it help? }
+  - type: input
+    id: license
+    attributes: { label: Licence (if you know it) }

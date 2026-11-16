@@ -1,0 +1,152 @@
+{
+  "id": "ai-agent-engineer",
+  "title": "AI Agent Engineer",
+  "domain": "ai",
+  "status": "emerging",
+  "summary": "Builds agents that plan, call tools and act, safely and observably.",
+  "duration": "6–9 months",
+  "whatYouDo": [
+    "Build agents that plan, call tools and act",
+    "Design tools and context for models",
+    "Evaluate, observe and secure agent behaviour"
+  ],
+  "skills": [
+    "Python",
+    "LLMs",
+    "APIs",
+    "Testing",
+    "Docker",
+    "Security",
+    "System Design"
+  ],
+  "next": [
+    "forward-deployed",
+    "gen-ai-engineer",
+    "ai-red-teaming"
+  ],
+  "updated": "2026-11-15",
+  "stages": [
+    {
+      "title": "Foundations",
+      "duration": "3–4 weeks",
+      "goal": "Code solidly and understand LLM basics.",
+      "topics": [
+        "Python",
+        "HTTP & APIs",
+        "JSON & schemas",
+        "Tokens & context windows",
+        "Prompt engineering"
+      ],
+      "resources": [
+        {
+          "title": "The Python Tutorial",
+          "url": "https://docs.python.org/3/tutorial/"
+        },
+        {
+          "title": "Claude documentation",
+          "url": "https://docs.claude.com/"
+        }
+      ],
+      "project": "A CLI assistant with structured output"
+    },
+    {
+      "title": "Tool use",
+      "duration": "4 weeks",
+      "goal": "Let models call your code safely.",
+      "topics": [
+        "Tool use / function calling",
+        "Tool design",
+        "Error handling & retries",
+        "Structured output",
+        "Rate limits"
+      ],
+      "resources": [
+        {
+          "title": "Claude documentation",
+          "url": "https://docs.claude.com/"
+        }
+      ],
+      "project": "An assistant that books meetings via a calendar API"
+    },
+    {
+      "title": "Agent loops & patterns",
+      "duration": "4 weeks",
+      "goal": "Build agents that plan and recover.",
+      "topics": [
+        "Agent loops",
+        "Workflows vs agents",
+        "Planning & reflection",
+        "Memory",
+        "Multi-agent patterns"
+      ],
+      "resources": [
+        {
+          "title": "Building effective agents (Anthropic)",
+          "url": "https://www.anthropic.com/engineering/building-effective-agents"
+        }
+      ],
+      "project": "A research agent that writes a cited brief"
+    },
+    {
+      "title": "Context & integrations",
+      "duration": "4 weeks",
+      "goal": "Give agents the right context and systems.",
+      "topics": [
+        "Model Context Protocol (MCP)",
+        "Context engineering",
+        "RAG",
+        "Embeddings",
+        "Long-running tasks"
+      ],
+      "resources": [
+        {
+          "title": "Model Context Protocol",
+          "url": "https://modelcontextprotocol.io/"
+        },
+        {
+          "title": "Effective context engineering (Anthropic)",
+          "url": "https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents"
+        }
+      ],
+      "project": "An MCP server for an internal tool"
+    },
+    {
+      "title": "Evaluation & safety",
+      "duration": "4 weeks",
+      "goal": "Measure and guard agent behaviour.",
+      "topics": [
+        "LLM evaluation",
+        "Agent traces & observability",
+        "Guardrails",
+        "Prompt injection",
+        "Human-in-the-loop"
+      ],
+      "resources": [
+        {
+          "title": "OWASP Top 10 for LLM Applications",
+          "url": "https://genai.owasp.org/"
+        }
+      ],
+      "project": "An eval suite with trace review for your agent"
+    },
+    {
+      "title": "Production",
+      "duration": "4 weeks",
+      "goal": "Ship agents people trust.",
+      "topics": [
+        "Docker",
+        "Cost & latency",
+        "Permissions & sandboxing",
+        "System design",
+        "Interview practice"
+      ],
+      "resources": [
+        {
+          "title": "Hugging Face Agents Course",
+          "url": "https://huggingface.co/learn/agents-course/unit0/introduction"
+        }
+      ],
+      "project": "Deploy a sandboxed agent with approvals and logs"
+    }
+  ]
+}

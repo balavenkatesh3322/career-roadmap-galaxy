@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Career Galaxy — every tech career, one galaxy</title>
+  <meta name="description" content="Explore 39 tech careers in an interactive 3D galaxy, climb step-by-step roadmaps, match your skills and switch paths. Free and open source.">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <script>try{var t=localStorage.getItem('cg-theme');document.documentElement.dataset.theme=t||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light')}catch(e){document.documentElement.dataset.theme='light'}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800;900&family=Roboto:wght@400;500;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <main id="main">
+    <section class="space hero" id="hero" aria-labelledby="hero-h">
+      <div class="twinkle" aria-hidden="true"></div>
+      <span class="shoot" style="right: 8%; top: 12%" aria-hidden="true"></span>
+      <span class="shoot" style="right: 34%; top: 4%; animation-delay: 3.4s; width: 110px" aria-hidden="true"></span>
+      <header id="site-header"></header>
+
+      <div class="hero-copy">
+        <p class="pill glass" id="hero-pill"><span class="sphere t-teal s10"></span><span id="pill-text">39 CAREERS · 7 DOMAINS · FREE</span></p>
+        <h1 id="hero-h"><span id="h1a">Every tech career.</span><br><span class="grad" id="h1b">One galaxy.</span></h1>
+        <p class="sub" id="hero-sub" aria-live="polite">Find your planet, then climb its roadmap step by step.</p>
+        <div class="hero-actions" id="hero-actions">
+          <a class="btn btn-p" href="galaxy.html">Explore the galaxy<span class="go" data-icon="arrow"></span></a>
+          <a class="btn btn-glass" href="library.html">Browse roadmaps</a>
+        </div>
+      </div>
+
+      <svg class="spot-line" aria-hidden="true" style="position:absolute;inset:0;width:100%;height:100%;z-index:4;pointer-events:none"><line id="spot-line" stroke="#ffe08a" stroke-width="1.5" stroke-dasharray="4 5"/></svg>
+      <div class="spot-card glass" id="spot-card">
+        <div style="display:flex;align-items:center;gap:10px"><span class="sphere s28" id="spot-tint"></span><div><div class="mono" style="font-size:11px;letter-spacing:.16em;color:#ffe08a">NOW ORBITING</div><div style="font:700 17px/1.15 var(--font-display)" id="spot-role"></div></div></div>
+        <div class="path" id="spot-path"></div>
+        <button type="button" id="spot-go"></button>
+      </div>
+
+      <nav class="crumbs" id="crumbs" aria-label="Breadcrumb" hidden>
+        <button type="button" class="ibtn glass" id="back" style="color:#fff"><span data-icon="back"></span>Galaxy</button>
+        <span class="sep">/</span><span class="ibtn glass" style="color:#fff" id="crumb-domain"></span>
+        <span class="sep" id="crumb-sep2" hidden>/</span><span class="ibtn glass" style="color:#fff;border-color:#a78bfa" id="crumb-role" hidden></span>
+      </nav>
+
+      <div class="role-card glass" id="role-card" hidden>
+        <span class="sphere s48" id="rc-tint" aria-hidden="true"></span>
+        <div class="mono" style="margin-top:14px;font-size:11px;letter-spacing:.16em;color:#a9b0c0" id="rc-domain"></div>
+        <div style="font:800 28px/1.1 var(--font-display);letter-spacing:-.02em;margin-top:4px" id="rc-title"></div>
+        <p style="margin:8px 0 0;font:400 15px/1.5 var(--font-body);color:#d5d9e6" id="rc-summary"></p>
+        <a class="btn btn-p btn-sm" id="rc-go" style="margin-top:18px;width:100%">Climb this roadmap</a>
+      </div>
+
+      <div class="horizon bottom" aria-hidden="true"></div>
+      <p class="scene-hint" id="scene-hint">drag to spin · click a planet</p>
+      <button type="button" class="ibtn glass pause-btn" id="pause" style="color:#fff">Pause motion</button>
+    </section>
+
+    <div class="wrap"><div class="stats" id="stats"></div></div>
+
+    <section class="section" aria-labelledby="climb-h">
+      <span class="floaty sphere t-pink" style="left:-40px;top:120px;width:120px;height:120px" aria-hidden="true"></span>
+      <span class="floaty sphere t-cyan" style="right:3%;top:70px;width:90px;height:90px;animation-delay:-2s" aria-hidden="true"></span>
+      <div class="wrap">
+        <div class="center" style="max-width:820px;margin:0 auto">
+          <p class="eyebrow">The climb</p>
+          <h2 class="big" id="climb-h">Every roadmap is a <span class="grad-l">climb.</span></h2>
+          <p class="lede">Click a stage and watch yourself move up.</p>
+        </div>
+        <div class="row" style="margin-top:56px">
+          <div class="climb-box space" id="climb-box">
+            <div class="twinkle" aria-hidden="true"></div>
+            <div class="scene-ctrl"><button type="button" class="ibtn icon" id="stage-prev" aria-label="Previous stage" data-icon="left"></button><button type="button" class="ibtn icon" id="stage-next" aria-label="Next stage" data-icon="right"></button></div>
+          </div>
+          <div class="card stage-card" id="stage-card" aria-live="polite"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" aria-labelledby="switch-h">
+      <span class="floaty sphere t-orange" style="right:-30px;top:60px;width:140px;height:140px;animation-delay:-1s" aria-hidden="true"></span>
+      <span class="floaty gem t-violet" style="left:4%;bottom:60px;width:70px;height:84px;animation-delay:-3s" aria-hidden="true"></span>
+      <div class="wrap">
+        <div class="center" style="max-width:860px;margin:0 auto">
+          <p class="eyebrow">Switch careers</p>
+          <h2 class="big" id="switch-h">Change direction. <span class="grad-l">Keep your skills.</span></h2>
+        </div>
+        <div class="row" style="margin-top:56px">
+          <div class="card" style="flex:1.4 1 520px;min-width:0;padding:26px;overflow:hidden">
+            <div role="group" aria-label="I am a" style="display:flex;flex-wrap:wrap;align-items:center;gap:8px" id="from-chips"><span class="mono cat" style="margin-right:4px">I am a</span></div>
+            <div class="space ring-box" id="ring-box">
+              <div class="twinkle" aria-hidden="true"></div>
+              <div class="ring-center"><b class="grad" id="pv-pct">0%</b><span style="font:500 15px var(--font-display);color:#d5d9e6" id="pv-to"></span></div>
+              <button type="button" class="ibtn icon ring-arrow" style="left:14px" id="ring-prev" aria-label="Previous career" data-icon="left"></button>
+              <button type="button" class="ibtn icon ring-arrow" style="right:14px" id="ring-next" aria-label="Next career" data-icon="right"></button>
+            </div>
+            <div style="display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-top:16px" id="pv-skills" aria-live="polite"></div>
+            <a class="btn btn-p btn-sm" id="pv-go" style="margin-top:18px">Start this climb</a>
+          </div>
+          <div class="card" style="flex:1 1 360px;min-width:0;padding:30px;display:flex;flex-direction:column">
+            <p class="eyebrow">Recall</p>
+            <h3 class="h3" style="margin-top:12px">Check yourself before you climb.</h3>
+            <div class="flash"><div class="back"></div><div class="front"><span class="sphere t-cyan" style="position:absolute;right:-30px;top:-30px;width:120px;height:120px;opacity:.55" aria-hidden="true"></span><span class="mono" style="position:relative;font-size:12px;letter-spacing:.16em;opacity:.9" id="fc-meta"></span><p id="fc-text" aria-live="polite"></p><button type="button" id="fc-flip">Show hint</button></div></div>
+            <div class="rate-row"><button type="button" class="ibtn" data-rate="again">Again<small>see it soon</small></button><button type="button" class="ibtn" data-rate="good">Good<small>in 3 days</small></button><button type="button" class="ibtn" data-rate="easy" style="border-color:#22a55a">Easy ✓<small>ticks the topic</small></button></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="const-h">
+      <span class="floaty sphere t-violet" style="left:-50px;top:90px;width:130px;height:130px;animation-delay:-4s" aria-hidden="true"></span>
+      <div class="wrap">
+        <div class="center" style="max-width:860px;margin:0 auto">
+          <p class="eyebrow">Seven constellations</p>
+          <h2 class="big" id="const-h">Every field. <span class="grad-l">One map.</span></h2>
+        </div>
+        <div class="grid" id="gallery" style="grid-template-columns:repeat(auto-fit,minmax(260px,1fr));margin-top:56px"></div>
+      </div>
+    </section>
+
+    <section class="space finale">
+      <div class="twinkle" aria-hidden="true"></div>
+      <span class="shoot" style="right:20%;top:18%;animation-delay:1.5s" aria-hidden="true"></span>
+      <div class="horizon top" aria-hidden="true"></div>
+      <span class="floaty sphere t-violet" style="left:7%;top:40%;width:140px;height:140px" aria-hidden="true"></span>
+      <span class="floaty sphere t-teal" style="left:17%;bottom:14%;width:50px;height:50px;animation-delay:-2s" aria-hidden="true"></span>
+      <span class="floaty sphere t-orange" style="right:8%;top:34%;width:100px;height:100px;animation-delay:-3s" aria-hidden="true"></span>
+      <div class="wrap" style="position:relative">
+        <p class="pill glass mono" style="display:inline-flex;margin:0;padding:9px 16px;border-radius:999px;font-size:13px;letter-spacing:.18em;color:#e9e4ff">READY FOR LAUNCH</p>
+        <h2>Your next career is <span class="grad">one planet away.</span></h2>
+        <div class="hero-actions" style="margin-top:38px"><a class="btn btn-p" href="galaxy.html">Explore the galaxy<span class="go" data-icon="arrow"></span></a><a class="btn btn-glass" href="contribute.html">Add a field</a></div>
+      </div>
+    </section>
+  </main>
+  <footer id="site-footer"></footer>
+  <script type="module" src="/src/pages/landing.js"></script>
+</body>
+</html>

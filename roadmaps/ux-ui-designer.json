@@ -1,0 +1,137 @@
+{
+  "id": "ux-ui-designer",
+  "title": "UX / UI Designer",
+  "domain": "product",
+  "status": "stable",
+  "summary": "Researches users and designs products that are clear and usable.",
+  "duration": "6–8 months",
+  "whatYouDo": [
+    "Research users and their problems",
+    "Design flows, interfaces and systems",
+    "Test and improve with evidence"
+  ],
+  "skills": [
+    "UX Research",
+    "Product Sense",
+    "Communication",
+    "HTML & CSS",
+    "Data Visualization"
+  ],
+  "next": [
+    "product-manager",
+    "frontend",
+    "developer-relations"
+  ],
+  "updated": "2026-11-15",
+  "stages": [
+    {
+      "title": "Design foundations",
+      "duration": "4 weeks",
+      "goal": "See like a designer.",
+      "topics": [
+        "Visual hierarchy",
+        "Typography",
+        "Colour",
+        "Layout & grids",
+        "Gestalt principles"
+      ],
+      "resources": [
+        {
+          "title": "Laws of UX",
+          "url": "https://lawsofux.com/"
+        }
+      ],
+      "project": "Redesign a poorly designed web page"
+    },
+    {
+      "title": "User research",
+      "duration": "4 weeks",
+      "goal": "Understand people before designing.",
+      "topics": [
+        "UX research",
+        "Interviews",
+        "Surveys",
+        "Personas & journeys",
+        "Jobs to be done"
+      ],
+      "resources": [
+        {
+          "title": "Nielsen Norman Group articles",
+          "url": "https://www.nngroup.com/articles/"
+        }
+      ],
+      "project": "Run five interviews and synthesise findings"
+    },
+    {
+      "title": "Interaction design",
+      "duration": "4 weeks",
+      "goal": "Design flows that work.",
+      "topics": [
+        "Information architecture",
+        "User flows",
+        "Wireframing",
+        "Prototyping",
+        "Figma"
+      ],
+      "resources": [
+        {
+          "title": "Figma Learn",
+          "url": "https://help.figma.com/hc/en-us/categories/360002051613"
+        }
+      ],
+      "project": "A clickable prototype for a real problem"
+    },
+    {
+      "title": "UI & design systems",
+      "duration": "4 weeks",
+      "goal": "Polished, consistent interfaces.",
+      "topics": [
+        "UI patterns",
+        "Components & variants",
+        "Design tokens",
+        "Accessibility (WCAG)",
+        "Motion basics"
+      ],
+      "resources": [
+        {
+          "title": "WCAG quick reference",
+          "url": "https://www.w3.org/WAI/WCAG22/quickref/"
+        }
+      ],
+      "project": "A small design system with documentation"
+    },
+    {
+      "title": "Testing & iteration",
+      "duration": "3 weeks",
+      "goal": "Prove designs work.",
+      "topics": [
+        "Usability testing",
+        "A/B testing basics",
+        "Analytics",
+        "Heuristic evaluation",
+        "Iteration"
+      ],
+      "resources": [],
+      "project": "Usability test your prototype and iterate"
+    },
+    {
+      "title": "Professional",
+      "duration": "4 weeks",
+      "goal": "Collaborate and get hired.",
+      "topics": [
+        "Working with engineers",
+        "HTML & CSS basics",
+        "Presenting design",
+        "Case-study portfolio",
+        "Interview practice"
+      ],
+      "resources": [
+        {
+          "title": "UI/UX designer roadmap",
+          "url": "https://github.com/togiberlin/ui-ux-designer-roadmap"
+        }
+      ],
+      "project": "Three portfolio case studies"
+    }
+  ]
+}

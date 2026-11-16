@@ -1,0 +1,130 @@
+{
+  "id": "quantum",
+  "title": "Quantum Computing Engineer",
+  "domain": "frontier",
+  "status": "emerging",
+  "summary": "Writes and tests algorithms for quantum hardware.",
+  "duration": "9–12 months",
+  "whatYouDo": [
+    "Write and test algorithms for quantum hardware",
+    "Simulate and benchmark circuits",
+    "Find problems where quantum may help"
+  ],
+  "skills": [
+    "Python",
+    "Math",
+    "Statistics",
+    "Writing"
+  ],
+  "next": [
+    "ai-research-scientist",
+    "ml-engineer"
+  ],
+  "updated": "2026-11-15",
+  "stages": [
+    {
+      "title": "Maths & Python",
+      "duration": "6 weeks",
+      "goal": "The maths quantum computing uses.",
+      "topics": [
+        "Linear algebra",
+        "Complex numbers",
+        "Probability",
+        "Python",
+        "NumPy"
+      ],
+      "resources": [
+        {
+          "title": "3Blue1Brown: Linear algebra",
+          "url": "https://www.3blue1brown.com/topics/linear-algebra"
+        }
+      ],
+      "project": "Simulate a qubit with NumPy"
+    },
+    {
+      "title": "Quantum basics",
+      "duration": "5 weeks",
+      "goal": "Qubits, gates and measurement.",
+      "topics": [
+        "Qubits & superposition",
+        "Quantum gates",
+        "Entanglement",
+        "Measurement",
+        "Bloch sphere"
+      ],
+      "resources": [
+        {
+          "title": "IBM Quantum Learning",
+          "url": "https://learning.quantum.ibm.com/"
+        }
+      ],
+      "project": "Build and run Bell-state circuits"
+    },
+    {
+      "title": "Circuits & SDKs",
+      "duration": "4 weeks",
+      "goal": "Program real devices.",
+      "topics": [
+        "Qiskit or Cirq",
+        "Circuit design",
+        "Simulators",
+        "Running on hardware",
+        "Transpilation"
+      ],
+      "resources": [
+        {
+          "title": "Qiskit docs",
+          "url": "https://docs.quantum.ibm.com/"
+        }
+      ],
+      "project": "Run a circuit on real hardware and compare"
+    },
+    {
+      "title": "Algorithms",
+      "duration": "6 weeks",
+      "goal": "Classic quantum algorithms.",
+      "topics": [
+        "Deutsch–Jozsa",
+        "Grover’s search",
+        "Quantum Fourier transform",
+        "Shor’s algorithm",
+        "Variational algorithms"
+      ],
+      "resources": [],
+      "project": "Implement Grover’s search for a small problem"
+    },
+    {
+      "title": "Noise & applications",
+      "duration": "5 weeks",
+      "goal": "Work with today’s noisy hardware.",
+      "topics": [
+        "Noise & error mitigation",
+        "Error correction basics",
+        "Quantum machine learning",
+        "Optimisation (QAOA)",
+        "Chemistry simulation"
+      ],
+      "resources": [
+        {
+          "title": "PennyLane QML demos",
+          "url": "https://pennylane.ai/qml"
+        }
+      ],
+      "project": "Benchmark a variational algorithm with mitigation"
+    },
+    {
+      "title": "Professional",
+      "duration": "ongoing",
+      "goal": "Contribute to the field.",
+      "topics": [
+        "Reading papers",
+        "Writing",
+        "Open-source contributions",
+        "Community",
+        "Interview practice"
+      ],
+      "resources": [],
+      "project": "Contribute to an open-source quantum SDK"
+    }
+  ]
+}

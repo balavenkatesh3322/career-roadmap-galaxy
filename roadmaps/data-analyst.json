@@ -1,0 +1,136 @@
+{
+  "id": "data-analyst",
+  "title": "Data Analyst",
+  "domain": "data",
+  "status": "stable",
+  "summary": "Turns raw data into answers, dashboards and decisions.",
+  "duration": "4–6 months",
+  "whatYouDo": [
+    "Answer business questions with data",
+    "Build dashboards people use",
+    "Explain findings clearly"
+  ],
+  "skills": [
+    "SQL",
+    "Excel",
+    "Python",
+    "Statistics",
+    "Data Visualization",
+    "Communication"
+  ],
+  "next": [
+    "bi-analyst",
+    "data-scientist",
+    "product-manager"
+  ],
+  "updated": "2026-11-15",
+  "stages": [
+    {
+      "title": "Spreadsheets & thinking",
+      "duration": "3 weeks",
+      "goal": "Clean and summarise data in a spreadsheet.",
+      "topics": [
+        "Excel or Google Sheets",
+        "Formulas & lookups",
+        "Pivot tables",
+        "Data cleaning",
+        "Asking good questions"
+      ],
+      "resources": [],
+      "project": "Analyse a public dataset in a spreadsheet"
+    },
+    {
+      "title": "SQL",
+      "duration": "4 weeks",
+      "goal": "Pull exactly the data you need.",
+      "topics": [
+        "SQL",
+        "Joins",
+        "Aggregations",
+        "Window functions",
+        "CTEs"
+      ],
+      "resources": [
+        {
+          "title": "SQLBolt",
+          "url": "https://sqlbolt.com/"
+        },
+        {
+          "title": "PostgreSQL tutorial",
+          "url": "https://www.postgresql.org/docs/current/tutorial.html"
+        }
+      ],
+      "project": "Answer 20 business questions with SQL"
+    },
+    {
+      "title": "Statistics",
+      "duration": "3 weeks",
+      "goal": "Reason about uncertainty.",
+      "topics": [
+        "Descriptive statistics",
+        "Distributions",
+        "Sampling",
+        "Hypothesis tests",
+        "A/B testing"
+      ],
+      "resources": [
+        {
+          "title": "Khan Academy: Statistics",
+          "url": "https://www.khanacademy.org/math/statistics-probability"
+        }
+      ],
+      "project": "Analyse an A/B test and write the result"
+    },
+    {
+      "title": "Python for analysis",
+      "duration": "4 weeks",
+      "goal": "Automate analysis with code.",
+      "topics": [
+        "Python",
+        "pandas",
+        "Notebooks",
+        "Data cleaning",
+        "Charts with matplotlib"
+      ],
+      "resources": [
+        {
+          "title": "pandas getting started",
+          "url": "https://pandas.pydata.org/docs/getting_started/index.html"
+        },
+        {
+          "title": "Kaggle Learn",
+          "url": "https://www.kaggle.com/learn"
+        }
+      ],
+      "project": "A reproducible notebook analysis"
+    },
+    {
+      "title": "Visualisation & BI",
+      "duration": "3 weeks",
+      "goal": "Build dashboards that answer questions.",
+      "topics": [
+        "Data visualization",
+        "Power BI or Tableau or Looker Studio",
+        "Dashboard design",
+        "KPIs",
+        "Storytelling with data"
+      ],
+      "resources": [],
+      "project": "An interactive sales dashboard"
+    },
+    {
+      "title": "Professional",
+      "duration": "3 weeks",
+      "goal": "Show your work and get hired.",
+      "topics": [
+        "Communication",
+        "Stakeholder questions",
+        "Portfolio",
+        "Case interviews",
+        "Domain knowledge"
+      ],
+      "resources": [],
+      "project": "Three portfolio case studies"
+    }
+  ]
+}

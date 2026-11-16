@@ -1,0 +1,141 @@
+{
+  "id": "ai-red-teaming",
+  "title": "AI Red Teaming & Safety",
+  "domain": "ai",
+  "status": "emerging",
+  "summary": "Finds how AI systems fail or can be misused, and helps fix it.",
+  "duration": "6–9 months",
+  "whatYouDo": [
+    "Find how AI systems fail or can be misused",
+    "Design adversarial tests and evaluations",
+    "Help teams fix and measure risks"
+  ],
+  "skills": [
+    "Python",
+    "LLMs",
+    "Security",
+    "Machine Learning",
+    "Writing",
+    "Testing"
+  ],
+  "next": [
+    "ai-research-scientist",
+    "penetration-tester",
+    "devsecops"
+  ],
+  "updated": "2026-11-15",
+  "stages": [
+    {
+      "title": "Foundations",
+      "duration": "4 weeks",
+      "goal": "Know how models and apps are built.",
+      "topics": [
+        "Python",
+        "How LLMs work",
+        "Prompt engineering",
+        "RAG & agents basics",
+        "APIs"
+      ],
+      "resources": [
+        {
+          "title": "Claude documentation",
+          "url": "https://docs.claude.com/"
+        }
+      ],
+      "project": "A small LLM app you will later attack"
+    },
+    {
+      "title": "Security basics",
+      "duration": "4 weeks",
+      "goal": "Think like an attacker.",
+      "topics": [
+        "Security fundamentals",
+        "Threat modelling",
+        "OWASP Top 10",
+        "Web application security",
+        "Responsible disclosure"
+      ],
+      "resources": [
+        {
+          "title": "OWASP Top 10",
+          "url": "https://owasp.org/www-project-top-ten/"
+        },
+        {
+          "title": "PortSwigger Web Security Academy",
+          "url": "https://portswigger.net/web-security"
+        }
+      ],
+      "project": "A threat model for your LLM app"
+    },
+    {
+      "title": "Attacking LLM apps",
+      "duration": "5 weeks",
+      "goal": "Probe model and app weaknesses.",
+      "topics": [
+        "Prompt injection",
+        "Jailbreak techniques",
+        "Data exfiltration via tools",
+        "Insecure output handling",
+        "Agent abuse"
+      ],
+      "resources": [
+        {
+          "title": "OWASP Top 10 for LLM Applications",
+          "url": "https://genai.owasp.org/"
+        },
+        {
+          "title": "MITRE ATLAS",
+          "url": "https://atlas.mitre.org/"
+        }
+      ],
+      "project": "A red-team report against your own app"
+    },
+    {
+      "title": "Evaluations",
+      "duration": "4 weeks",
+      "goal": "Turn findings into repeatable tests.",
+      "topics": [
+        "LLM evaluation",
+        "Adversarial datasets",
+        "Automated red teaming",
+        "Scoring & rubrics",
+        "Benchmarks"
+      ],
+      "resources": [],
+      "project": "An automated red-team eval suite"
+    },
+    {
+      "title": "Mitigations & policy",
+      "duration": "4 weeks",
+      "goal": "Help fix what you find.",
+      "topics": [
+        "Guardrails",
+        "Sandboxing & permissions",
+        "Monitoring & abuse detection",
+        "AI risk frameworks",
+        "Model cards"
+      ],
+      "resources": [
+        {
+          "title": "NIST AI Risk Management Framework",
+          "url": "https://www.nist.gov/itl/ai-risk-management-framework"
+        }
+      ],
+      "project": "A mitigation plan mapped to a risk framework"
+    },
+    {
+      "title": "Professional",
+      "duration": "3 weeks",
+      "goal": "Report clearly and grow.",
+      "topics": [
+        "Writing",
+        "Severity rating",
+        "Ethics & safe handling",
+        "Community & CTFs",
+        "Interview practice"
+      ],
+      "resources": [],
+      "project": "A public write-up of a fixed, disclosed issue"
+    }
+  ]
+}

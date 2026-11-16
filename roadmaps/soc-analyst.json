@@ -1,0 +1,143 @@
+{
+  "id": "soc-analyst",
+  "title": "Cybersecurity (SOC) Analyst",
+  "domain": "security",
+  "status": "stable",
+  "summary": "Detects, investigates and responds to security incidents.",
+  "duration": "5–7 months",
+  "whatYouDo": [
+    "Watch for threats across an organisation",
+    "Investigate alerts and incidents",
+    "Improve detections over time"
+  ],
+  "skills": [
+    "Networking",
+    "Linux",
+    "Security",
+    "Monitoring",
+    "Python",
+    "Communication"
+  ],
+  "next": [
+    "penetration-tester",
+    "devsecops",
+    "ai-red-teaming"
+  ],
+  "updated": "2026-11-15",
+  "stages": [
+    {
+      "title": "IT foundations",
+      "duration": "4 weeks",
+      "goal": "Know the systems you defend.",
+      "topics": [
+        "Networking",
+        "Linux",
+        "Windows & Active Directory",
+        "How the web works",
+        "Python basics"
+      ],
+      "resources": [
+        {
+          "title": "Cisco Networking Academy",
+          "url": "https://www.netacad.com/"
+        }
+      ],
+      "project": "Build a home lab with a few VMs"
+    },
+    {
+      "title": "Security fundamentals",
+      "duration": "4 weeks",
+      "goal": "Core concepts and attacker thinking.",
+      "topics": [
+        "CIA triad",
+        "Common attacks",
+        "Cryptography basics",
+        "Identity & access",
+        "MITRE ATT&CK"
+      ],
+      "resources": [
+        {
+          "title": "MITRE ATT&CK",
+          "url": "https://attack.mitre.org/"
+        }
+      ],
+      "project": "Map a real breach to ATT&CK techniques"
+    },
+    {
+      "title": "Logs & SIEM",
+      "duration": "4 weeks",
+      "goal": "Find signals in noise.",
+      "topics": [
+        "Log sources",
+        "SIEM basics",
+        "Search queries",
+        "Dashboards",
+        "Monitoring"
+      ],
+      "resources": [
+        {
+          "title": "Elastic Security docs",
+          "url": "https://www.elastic.co/guide/en/security/current/index.html"
+        }
+      ],
+      "project": "Ingest lab logs into a SIEM and build alerts"
+    },
+    {
+      "title": "Detection & triage",
+      "duration": "4 weeks",
+      "goal": "Investigate alerts well.",
+      "topics": [
+        "Alert triage",
+        "Phishing analysis",
+        "Endpoint detection",
+        "Threat intelligence",
+        "Detection rules (Sigma)"
+      ],
+      "resources": [
+        {
+          "title": "Sigma rules",
+          "url": "https://github.com/SigmaHQ/sigma"
+        }
+      ],
+      "project": "Write and test five detection rules"
+    },
+    {
+      "title": "Incident response",
+      "duration": "3 weeks",
+      "goal": "Contain and recover.",
+      "topics": [
+        "IR lifecycle",
+        "Forensics basics",
+        "Containment",
+        "Communication",
+        "Lessons learned"
+      ],
+      "resources": [
+        {
+          "title": "NIST incident handling guide",
+          "url": "https://csrc.nist.gov/pubs/sp/800/61/r2/final"
+        }
+      ],
+      "project": "Run a tabletop exercise and write the report"
+    },
+    {
+      "title": "Professional",
+      "duration": "3 weeks",
+      "goal": "Get certified and hired.",
+      "topics": [
+        "Certifications (Security+)",
+        "Blue-team CTFs",
+        "Scripting with Python",
+        "Portfolio",
+        "Interview practice"
+      ],
+      "resources": [
+        {
+          "title": "TryHackMe",
+          "url": "https://tryhackme.com/"
+        }
+      ],
+      "project": "Complete a blue-team CTF series"
+    }
+  ]
+}

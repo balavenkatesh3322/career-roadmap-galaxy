@@ -1,0 +1,127 @@
+{
+  "id": "product-manager",
+  "title": "Product Manager",
+  "domain": "product",
+  "status": "stable",
+  "summary": "Decides what to build and why, and gets it shipped.",
+  "duration": "6–8 months",
+  "whatYouDo": [
+    "Decide what to build and why",
+    "Align engineering, design and business",
+    "Measure outcomes and iterate"
+  ],
+  "skills": [
+    "Product Sense",
+    "Communication",
+    "UX Research",
+    "SQL",
+    "Statistics",
+    "Writing"
+  ],
+  "next": [
+    "engineering-manager",
+    "forward-deployed"
+  ],
+  "updated": "2026-11-15",
+  "stages": [
+    {
+      "title": "Product foundations",
+      "duration": "4 weeks",
+      "goal": "Know what product management is.",
+      "topics": [
+        "Product lifecycle",
+        "Problem framing",
+        "Product sense",
+        "Business models",
+        "Agile & Scrum"
+      ],
+      "resources": [
+        {
+          "title": "Mind the Product",
+          "url": "https://www.mindtheproduct.com/"
+        }
+      ],
+      "project": "Teardown of a product you use daily"
+    },
+    {
+      "title": "Discovery",
+      "duration": "4 weeks",
+      "goal": "Find problems worth solving.",
+      "topics": [
+        "UX research",
+        "Customer interviews",
+        "Opportunity trees",
+        "Prototyping",
+        "Competitive analysis"
+      ],
+      "resources": [
+        {
+          "title": "Silicon Valley Product Group articles",
+          "url": "https://www.svpg.com/articles/"
+        }
+      ],
+      "project": "A discovery report with evidence"
+    },
+    {
+      "title": "Strategy & roadmaps",
+      "duration": "3 weeks",
+      "goal": "Choose and sequence bets.",
+      "topics": [
+        "Vision & strategy",
+        "Prioritisation frameworks",
+        "Roadmaps",
+        "OKRs",
+        "Market sizing"
+      ],
+      "resources": [],
+      "project": "A one-page strategy and roadmap"
+    },
+    {
+      "title": "Delivery",
+      "duration": "4 weeks",
+      "goal": "Ship with your team.",
+      "topics": [
+        "Writing specs & PRDs",
+        "Working with engineers",
+        "Technical basics & APIs",
+        "Release planning",
+        "Stakeholder management"
+      ],
+      "resources": [],
+      "project": "Write a PRD for a real feature"
+    },
+    {
+      "title": "Data & experiments",
+      "duration": "3 weeks",
+      "goal": "Measure what matters.",
+      "topics": [
+        "Metrics & north star",
+        "SQL",
+        "Statistics",
+        "A/B testing",
+        "Product analytics"
+      ],
+      "resources": [
+        {
+          "title": "SQLBolt",
+          "url": "https://sqlbolt.com/"
+        }
+      ],
+      "project": "A metrics dashboard and an experiment plan"
+    },
+    {
+      "title": "Leadership",
+      "duration": "3 weeks",
+      "goal": "Influence without authority.",
+      "topics": [
+        "Communication",
+        "Storytelling",
+        "Go-to-market",
+        "Portfolio",
+        "Interview practice"
+      ],
+      "resources": [],
+      "project": "A product case study presentation"
+    }
+  ]
+}

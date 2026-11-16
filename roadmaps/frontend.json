@@ -1,0 +1,164 @@
+{
+  "id": "frontend",
+  "title": "Frontend Developer",
+  "domain": "software",
+  "status": "stable",
+  "summary": "Builds the interfaces people click, type and scroll in the browser.",
+  "duration": "5–7 months",
+  "whatYouDo": [
+    "Turn designs into fast, accessible interfaces",
+    "Manage state, data fetching and routing in the browser",
+    "Ship and measure UI performance"
+  ],
+  "skills": [
+    "HTML & CSS",
+    "JavaScript",
+    "TypeScript",
+    "React",
+    "Git",
+    "Testing",
+    "APIs"
+  ],
+  "next": [
+    "full-stack",
+    "mobile",
+    "ux-ui-designer"
+  ],
+  "updated": "2026-11-15",
+  "stages": [
+    {
+      "title": "Web foundations",
+      "duration": "3–4 weeks",
+      "goal": "Build accessible static pages with semantic HTML and modern CSS.",
+      "topics": [
+        "Semantic HTML",
+        "CSS layout: Flexbox & Grid",
+        "Responsive design",
+        "Accessibility basics",
+        "Browser DevTools",
+        "Git & GitHub"
+      ],
+      "resources": [
+        {
+          "title": "MDN: Learn web development",
+          "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development"
+        },
+        {
+          "title": "Pro Git book",
+          "url": "https://git-scm.com/book/en/v2"
+        }
+      ],
+      "project": "A responsive personal portfolio page"
+    },
+    {
+      "title": "JavaScript",
+      "duration": "4–6 weeks",
+      "goal": "Write clear JavaScript that talks to the DOM and to APIs.",
+      "topics": [
+        "Types, functions & closures",
+        "DOM & events",
+        "Promises & async/await",
+        "Fetch & HTTP & APIs",
+        "Modules",
+        "Debugging"
+      ],
+      "resources": [
+        {
+          "title": "javascript.info",
+          "url": "https://javascript.info/"
+        },
+        {
+          "title": "MDN: Learn web development",
+          "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development"
+        }
+      ],
+      "project": "A weather app that calls a public API"
+    },
+    {
+      "title": "A framework: React",
+      "duration": "4–6 weeks",
+      "goal": "Build component-based apps with state and routing.",
+      "topics": [
+        "Components & props",
+        "State & hooks",
+        "Forms",
+        "Routing",
+        "Data fetching",
+        "Component libraries"
+      ],
+      "resources": [
+        {
+          "title": "React docs: Learn",
+          "url": "https://react.dev/learn"
+        }
+      ],
+      "project": "A task board with drag and drop and persistence"
+    },
+    {
+      "title": "TypeScript & tooling",
+      "duration": "3–4 weeks",
+      "goal": "Catch bugs early with types and a modern build setup.",
+      "topics": [
+        "TypeScript basics",
+        "Typing React",
+        "Vite & bundling",
+        "Linting & formatting",
+        "npm packages"
+      ],
+      "resources": [
+        {
+          "title": "TypeScript handbook",
+          "url": "https://www.typescriptlang.org/docs/handbook/intro.html"
+        },
+        {
+          "title": "Vite guide",
+          "url": "https://vite.dev/guide/"
+        }
+      ],
+      "project": "Convert your task board to TypeScript"
+    },
+    {
+      "title": "Quality & performance",
+      "duration": "3–4 weeks",
+      "goal": "Test, measure and speed up what you ship.",
+      "topics": [
+        "Unit testing",
+        "Component testing",
+        "End-to-end testing",
+        "Core Web Vitals",
+        "Lazy loading & code splitting",
+        "Accessibility audits"
+      ],
+      "resources": [
+        {
+          "title": "web.dev: Learn performance",
+          "url": "https://web.dev/learn/performance"
+        },
+        {
+          "title": "Playwright docs",
+          "url": "https://playwright.dev/docs/intro"
+        }
+      ],
+      "project": "Add tests and a Lighthouse score above 90"
+    },
+    {
+      "title": "Professional",
+      "duration": "3–4 weeks",
+      "goal": "Ship real projects and get hired.",
+      "topics": [
+        "Design systems",
+        "Deploying to the web",
+        "Code review",
+        "Portfolio",
+        "Interview practice"
+      ],
+      "resources": [
+        {
+          "title": "Frontend Mentor challenges",
+          "url": "https://www.frontendmentor.io/challenges"
+        }
+      ],
+      "project": "Ship a polished app to production with a case study"
+    }
+  ]
+}

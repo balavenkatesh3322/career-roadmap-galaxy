@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Career Galaxy — Mobile climb</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&amp;family=Roboto:wght@400;500;700&amp;family=Roboto+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:inherit;text-decoration:none}a:hover{color:inherit}
+.cg{--bg:#fbfaff;--bg-alt:#f3f0fb;--surface:#ffffff;--surface-2:#f6f3fd;--line:#e5dff2;--line-2:#d2c9e8;--ink:#15121f;--ink-2:#4b5466;--ink-3:#5f6878;--accent:#6d3cff;--accent-ink:#ffffff;--accent-text:#5a2be0;--dot:rgba(70,50,140,.12);--shadow:rgba(60,40,120,.24);--orbit:rgba(109,60,255,.3);font-family:Roboto,system-ui,sans-serif;color:var(--ink);background:var(--bg)}
+.cg[data-theme=dark]{--bg:#111019;--bg-alt:#17151f;--surface:#1e1b28;--surface-2:#262233;--line:#2e2a3d;--line-2:#433d57;--ink:#ffffff;--ink-2:#b6bdcc;--ink-3:#9aa2b3;--accent:#7a52ff;--accent-ink:#ffffff;--accent-text:#bba6ff;--dot:rgba(220,210,255,.08);--shadow:rgba(0,0,0,.6);--orbit:rgba(187,166,255,.32)}
+.field{position:relative;overflow:hidden;background-color:var(--bg-alt);background-image:radial-gradient(var(--dot) 1.2px,transparent 1.4px);background-size:20px 20px}
+.t-violet{--c1:#dccbff;--c2:#8b5cf6;--c3:#4c1fc0}.t-gold{--c1:#fff1bd;--c2:#f5b301;--c3:#a86400}.t-green{--c1:#c9f7d8;--c2:#22c55e;--c3:#11713a}.t-pearl{--c1:#ffffff;--c2:#e9e4f7;--c3:#a59cc7}.t-mute{--c1:#e7e4f0;--c2:#b8b2cc;--c3:#7d7695}
+.sphere{display:block;border-radius:50%;background:radial-gradient(circle at 33% 27%,rgba(255,255,255,.95) 0,rgba(255,255,255,.95) 3%,rgba(255,255,255,.25) 11%,rgba(255,255,255,0) 22%),radial-gradient(circle at 42% 36%,var(--c1) 0,var(--c2) 48%,var(--c3) 100%)}
+.gem{display:block;clip-path:polygon(50% 0,100% 50%,50% 100%,0 50%);background:conic-gradient(from -45deg at 50% 50%,var(--c1) 0 25%,var(--c2) 0 50%,var(--c3) 0 75%,var(--c2) 0)}
+.ibtn{min-height:44px;min-width:44px;display:inline-flex;align-items:center;justify-content:center;border-radius:999px;border:1px solid var(--line-2);background:var(--surface);color:var(--ink);cursor:pointer;padding:0}
+.tab{flex:1;min-height:40px;border:0;border-radius:999px;background:transparent;color:var(--ink-2);font:600 14px Outfit,sans-serif;cursor:pointer}
+.tab.on{background:var(--surface);color:var(--ink);box-shadow:0 4px 12px -6px var(--shadow)}
+.ck{display:flex;align-items:center;gap:12px;min-height:44px;border-top:1px solid var(--line);font:400 15px Roboto,sans-serif}
+.ck input{width:20px;height:20px;accent-color:#22a55a;margin:0}
+</style>
+</helmet>
+<div class="cg" data-theme="{{theme}}" style="width: 390px; height: 844px; position: relative; overflow: hidden">
+<header style="display: flex; align-items: center; gap: 10px; padding: 14px 16px">
+<a class="ibtn" href="Mobile.dc.html" aria-label="Back to galaxy"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"></path></svg></a>
+<div style="flex: 1; min-width: 0"><div style="font: 800 19px Outfit, sans-serif; letter-spacing: -.03em">Gen AI Engineer</div><div style="display: flex; align-items: center; gap: 8px; margin-top: 6px"><div style="flex: 1; height: 6px; border-radius: 3px; background: var(--line)"><div style="width: 47%; height: 6px; border-radius: 3px; background: #8b5cf6"></div></div><span style="font: 700 12px Outfit, sans-serif">47%</span></div></div>
+<button type="button" class="ibtn" onClick="{{toggleTheme}}" aria-label="Switch colour theme"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"></path></svg></button>
+</header>
+<div class="field" style="position: relative; margin: 4px 12px 0; height: 340px; border-radius: 26px; border: 1px solid var(--line)">
+<svg width="100%" height="100%" viewBox="0 0 366 340" preserveAspectRatio="none" aria-hidden="true" style="position: absolute; inset: 0">
+<path d="M60 310 C 160 335, 300 320, 300 270 C 300 225, 90 230, 80 180 C 70 130, 290 140, 290 95 C 290 55, 180 40, 190 20" fill="none" stroke="var(--line-2)" stroke-width="12" stroke-linecap="round"></path>
+<path d="M60 310 C 160 335, 300 320, 300 270 C 300 225, 90 230, 80 180" fill="none" stroke="#8b5cf6" stroke-width="6" stroke-linecap="round"></path>
+<ellipse cx="150" cy="210" rx="95" ry="38" fill="none" stroke="var(--orbit)" stroke-width="1.5" stroke-dasharray="4 5"></ellipse>
+</svg>
+<span class="gem t-gold" style="position: absolute; left: 60px; top: 310px; transform: translate(-50%, -50%); width: 26px; height: 32px"></span>
+<span class="gem t-gold" style="position: absolute; left: 230px; top: 322px; transform: translate(-50%, -50%); width: 26px; height: 32px"></span>
+<span class="gem t-gold" style="position: absolute; left: 298px; top: 262px; transform: translate(-50%, -50%); width: 26px; height: 32px"></span>
+<span class="gem t-violet" style="position: absolute; left: 150px; top: 210px; transform: translate(-50%, -50%); width: 44px; height: 54px; filter: drop-shadow(0 10px 8px var(--shadow))"></span>
+<span class="gem t-mute" style="position: absolute; left: 85px; top: 150px; transform: translate(-50%, -50%); width: 24px; height: 30px"></span>
+<span class="gem t-mute" style="position: absolute; left: 288px; top: 95px; transform: translate(-50%, -50%); width: 24px; height: 30px"></span>
+<span class="gem t-mute" style="position: absolute; left: 190px; top: 22px; transform: translate(-50%, -50%); width: 24px; height: 30px"></span>
+<span class="sphere t-green" style="position: absolute; left: 150px; top: 172px; transform: translate(-50%, -50%); width: 16px; height: 16px"></span>
+<span class="sphere t-green" style="position: absolute; left: 236px; top: 196px; transform: translate(-50%, -50%); width: 16px; height: 16px"></span>
+<span class="sphere t-pearl" style="position: absolute; left: 230px; top: 232px; transform: translate(-50%, -50%); width: 16px; height: 16px"></span>
+<span class="sphere t-pearl" style="position: absolute; left: 150px; top: 248px; transform: translate(-50%, -50%); width: 16px; height: 16px"></span>
+<span class="sphere t-pearl" style="position: absolute; left: 66px; top: 232px; transform: translate(-50%, -50%); width: 16px; height: 16px"></span>
+<span class="sphere t-pearl" style="position: absolute; left: 62px; top: 196px; transform: translate(-50%, -50%); width: 16px; height: 16px"></span>
+<span style="position: absolute; left: 150px; top: 120px; transform: translateX(-50%); white-space: nowrap; font: 700 13px Outfit, sans-serif; background: var(--surface); border: 1px solid var(--accent); padding: 6px 10px; border-radius: 999px">4 · RAG &amp; retrieval</span>
+</div>
+<section aria-label="Stage details" style="position: absolute; left: 0; right: 0; bottom: 0; height: 410px; background: var(--surface); border-top: 1px solid var(--line-2); border-radius: 26px 26px 0 0; padding: 10px 18px 0; box-sizing: border-box; box-shadow: 0 -20px 40px -24px var(--shadow); overflow: hidden">
+<div style="width: 42px; height: 5px; border-radius: 3px; background: var(--line-2); margin: 0 auto 10px"></div>
+<div style="display: flex; justify-content: space-between; font: 500 11px 'Roboto Mono', monospace; letter-spacing: .14em; color: var(--ink-3)"><span>STAGE 4 OF 7</span><span>4–6 WEEKS</span></div>
+<h2 style="margin: 6px 0 10px; font: 800 26px/1.05 Outfit, sans-serif; letter-spacing: -.03em">RAG &amp; retrieval</h2>
+<div role="tablist" aria-label="Stage sections" style="display: flex; gap: 4px; padding: 4px; border-radius: 999px; background: var(--surface-2)">
+<sc-for list="{{tabs}}" as="t" hint-placeholder-count="3"><button type="button" role="tab" aria-selected="{{t.on}}" class="{{t.cls}}" onClick="{{t.go}}">{{t.name}}</button></sc-for>
+</div>
+<div style="margin-top: 6px">
+<sc-for list="{{items}}" as="i" hint-placeholder-count="4"><div class="ck"><span class="sphere {{i.tint}}" style="width: 14px; height: 14px"></span>{{i.name}}</div></sc-for>
+</div>
+<div style="position: absolute; left: 0; right: 0; bottom: 0; display: flex; gap: 10px; padding: 12px 18px 22px; background: var(--surface); border-top: 1px solid var(--line)">
+<a href="Recall.dc.html" style="flex: 1; min-height: 50px; display: flex; align-items: center; justify-content: center; border-radius: 999px; border: 1px solid var(--line-2); font: 600 15px Outfit, sans-serif">Self-check</a>
+<button type="button" style="flex: 1; min-height: 50px; border: 0; border-radius: 999px; background: var(--accent); color: var(--accent-ink); font: 600 15px Outfit, sans-serif">Next stage →</button>
+</div>
+</section>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"theme":{"editor":"enum","options":["light","dark"],"default":"light"},"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+  renderVals() {
+    const s = this.state || {};
+    const theme = s.theme || this.props.theme || 'light';
+    const tab = s.tab || 0;
+    const T = [
+      ['Learn 2/6', [['Embeddings', 't-green'], ['Vector databases', 't-green'], ['Chunking', 't-pearl'], ['Hybrid search', 't-pearl']]],
+      ['Resources', [['Hugging Face Learn', 't-violet'], ['Claude docs', 't-violet']]],
+      ['Build', [['Chat with your PDFs, with page citations', 't-gold']]]
+    ];
+    return {
+      theme: theme, toggleTheme: () => this.setState({ theme: theme === 'dark' ? 'light' : 'dark' }),
+      tabs: T.map((t, i) => ({ name: t[0], on: i === tab ? 'true' : 'false', cls: i === tab ? 'tab on' : 'tab', go: () => this.setState({ tab: i }) })),
+      items: T[tab][1].map((x) => ({ name: x[0], tint: x[1] }))
+    };
+  }
+}
+</script>
+</body>
+</html>

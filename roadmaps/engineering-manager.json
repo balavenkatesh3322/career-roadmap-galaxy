@@ -1,0 +1,125 @@
+{
+  "id": "engineering-manager",
+  "title": "Engineering Manager",
+  "domain": "product",
+  "status": "stable",
+  "summary": "Grows engineers and teams that deliver.",
+  "duration": "6–12 months (experienced engineers)",
+  "whatYouDo": [
+    "Grow engineers and build healthy teams",
+    "Deliver reliably with good process",
+    "Connect technical work to business goals"
+  ],
+  "skills": [
+    "Communication",
+    "System Design",
+    "Product Sense",
+    "Writing"
+  ],
+  "next": [
+    "software-architect",
+    "product-manager"
+  ],
+  "updated": "2026-11-15",
+  "stages": [
+    {
+      "title": "From engineer to manager",
+      "duration": "4 weeks",
+      "goal": "Understand the role change.",
+      "topics": [
+        "Manager vs tech lead",
+        "One-on-ones",
+        "Delegation",
+        "Time management",
+        "Your first 90 days"
+      ],
+      "resources": [
+        {
+          "title": "The Manager’s Path (book)",
+          "url": "https://www.oreilly.com/library/view/the-managers-path/9781491973882/"
+        }
+      ],
+      "project": "A 90-day plan for a new team"
+    },
+    {
+      "title": "People",
+      "duration": "5 weeks",
+      "goal": "Grow and support people.",
+      "topics": [
+        "Feedback",
+        "Coaching",
+        "Career ladders",
+        "Performance reviews",
+        "Hiring & interviewing"
+      ],
+      "resources": [],
+      "project": "A growth plan for each team member"
+    },
+    {
+      "title": "Delivery",
+      "duration": "4 weeks",
+      "goal": "Ship predictably.",
+      "topics": [
+        "Planning & estimation",
+        "Agile practices",
+        "Technical debt",
+        "Incident ownership",
+        "DORA metrics"
+      ],
+      "resources": [
+        {
+          "title": "DORA research",
+          "url": "https://dora.dev/"
+        }
+      ],
+      "project": "A quarterly plan with risks and metrics"
+    },
+    {
+      "title": "Technical leadership",
+      "duration": "4 weeks",
+      "goal": "Stay credible and guide architecture.",
+      "topics": [
+        "System design",
+        "Architecture reviews",
+        "Code review culture",
+        "Engineering standards",
+        "Build vs buy"
+      ],
+      "resources": [],
+      "project": "Run a design review using ADRs"
+    },
+    {
+      "title": "Organisation",
+      "duration": "4 weeks",
+      "goal": "Work across the company.",
+      "topics": [
+        "Stakeholder management",
+        "Product partnership",
+        "Budgets & headcount",
+        "Team topologies",
+        "Change management"
+      ],
+      "resources": [
+        {
+          "title": "Team Topologies key concepts",
+          "url": "https://teamtopologies.com/key-concepts"
+        }
+      ],
+      "project": "A team charter and interface map"
+    },
+    {
+      "title": "Culture",
+      "duration": "3 weeks",
+      "goal": "Build a team people want to join.",
+      "topics": [
+        "Psychological safety",
+        "Inclusion",
+        "Writing",
+        "Conflict resolution",
+        "Interview practice"
+      ],
+      "resources": [],
+      "project": "A team health survey and action plan"
+    }
+  ]
+}

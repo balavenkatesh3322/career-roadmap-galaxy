@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Career Galaxy — Mobile galaxy</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&amp;family=Roboto:wght@400;500;700&amp;family=Roboto+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:inherit;text-decoration:none}a:hover{color:inherit}
+.cg{--bg:#fbfaff;--bg-alt:#f3f0fb;--surface:#ffffff;--surface-2:#f6f3fd;--line:#e5dff2;--line-2:#d2c9e8;--ink:#15121f;--ink-2:#4b5466;--ink-3:#5f6878;--accent:#6d3cff;--accent-ink:#ffffff;--accent-text:#5a2be0;--dot:rgba(70,50,140,.12);--shadow:rgba(60,40,120,.24);--orbit:rgba(109,60,255,.3);font-family:Roboto,system-ui,sans-serif;color:var(--ink);background:var(--bg)}
+.cg[data-theme=dark]{--bg:#111019;--bg-alt:#17151f;--surface:#1e1b28;--surface-2:#262233;--line:#2e2a3d;--line-2:#433d57;--ink:#ffffff;--ink-2:#b6bdcc;--ink-3:#9aa2b3;--accent:#7a52ff;--accent-ink:#ffffff;--accent-text:#bba6ff;--dot:rgba(220,210,255,.08);--shadow:rgba(0,0,0,.6);--orbit:rgba(187,166,255,.32)}
+.field{position:relative;overflow:hidden;background-color:var(--bg-alt);background-image:radial-gradient(var(--dot) 1.2px,transparent 1.4px);background-size:20px 20px}
+.t-violet{--c1:#dccbff;--c2:#8b5cf6;--c3:#4c1fc0}.t-cyan{--c1:#c8f7ff;--c2:#22c3e6;--c3:#0a6f93}.t-gold{--c1:#fff1bd;--c2:#f5b301;--c3:#a86400}.t-pink{--c1:#ffc4d7;--c2:#f43f72;--c3:#a50f3a}.t-teal{--c1:#c8f8ef;--c2:#14b8a6;--c3:#076b60}.t-blue{--c1:#d0e1ff;--c2:#3b82f6;--c3:#1846b8}.t-orange{--c1:#ffe2bb;--c2:#f59e0b;--c3:#a84a05}.t-pearl{--c1:#ffffff;--c2:#e9e4f7;--c3:#a59cc7}
+.sphere{display:block;border-radius:50%;background:radial-gradient(circle at 33% 27%,rgba(255,255,255,.95) 0,rgba(255,255,255,.95) 3%,rgba(255,255,255,.25) 11%,rgba(255,255,255,0) 22%),radial-gradient(circle at 42% 36%,var(--c1) 0,var(--c2) 48%,var(--c3) 100%)}
+.ibtn{min-height:44px;min-width:44px;display:inline-flex;align-items:center;justify-content:center;border-radius:999px;border:1px solid var(--line-2);background:var(--surface);color:var(--ink);cursor:pointer;padding:0}
+.planet{position:absolute;transform:translate(-50%,-50%);border:0;padding:0;background:transparent;cursor:pointer;border-radius:50%;filter:drop-shadow(0 12px 10px var(--shadow))}
+.plabel{position:absolute;left:50%;top:calc(100% + 6px);translate:-50% 0;white-space:nowrap;font:600 12px/1 Outfit,sans-serif;color:var(--ink);background:var(--surface);border:1px solid var(--line-2);padding:5px 8px;border-radius:999px}
+.ri{display:flex;align-items:center;gap:12px;min-height:48px;border-top:1px solid var(--line);font:500 15px Outfit,sans-serif;color:var(--ink)}
+</style>
+</helmet>
+<div class="cg" data-theme="{{theme}}" style="width: 390px; height: 844px; position: relative; overflow: hidden">
+<header style="display: flex; align-items: center; gap: 10px; padding: 14px 16px">
+<span class="sphere t-violet" style="width: 26px; height: 26px" aria-hidden="true"></span>
+<span style="font: 800 19px Outfit, sans-serif; letter-spacing: -.03em">Career Galaxy</span>
+<span style="flex: 1"></span>
+<button type="button" class="ibtn" aria-label="Search roles"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.5-3.5"></path></svg></button>
+<button type="button" class="ibtn" onClick="{{toggleTheme}}" aria-label="Switch colour theme"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"></path></svg></button>
+</header>
+<h1 style="margin: 6px 16px 0; font: 800 38px/1.02 Outfit, sans-serif; letter-spacing: -.035em">Every tech career,<br><span style="color: var(--accent-text)">one galaxy.</span></h1>
+<div class="field" style="position: relative; margin: 16px 12px 0; height: 330px; border-radius: 26px; border: 1px solid var(--line)">
+<svg width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true" style="position: absolute; inset: 0"><ellipse cx="50" cy="50" rx="38" ry="24" fill="none" stroke="var(--orbit)" stroke-width=".5" stroke-dasharray="1.5 1.5"></ellipse></svg>
+<span class="sphere t-pearl" style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 54px; height: 54px; filter: drop-shadow(0 12px 10px var(--shadow))" aria-hidden="true"></span>
+<span style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); font: 500 10px 'Roboto Mono', monospace; letter-spacing: .16em; color: #4c1fc0" aria-hidden="true">YOU</span>
+<sc-for list="{{planets}}" as="p" hint-placeholder-count="7"><button type="button" class="planet" style="{{p.style}}" onClick="{{p.go}}" aria-label="{{p.aria}}"><span class="sphere {{p.tint}}" style="width: 100%; height: 100%"></span><span class="plabel">{{p.name}}</span></button></sc-for>
+<p style="position: absolute; left: 0; right: 0; bottom: 10px; margin: 0; text-align: center; font: 500 11px 'Roboto Mono', monospace; letter-spacing: .14em; color: var(--ink-3)">SWIPE TO SPIN · TAP A PLANET</p>
+</div>
+<section aria-label="Roles" style="position: absolute; left: 0; right: 0; bottom: 0; height: 290px; background: var(--surface); border-top: 1px solid var(--line-2); border-radius: 26px 26px 0 0; padding: 10px 18px 0; box-sizing: border-box; box-shadow: 0 -20px 40px -24px var(--shadow); overflow: hidden">
+<div style="width: 42px; height: 5px; border-radius: 3px; background: var(--line-2); margin: 0 auto 12px"></div>
+<div style="display: flex; align-items: center; gap: 12px"><span class="sphere {{domTint}}" style="width: 34px; height: 34px"></span><div><div style="font: 700 20px/1.1 Outfit, sans-serif">{{domName}}</div><div style="font: 500 11px 'Roboto Mono', monospace; letter-spacing: .14em; color: var(--ink-3)">{{domCount}} CAREERS</div></div></div>
+<div style="margin-top: 10px">
+<sc-for list="{{roles}}" as="r" hint-placeholder-count="4"><a class="ri" href="MobileRoadmap.dc.html"><span class="sphere t-pearl" style="width: 14px; height: 14px"></span>{{r}}<svg style="margin-left: auto" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 6l6 6-6 6"></path></svg></a></sc-for>
+</div>
+</section>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"theme":{"editor":"enum","options":["light","dark"],"default":"light"},"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+  renderVals() {
+    const s = this.state || {};
+    const theme = s.theme || this.props.theme || 'light';
+    const D = [
+      ['AI / ML', 't-violet', ['Gen AI Engineer', 'AI Agent Engineer', 'ML Engineer', 'MLOps Engineer', 'NLP Engineer', 'Computer Vision', 'Research Scientist', 'AI Red Teaming']],
+      ['Data', 't-teal', ['Data Scientist', 'Data Engineer', 'Data Analyst', 'BI Analyst', 'Database Engineer']],
+      ['Software', 't-blue', ['Frontend', 'Backend', 'Full Stack', 'Mobile', 'Game Dev', 'Embedded & IoT', 'QA / SDET', 'Architect']],
+      ['Security', 't-pink', ['SOC Analyst', 'Penetration Tester', 'DevSecOps']],
+      ['Infra', 't-orange', ['DevOps', 'SRE', 'Cloud Engineer', 'Platform Engineer', 'Network Engineer']],
+      ['Product', 't-gold', ['UX / UI Designer', 'Product Manager', 'Engineering Manager', 'Technical Writer', 'DevRel']],
+      ['Frontier', 't-cyan', ['Blockchain', 'AR / VR', 'Quantum', 'Robotics', 'Forward Deployed']]
+    ];
+    const di = s.domain == null ? 0 : s.domain;
+    const planets = D.map((d, i) => {
+      const a = 0.5 + (i / D.length) * Math.PI * 2;
+      const depth = (Math.sin(a) + 1) / 2;
+      const size = Math.round(30 + 26 * depth) + (i === di ? 8 : 0);
+      return { name: d[0], tint: d[1], aria: 'Show ' + d[0] + ' careers', style: 'left:' + (50 + 38 * Math.cos(a)).toFixed(1) + '%;top:' + (50 + 24 * Math.sin(a)).toFixed(1) + '%;width:' + size + 'px;height:' + size + 'px;z-index:' + Math.round(depth * 10) + (i === di ? ';outline:2px solid var(--accent);outline-offset:5px' : ''), go: () => this.setState({ domain: i }) };
+    });
+    const d = D[di];
+    return {
+      theme: theme, toggleTheme: () => this.setState({ theme: theme === 'dark' ? 'light' : 'dark' }),
+      planets: planets, domName: d[0], domTint: d[1], domCount: d[2].length, roles: d[2].slice(0, 4)
+    };
+  }
+}
+</script>
+</body>
+</html>

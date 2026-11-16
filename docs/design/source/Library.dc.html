@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Career Galaxy — Roadmap library</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&amp;family=Roboto:wght@400;500;700&amp;family=Roboto+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:inherit;text-decoration:none}a:hover{color:inherit}
+.cg{--bg:#fbfaff;--bg-alt:#f3f0fb;--surface:#ffffff;--surface-2:#f6f3fd;--line:#e5dff2;--line-2:#d2c9e8;--ink:#15121f;--ink-2:#4b5466;--ink-3:#5f6878;--accent:#6d3cff;--accent-ink:#ffffff;--accent-text:#5a2be0;--accent-soft:#ede6ff;--shadow:rgba(60,40,120,.24);--fresh:#15803d;--fresh-bg:#dcfce7;--ok:#92400e;--ok-bg:#fef3c7;--old:#4b5466;--old-bg:#eceaf2;font-family:Roboto,system-ui,sans-serif;color:var(--ink);background:var(--bg)}
+.cg[data-theme=dark]{--bg:#111019;--bg-alt:#17151f;--surface:#1e1b28;--surface-2:#262233;--line:#2e2a3d;--line-2:#433d57;--ink:#ffffff;--ink-2:#b6bdcc;--ink-3:#9aa2b3;--accent:#7a52ff;--accent-ink:#ffffff;--accent-text:#bba6ff;--accent-soft:#2b2346;--shadow:rgba(0,0,0,.6);--fresh:#86efac;--fresh-bg:#123222;--ok:#fcd34d;--ok-bg:#3a2a0b;--old:#b6bdcc;--old-bg:#2a2733}
+.mono{font-family:'Roboto Mono',ui-monospace,monospace}
+.eyebrow{font:500 13px/1.4 'Roboto Mono',monospace;letter-spacing:.2em;text-transform:uppercase;color:var(--accent-text);margin:0}
+.t-violet{--c1:#dccbff;--c2:#8b5cf6;--c3:#4c1fc0}.t-cyan{--c1:#c8f7ff;--c2:#22c3e6;--c3:#0a6f93}.t-gold{--c1:#fff1bd;--c2:#f5b301;--c3:#a86400}.t-pink{--c1:#ffc4d7;--c2:#f43f72;--c3:#a50f3a}.t-teal{--c1:#c8f8ef;--c2:#14b8a6;--c3:#076b60}.t-blue{--c1:#d0e1ff;--c2:#3b82f6;--c3:#1846b8}.t-orange{--c1:#ffe2bb;--c2:#f59e0b;--c3:#a84a05}.t-pearl{--c1:#ffffff;--c2:#e9e4f7;--c3:#a59cc7}
+.sphere{display:block;border-radius:50%;flex:none;background:radial-gradient(circle at 33% 27%,rgba(255,255,255,.95) 0,rgba(255,255,255,.95) 3%,rgba(255,255,255,.25) 11%,rgba(255,255,255,0) 22%),radial-gradient(circle at 42% 36%,var(--c1) 0,var(--c2) 48%,var(--c3) 100%)}
+.ibtn{min-height:42px;min-width:42px;display:inline-flex;align-items:center;justify-content:center;gap:8px;border-radius:999px;border:1px solid var(--line-2);background:var(--surface);color:var(--ink);font:500 14px Outfit,sans-serif;padding:0 14px;cursor:pointer}
+.chip{min-height:40px;display:inline-flex;align-items:center;gap:8px;border-radius:999px;border:1px solid var(--line-2);background:var(--surface);color:var(--ink);font:500 14px Outfit,sans-serif;padding:0 14px 0 10px;cursor:pointer}
+.chip.on{border-color:var(--accent);background:var(--accent-soft);color:var(--accent-text)}
+.chip .n{font:500 11px 'Roboto Mono',monospace;color:var(--ink-3)}
+.card{display:flex;flex-direction:column;gap:10px;padding:18px;border-radius:22px;border:1px solid var(--line);background:var(--surface);box-sizing:border-box;transition:transform .2s,box-shadow .2s}
+.card:hover{transform:translateY(-3px);box-shadow:0 18px 36px -22px var(--shadow)}
+.ct{font:700 18px/1.2 Outfit,sans-serif;letter-spacing:-.015em}
+.cd{margin:0;font:400 14px/1.5 Roboto,sans-serif;color:var(--ink-2)}
+.b{font:500 11px/1 'Roboto Mono',monospace;letter-spacing:.06em;border-radius:999px;padding:5px 8px}
+button.card{text-align:left;font:inherit;color:inherit;cursor:pointer;width:100%}
+button.card:focus-visible,.dstage:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.drawer-bg{position:fixed;inset:0;z-index:50;background:rgba(10,8,20,.55);display:flex;justify-content:flex-end}
+.drawer{width:min(860px,100%);height:100%;background:var(--bg);border-left:1px solid var(--line-2);display:flex;flex-direction:column;box-shadow:-30px 0 60px -30px rgba(0,0,0,.5)}
+.dstage{display:flex;align-items:center;gap:12px;width:100%;min-height:46px;padding:0 12px;border-radius:14px;border:1px solid transparent;background:transparent;color:var(--ink-2);font:500 15px Outfit,sans-serif;text-align:left;cursor:pointer;position:relative}
+.dstage.on{background:var(--surface);border-color:var(--accent);color:var(--ink);font-weight:700}
+.gem{display:block;flex:none;clip-path:polygon(50% 0,100% 50%,50% 100%,0 50%);background:conic-gradient(from -45deg at 50% 50%,var(--c1) 0 25%,var(--c2) 0 50%,var(--c3) 0 75%,var(--c2) 0)}
+.tck{display:flex;align-items:flex-start;gap:12px;padding:10px 0;border-top:1px solid var(--line);font:400 15px/1.45 Roboto,sans-serif}
+.tck input{width:18px;height:18px;margin:2px 0 0;accent-color:#22a55a;flex:none}
+.res{display:flex;align-items:center;gap:12px;min-height:48px;padding:8px 14px;border-radius:14px;border:1px solid var(--line);background:var(--surface);font:500 14px/1.35 Outfit,sans-serif;color:var(--ink)}
+.res small{display:block;font:400 12px Roboto,sans-serif;color:var(--ink-3)}
+.planetchip{display:inline-flex;align-items:center;gap:6px;font:600 13px Outfit,sans-serif;color:var(--ink);margin-top:auto;padding-top:8px;border-top:1px solid var(--line)}
+</style>
+</helmet>
+<div class="cg" data-theme="{{theme}}" style="min-height: 1700px">
+<header style="display: flex; flex-wrap: wrap; align-items: center; gap: 12px 16px; padding: 14px 24px; border-bottom: 1px solid var(--line)">
+<a href="Main.dc.html" style="display: flex; align-items: center; gap: 10px; font: 800 21px/1 Outfit, sans-serif; letter-spacing: -.03em"><span class="sphere t-violet" style="width: 28px; height: 28px" aria-hidden="true"></span>Career Galaxy</a>
+<nav aria-label="Primary" style="display: flex; gap: 4px; margin-left: 12px; font: 500 15px Outfit, sans-serif"><a href="Galaxy.dc.html" style="padding: 10px 12px">Galaxy</a><a href="Library.dc.html" style="padding: 10px 12px; color: var(--accent-text)">Library</a><a href="SkillGraph.dc.html" style="padding: 10px 12px">Skill match</a></nav>
+<div style="flex: 1 1 0"></div>
+<button type="button" class="ibtn" onClick="{{toggleTheme}}"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"></path></svg>{{themeLabel}}</button>
+</header>
+
+<section style="padding: 40px 32px 24px">
+<p class="eyebrow">Roadmap library</p>
+<div style="display: flex; flex-wrap: wrap; gap: 24px; align-items: flex-end; justify-content: space-between">
+<h1 style="font: 800 52px/1.02 Outfit, sans-serif; letter-spacing: -.035em; margin: 12px 0 0; max-width: 760px">{{total}} community roadmaps, mapped onto the galaxy</h1>
+<button type="button" onClick="{{openAdd}}" style="display: inline-flex; align-items: center; gap: 10px; min-height: 52px; padding: 0 24px 0 18px; border: 0; border-radius: 999px; background: var(--accent); color: var(--accent-ink); font: 600 16px Outfit, sans-serif; cursor: pointer; box-shadow: 0 14px 30px -14px var(--accent)"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg>Add a roadmap</button>
+</div>
+<sc-if value="{{adding}}" hint-placeholder-val="{{ false }}">
+<div role="dialog" aria-labelledby="add-h" style="margin-top: 22px; padding: 22px; border-radius: 24px; border: 1px solid var(--accent); background: var(--surface); box-shadow: 0 24px 50px -28px var(--shadow)">
+<div style="display: flex; align-items: center; justify-content: space-between; gap: 12px"><h2 id="add-h" style="margin: 0; font: 800 24px Outfit, sans-serif; letter-spacing: -.02em">Add a roadmap in one step</h2><button type="button" class="ibtn" onClick="{{closeAdd}}" aria-label="Close">✕</button></div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; margin-top: 16px">
+<label style="display: flex; flex-direction: column; gap: 6px; font: 500 14px Outfit, sans-serif; color: var(--ink-2)">Link<input type="url" placeholder="https://github.com/…" onChange="{{setUrl}}" style="min-height: 46px; border-radius: 14px; border: 1px solid var(--line-2); background: var(--surface-2); color: var(--ink); font: 400 15px Roboto, sans-serif; padding: 0 14px"></label>
+<label style="display: flex; flex-direction: column; gap: 6px; font: 500 14px Outfit, sans-serif; color: var(--ink-2)">Title<input type="text" placeholder="Context Engineering Roadmap" onChange="{{setTitle}}" style="min-height: 46px; border-radius: 14px; border: 1px solid var(--line-2); background: var(--surface-2); color: var(--ink); font: 400 15px Roboto, sans-serif; padding: 0 14px"></label>
+<label style="display: flex; flex-direction: column; gap: 6px; font: 500 14px Outfit, sans-serif; color: var(--ink-2)">Section<select onChange="{{setCat}}" style="min-height: 46px; border-radius: 14px; border: 1px solid var(--line-2); background: var(--surface-2); color: var(--ink); font: 500 15px Outfit, sans-serif; padding: 0 12px"><option value="5">AI / Data</option><option value="1">Web</option><option value="0">Languages</option><option value="2">Mobile</option><option value="3">Infrastructure</option><option value="6">Security</option><option value="7">Misc</option></select></label>
+<label style="display: flex; flex-direction: column; gap: 6px; font: 500 14px Outfit, sans-serif; color: var(--ink-2)">Helps you climb<select onChange="{{setPlanet}}" style="min-height: 46px; border-radius: 14px; border: 1px solid var(--line-2); background: var(--surface-2); color: var(--ink); font: 500 15px Outfit, sans-serif; padding: 0 12px"><option>AI Agent Engineer</option><option>Gen AI Engineer</option><option>Data Scientist</option><option>Frontend Developer</option><option>Backend Developer</option><option>DevOps Engineer</option><option>SOC Analyst</option></select></label>
+</div>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 14px; margin-top: 16px"><button type="button" onClick="{{submitAdd}}" style="min-height: 48px; padding: 0 24px; border: 0; border-radius: 999px; background: var(--accent); color: var(--accent-ink); font: 600 15px Outfit, sans-serif; cursor: pointer">Add to library</button><span style="font: 400 14px Roboto, sans-serif; color: var(--ink-3)">Year and format are detected from the link. New cards show a NEW badge until reviewed.</span></div>
+</div>
+</sc-if>
+
+<div style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: 28px" role="group" aria-label="Section">
+<sc-for list="{{cats}}" as="c" hint-placeholder-count="11"><button type="button" class="{{c.cls}}" onClick="{{c.go}}"><span class="sphere {{c.tint}}" style="width: 16px; height: 16px"></span>{{c.name}}<span class="n">{{c.n}}</span></button></sc-for>
+</div>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-top: 12px">
+<span class="mono" style="font-size: 12px; letter-spacing: .14em; color: var(--ink-3); margin-right: 6px">UPDATED</span>
+<sc-for list="{{fresh}}" as="f" hint-placeholder-count="3"><button type="button" class="{{f.cls}}" onClick="{{f.go}}" style="padding: 0 14px">{{f.name}}</button></sc-for>
+<span style="flex: 1"></span>
+<span class="mono" style="font-size: 12px; letter-spacing: .14em; color: var(--ink-3)">PLANET</span>
+<sc-for list="{{planets}}" as="p" hint-placeholder-count="6"><button type="button" class="{{p.cls}}" onClick="{{p.go}}"><span class="sphere {{p.tint}}" style="width: 16px; height: 16px"></span>{{p.name}}<span class="n">{{p.n}}</span></button></sc-for>
+</div>
+<p class="mono" style="margin: 20px 0 0; font-size: 13px; letter-spacing: .1em; color: var(--ink-3)">{{shown}}</p>
+<sc-if value="{{toast}}" hint-placeholder-val="{{ false }}"><p role="status" style="margin: 12px 0 0; display: inline-flex; align-items: center; gap: 8px; padding: 10px 16px; border-radius: 999px; background: var(--fresh-bg); color: var(--fresh); font: 600 14px Outfit, sans-serif">✓ {{toast}}</p></sc-if>
+</section>
+
+<section style="padding: 0 32px 48px; display: grid; grid-template-columns: repeat(auto-fill, minmax(290px, 1fr)); gap: 14px">
+<sc-for list="{{items}}" as="r" hint-placeholder-count="12">
+<button type="button" class="card" onClick="{{r.open}}" aria-label="{{r.aria}}">
+<div style="display: flex; align-items: center; gap: 10px"><span class="sphere {{r.tint}}" style="width: 30px; height: 30px; filter: drop-shadow(0 6px 6px var(--shadow))"></span><span class="mono" style="font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: var(--ink-3)">{{r.cat}}</span></div>
+<div class="ct">{{r.title}}</div>
+<p class="cd">{{r.desc}}</p>
+<div style="display: flex; flex-wrap: wrap; gap: 6px"><sc-if value="{{r.isNew}}" hint-placeholder-val="{{ false }}"><span class="b" style="background: var(--accent); color: var(--accent-ink)">NEW</span></sc-if><span class="b" style="{{r.yearStyle}}">{{r.year}}</span><span class="b" style="background: var(--surface-2); color: var(--ink-2)">{{r.fmt}}</span><sc-if value="{{r.stLabel}}" hint-placeholder-val="{{ false }}"><span class="b" style="{{r.stStyle}}">{{r.stLabel}}</span></sc-if></div>
+<span class="planetchip"><span class="sphere {{r.ptint}}" style="width: 14px; height: 14px"></span>Helps you climb: {{r.planet}}</span>
+</button>
+</sc-for>
+</section>
+
+<sc-if value="{{dOpen}}" hint-placeholder-val="{{ false }}">
+<div class="drawer-bg" onClick="{{closeBg}}">
+<section class="drawer" role="dialog" aria-modal="true" aria-labelledby="d-title" onClick="{{stop}}">
+<header style="padding: 22px 26px 18px; border-bottom: 1px solid var(--line)">
+<div style="display: flex; align-items: flex-start; gap: 14px">
+<span class="sphere {{dTint}}" style="width: 48px; height: 48px; filter: drop-shadow(0 8px 8px var(--shadow))"></span>
+<div style="flex: 1; min-width: 0"><div class="mono" style="font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: var(--ink-3)">{{dCat}}</div><h2 id="d-title" style="margin: 4px 0 0; font: 800 30px/1.08 Outfit, sans-serif; letter-spacing: -.03em">{{dTitle}}</h2></div>
+<button type="button" class="ibtn" onClick="{{closeDetail}}" aria-label="Close roadmap">✕</button>
+</div>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-top: 14px"><span class="b" style="{{dYearStyle}}">{{dYear}}</span><span class="b" style="background: var(--surface-2); color: var(--ink-2)">{{dFmt}}</span><sc-if value="{{dStars}}" hint-placeholder-val="{{ false }}"><span class="b" style="background: var(--surface-2); color: var(--ink-2)">★ {{dStars}}</span></sc-if><span class="planetchip" style="margin: 0 0 0 auto; padding: 0; border: 0"><span class="sphere {{dPtint}}" style="width: 16px; height: 16px"></span>Helps you climb: {{dPlanet}}</span></div>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 14px; margin-top: 12px; font: 400 13px Roboto, sans-serif; color: var(--ink-2)"><span>{{dByLine}}</span><a href="{{dSrc}}" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 6px; min-height: 32px; padding: 0 12px; border-radius: 999px; border: 1px solid var(--line-2); background: var(--surface); color: var(--ink); font: 500 13px Outfit, sans-serif"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5a11.5 11.5 0 0 0-3.6 22.4c.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 0 1 5.8 0c2.2-1.5 3.2-1.2 3.2-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.2c0 .3.2.7.8.6A11.5 11.5 0 0 0 12 .5z"></path></svg>{{dSrcLabel}} ↗</a></div>
+<div style="margin-top: 14px; padding: 12px 14px; border-radius: 14px; background: {{dNoteBg}}; font: 400 14px/1.5 Roboto, sans-serif; color: var(--ink)"><strong style="font: 700 14px Outfit, sans-serif">{{dStatusText}}</strong> {{dNote}}</div>
+</header>
+<div style="flex: 1; min-height: 0; display: flex; overflow: hidden">
+<nav aria-label="Stages" style="flex: 0 0 260px; padding: 16px 12px; border-right: 1px solid var(--line); overflow: auto; display: flex; flex-direction: column; gap: 4px">
+<div class="mono" style="font-size: 11px; letter-spacing: .14em; color: var(--ink-3); padding: 0 10px 6px">{{dStageCount}}</div>
+<sc-for list="{{dStages}}" as="g" hint-placeholder-count="6"><button type="button" class="{{g.cls}}" onClick="{{g.go}}"><span class="gem {{g.tint}}" style="width: 16px; height: 20px"></span>{{g.name}}</button></sc-for>
+</nav>
+<div style="flex: 1; min-width: 0; padding: 20px 26px; overflow: auto">
+<sc-if value="{{dIsVisual}}" hint-placeholder-val="{{ false }}">
+<div style="position: relative; height: 240px; border-radius: 20px; overflow: hidden; background: #0b0a14; border: 1px solid var(--line-2); display: flex; align-items: center; justify-content: center; margin-bottom: 18px"><div style="text-align: center; color: #c3c9d6"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"></rect><circle cx="9" cy="10" r="2"></circle><path d="m21 16-5-5-9 9"></path></svg><div style="font: 600 15px Outfit, sans-serif; margin-top: 8px">Roadmap image viewer</div><div style="font: 400 13px Roboto, sans-serif; color: #a3abbb">The author's map, shown here with zoom and pan</div></div><div style="position: absolute; right: 12px; bottom: 12px; display: flex; gap: 6px"><span class="ibtn" style="min-height: 34px; min-width: 34px; padding: 0">+</span><span class="ibtn" style="min-height: 34px; min-width: 34px; padding: 0">−</span></div></div>
+</sc-if>
+<h3 style="margin: 0; font: 800 26px/1.1 Outfit, sans-serif; letter-spacing: -.02em">{{dStageTitle}}</h3>
+<sc-if value="{{dHasTopics}}" hint-placeholder-val="{{ true }}"><div class="mono" style="font-size: 11px; letter-spacing: .14em; color: var(--ink-3); margin: 18px 0 4px">LEARN</div><sc-for list="{{dTopics}}" as="t" hint-placeholder-count="5"><label class="tck"><input type="checkbox">{{t}}</label></sc-for></sc-if>
+<sc-if value="{{dHasRes}}" hint-placeholder-val="{{ true }}"><div class="mono" style="font-size: 11px; letter-spacing: .14em; color: var(--ink-3); margin: 18px 0 8px">RESOURCES</div><div style="display: flex; flex-direction: column; gap: 6px"><sc-for list="{{dRes}}" as="x" hint-placeholder-count="3"><a class="res" href="{{x.u}}" target="_blank" rel="noopener"><span style="flex: 1; min-width: 0">{{x.t}}<small>{{x.host}}</small></span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"></path></svg></a></sc-for></div></sc-if>
+</div>
+</div>
+<footer style="display: flex; flex-wrap: wrap; align-items: center; gap: 12px; padding: 14px 26px; border-top: 1px solid var(--line)">
+<span style="flex: 1 1 240px; font: 400 12px/1.5 Roboto, sans-serif; color: var(--ink-3)">{{dCredit}} · <a href="{{dSrc}}" target="_blank" rel="noopener" style="color: var(--accent-text); text-decoration: underline">{{dSrcShort}}</a></span>
+<sc-if value="{{dCanAsk}}" hint-placeholder-val="{{ false }}"><button type="button" class="ibtn">Ask the author to share</button></sc-if>
+<a href="Roadmap.dc.html" style="display: inline-flex; align-items: center; min-height: 46px; padding: 0 22px; border-radius: 999px; background: var(--accent); color: var(--accent-ink); font: 600 15px Outfit, sans-serif">Start this climb →</a>
+</footer>
+</section>
+</div>
+</sc-if>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"theme":{"editor":"enum","options":["light","dark"],"default":"light"},"$preview":{"width":1440,"height":1700}}'>
+class Component extends DCLogic {
+  componentDidMount() {
+    if (typeof fetch === 'function') fetch('/_blob/77a50c24ce4b2bbee4e58193ba76c9b1').then((r) => r.json()).then((d) => this.setState({ lib: d })).catch(() => {});
+  }
+  ours(tint) {
+    const F = {
+      't-violet': [['Python & maths', ['Python', 'NumPy & pandas', 'Linear algebra', 'Probability']], ['Machine learning basics', ['Supervised learning', 'Model evaluation', 'Feature engineering', 'scikit-learn']], ['Deep learning & LLMs', ['Neural networks', 'PyTorch', 'Transformers', 'Embeddings']], ['Build with AI', ['Prompting', 'RAG', 'Agents & tools', 'Evaluation']], ['Ship it', ['APIs & Docker', 'Monitoring', 'Cost & latency', 'Safety']]],
+      't-teal': [['Foundations', ['SQL', 'Python', 'Spreadsheets', 'Git']], ['Statistics', ['Descriptive stats', 'Distributions', 'Hypothesis tests', 'A/B testing']], ['Analysis & modelling', ['pandas', 'Data cleaning', 'Visualisation', 'Regression']], ['Pipelines & warehouses', ['ETL / ELT', 'dbt', 'Airflow', 'Data modelling']], ['Communicate', ['Dashboards', 'Storytelling', 'Stakeholders', 'Portfolio']]],
+      't-blue': [['Foundations', ['One language well', 'Git & GitHub', 'Data structures', 'HTTP']], ['Core craft', ['Frameworks', 'APIs', 'Databases', 'Testing']], ['Build real apps', ['Auth', 'State & caching', 'Deploys', 'Debugging']], ['Scale & quality', ['Performance', 'Security basics', 'CI/CD', 'Observability']], ['Professional', ['System design', 'Code review', 'Portfolio', 'Interviews']]],
+      't-orange': [['Linux & networking', ['Linux CLI', 'Bash', 'TCP/IP & DNS', 'SSH']], ['Containers', ['Docker', 'Images', 'Compose', 'Registries']], ['Automation', ['CI/CD', 'Terraform', 'Ansible', 'GitOps']], ['Orchestration & cloud', ['Kubernetes', 'AWS / Azure / GCP', 'Cloud networking', 'Cost']], ['Reliability', ['Monitoring', 'Logging', 'SLOs', 'Incident response']]],
+      't-pink': [['Foundations', ['Networking', 'Linux', 'Windows', 'Python']], ['Security basics', ['CIA triad', 'Cryptography', 'Identity & access', 'OWASP Top 10']], ['Defend', ['SIEM & logs', 'Threat detection', 'Incident response', 'Forensics']], ['Attack, legally', ['Recon', 'Web exploitation', 'Privilege escalation', 'Reporting']], ['Grow', ['CTFs', 'Certifications', 'Cloud security', 'Portfolio']]],
+      't-gold': [['Foundations', ['User research', 'Problem framing', 'Personas', 'Journeys']], ['Craft', ['Wireframes', 'Prototyping', 'Figma', 'Design systems']], ['Deliver', ['Roadmaps', 'Prioritisation', 'Working with engineers', 'Shipping']], ['Measure', ['Metrics', 'Experiments', 'Feedback loops', 'Analytics']], ['Lead', ['Storytelling', 'Stakeholders', 'Portfolio', 'Interviews']]],
+      't-cyan': [['Foundations', ['Python / C++', 'Maths', 'Git', 'Linux']], ['Core platform', ['Main SDK or framework', 'Simulators', 'Hardware basics', 'Tooling']], ['Build', ['First project', 'Testing', 'Debugging', 'Documentation']], ['Go deeper', ['Research papers', 'Optimisation', 'Safety', 'Community']], ['Professional', ['Portfolio', 'Open source', 'Networking', 'Interviews']]]
+    };
+    return F[tint] || F['t-blue'];
+  }
+  data() {
+    const R = 'Repo';
+    return [
+      ['C++ Developer Roadmap', 0, 2024, R, 'https://github.com/salmer/CppDeveloperRoadmap', 'Articles, visual maps and resources for C++.', 'Backend Developer'],
+      ['Go Developer Roadmap', 0, 2020, R, 'https://github.com/darius-khll/golang-developer-roadmap', 'Language, tooling and backend topics.', 'Backend Developer'],
+      ['Java Developer Roadmap', 0, 2026, R, 'https://github.com/s4kibs4mi/java-developer-roadmap', 'Current visual plan and practice topics.', 'Backend Developer'],
+      ['Node.js Developer Roadmap', 0, 2019, R, 'https://github.com/aliyr/Nodejs-Developer-Roadmap', 'Fundamentals, tooling and backend concepts.', 'Backend Developer'],
+      ['PHP Developer Roadmap', 0, 2021, R, 'https://github.com/thecodeholic/php-developer-roadmap', 'Visual map with companion videos.', 'Backend Developer'],
+      ['Rust Web Developer Roadmap', 0, 2022, R, 'https://github.com/anshulrgoyal/rust-web-developer-roadmap', 'Basics, frameworks and deployment.', 'Backend Developer'],
+      ['Angular Developer Roadmap', 1, 2018, R, 'https://github.com/sulco/angular-developer-roadmap', 'Core concepts, RxJS, state, testing.', 'Frontend Developer'],
+      ['Angular Developer Roadmap (Alt)', 1, 2024, R, 'https://github.com/saifaustcse/angular-developer-roadmap', 'What to learn next across Angular.', 'Frontend Developer'],
+      ['ASP.NET Core Developer Roadmap', 1, 2026, R, 'https://github.com/MoienTajik/AspNetCore-Developer-Roadmap', 'Maintained visual path, multilingual.', 'Backend Developer'],
+      ['Developer Roadmap', 1, 2022, R, 'https://github.com/nilbuild/developer-roadmap', 'Interactive roadmaps and guides.', 'Full Stack Developer'],
+      ['DevRoadmaps', 1, 2026, R, 'https://github.com/rudra496/devroadmaps', '17 paths, 800+ topics, offline PWA.', 'Full Stack Developer'],
+      ['Frontend Developer Roadmap', 1, 2025, R, 'https://github.com/Yousha/Frontend-Developer-Roadmap', 'Core web tech, frameworks, tooling.', 'Frontend Developer'],
+      ['Frontend Development Roadmap', 1, 2024, 'PDF', 'https://github.com/sadanandpai/frontend-learning-kit/blob/main/public/2024_FE_roadmap.pdf', 'Interview checklist as a PDF.', 'Frontend Developer'],
+      ['Laravel Developer Roadmap', 1, 2024, R, 'https://github.com/Hasnayeen/laravel-developer-roadmap', 'Prerequisites, core and ecosystem.', 'Backend Developer'],
+      ['React Developer Roadmap', 1, 2019, R, 'https://github.com/adam-golab/react-developer-roadmap', 'React and its surrounding ecosystem.', 'Frontend Developer'],
+      ['Vue Developer Roadmap', 1, 2019, R, 'https://github.com/flaviocopes/vue-developer-roadmap', 'A well-rounded Vue skill set.', 'Frontend Developer'],
+      ['Android Developer Roadmap', 2, 2020, R, 'https://github.com/mobile-roadmap/android-developer-roadmap', 'Visual maps and study notes.', 'Mobile Developer'],
+      ['Android Developer Roadmap (Alt)', 2, null, R, 'https://github.com/skydoves/android-developer-roadmap', 'Paths across the Android ecosystem.', 'Mobile Developer'],
+      ['Flutter Developer Roadmap', 2, 2024, R, 'https://github.com/olexale/flutter_roadmap', 'App development, tooling, workflow.', 'Mobile Developer'],
+      ['iOS Developer Roadmap', 2, 2018, R, 'https://github.com/BohdanOrlov/iOS-Developer-Roadmap', 'Main iOS topics and tools.', 'Mobile Developer'],
+      ['Cloud Engineer Roadmap', 3, null, 'Website', 'https://ciphemicacademia.in/roadmaps/cloud-engineer/', 'Project-based AWS path, IaC to DR.', 'Cloud Engineer'],
+      ['DevOps Roadmap', 3, 2026, R, 'https://github.com/milanm/DevOps-Roadmap', 'Git, Linux, containers, CI/CD, cloud.', 'DevOps Engineer'],
+      ['Platform Engineering Roadmap', 3, null, 'Website', 'https://github.com/mbianchidev/platform-engineering-roadmap', 'Interactive site backed by a repo.', 'Platform Engineer'],
+      ['Wyrcan Engineering Roadmap', 3, 2026, R, 'https://github.com/Wyrcan-io/roadmap', '12 stages from systems to MLOps.', 'DevOps Engineer'],
+      ['Game Developer Roadmap', 4, 2022, R, 'https://github.com/utilForever/game-developer-roadmap', 'Foundations, tools and specialties.', 'Game Developer'],
+      ['Game Programming Roadmap', 4, 2019, R, 'https://github.com/miloyip/game-programmer', 'Core engineering for game programmers.', 'Game Developer'],
+      ['Agent Engineering Roadmap', 5, null, R, 'https://github.com/audi0417/agent-engineering-roadmap', 'MCP, memory, RAG, evals, safety.', 'AI Agent Engineer'],
+      ['Agent Learning', 5, null, R, 'https://github.com/Haozhe-Xing/agent_learning', 'Agents, tools, MCP, agentic RL.', 'AI Agent Engineer'],
+      ['Agentic AI Roadmap', 5, 2026, R, 'https://github.com/AdilShamim8/Agentic-AI-Roadmap-with-Notes-and-Projects', 'LangGraph systems with projects.', 'AI Agent Engineer'],
+      ['Agentic Engineering Handbook', 5, null, R, 'https://github.com/keyuchen21/agentic-engineering-handbook', 'Harnesses, evals, coding agents.', 'AI Agent Engineer'],
+      ['AI Engineer Roadmap', 5, null, R, 'https://github.com/dswh/ai-engineer-roadmap', 'LLM apps, RAG, agents, LLMOps.', 'Gen AI Engineer'],
+      ['AI Expert Roadmap', 5, 2022, R, 'https://github.com/AMAI-GmbH/AI-Expert-Roadmap', 'Theory, tools and hands-on practice.', 'ML Engineer'],
+      ['AI for Beginners', 5, null, 'Course', 'https://github.com/microsoft/AI-For-Beginners', '12 weeks, 24 lessons, labs.', 'ML Engineer'],
+      ['AI, Governance & GTM Roadmaps', 5, 2026, R, 'https://github.com/Hardik-369/ROADMAP', 'AI Engineer, Governance, GTM.', 'Gen AI Engineer'],
+      ['Data Analyst Roadmap', 5, null, R, 'https://github.com/mtahiraslan/data-analyst-roadmap', 'Stats, Excel, SQL, BI, Python.', 'Data Analyst'],
+      ['Data Engineer Roadmap', 5, 2021, R, 'https://github.com/datastacktv/data-engineer-roadmap', 'Study guide for the modern data stack.', 'Data Engineer'],
+      ['Data Science Roadmap', 5, 2020, R, 'https://github.com/boringPpl/data-science-roadmap', 'Paths used across big tech.', 'Data Scientist'],
+      ['Data Scientist Roadmap', 5, 2024, R, 'https://github.com/MrMimic/data-scientist-roadmap', 'Tutorials for a visual roadmap.', 'Data Scientist'],
+      ['Deep Learning Reading Roadmap', 5, 2022, R, 'https://github.com/floodsung/Deep-Learning-Papers-Reading-Roadmap', 'Influential papers, in order.', 'AI Research Scientist'],
+      ['Deep Learning Roadmap', 5, 2020, R, 'https://github.com/instillai/deep-learning-roadmap', 'Curated references and explanations.', 'ML Engineer'],
+      ['Forward Deployed Engineer Roadmap', 5, 2026, R, 'https://github.com/thecoder8890/forward-deployed-engineer-roadmap', 'Build and deploy with customers.', 'Forward Deployed Engineer'],
+      ['Hugging Face Agents Course', 5, null, 'Course', 'https://huggingface.co/learn/agents-course/unit0/introduction', 'smolagents, LangGraph, evals.', 'AI Agent Engineer'],
+      ['LLM Course', 5, null, R, 'https://github.com/mlabonne/llm-course', 'Roadmap with Colab notebooks.', 'Gen AI Engineer'],
+      ['LLM Systems Engineering Roadmap', 5, null, R, 'https://github.com/h9-tec/llm-systems-engineering-roadmap', 'Inference, RAG, agents, production.', 'Gen AI Engineer'],
+      ['Machine Learning Roadmap', 5, 2026, 'Article', 'https://quiddityml.com/blog/how-to-learn-machine-learning-roadmap/', 'Python, maths, PyTorch, study times.', 'ML Engineer'],
+      ['NLP Roadmap', 5, 2019, R, 'https://github.com/graykode/nlp-roadmap', 'Mind maps and keywords.', 'NLP Engineer'],
+      ['Cybersecurity Skills & Career Roadmap', 6, null, R, 'https://github.com/jassics/cybersecurity-roadmap', 'Web, network, cloud, DevSecOps.', 'SOC Analyst'],
+      ['Awesome QA Roadmap', 7, 2021, R, 'https://github.com/fityanos/awesome-quality-assurance-roadmap', 'QA and test automation.', 'QA / SDET'],
+      ['DFIR Specialist Roadmap', 7, 2025, R, 'https://github.com/Yousha/DFIR-Specialist-Roadmap', 'Forensics and incident response.', 'SOC Analyst'],
+      ['Embedded Systems Roadmap', 7, null, R, 'https://github.com/m3y54m/Embedded-Engineering-Roadmap', 'From beginner to practitioner.', 'Embedded & IoT'],
+      ['FPGA / ASIC Roadmap', 7, null, R, 'https://github.com/m3y54m/FPGA-ASIC-Roadmap', 'Digital hardware and chip design.', 'Embedded & IoT'],
+      ['Hacker Roadmap', 7, 2023, 'Archived', 'https://github.com/Sundowndev/hacker-roadmap', 'Beginner pentesting tools and refs.', 'Penetration Tester'],
+      ['Knowledge Navigator', 7, 2026, 'Website', 'https://github.com/MohamedMuneerM/knowledge-navigator', 'Goal-based maps across STEM.', 'Any career'],
+      ['Mathematics Roadmap', 7, null, R, 'https://github.com/TalalAlrawajfeh/mathematics-roadmap', 'Foundations to advanced maths.', 'AI Research Scientist'],
+      ['Software Architect Roadmap', 7, 2018, R, 'https://github.com/AlaaAttya/software-architect-roadmap', 'From developer to architect.', 'Software Architect'],
+      ['Software Design & Architecture', 7, 2019, R, 'https://github.com/stemmlerjs/software-design-and-architecture-roadmap', 'Design for generalist developers.', 'Software Architect'],
+      ['System Design Roadmap', 7, 2024, R, 'https://github.com/moshafiei/system-design-master-plan', 'Large-scale design topics.', 'Software Architect'],
+      ['UI/UX Designer Roadmap', 7, 2017, R, 'https://github.com/togiberlin/ui-ux-designer-roadmap', 'Product design skills and disciplines.', 'UX / UI Designer'],
+      ['University Degree Roadmap', 7, 2024, R, 'https://github.com/IlIllII/collecobrary', 'University-level course material.', 'Any career'],
+      ['TutorialSearch', 8, null, 'Tool', 'https://tutorialsearch.io/?q=roadmaps', 'Search 50,000+ tutorials.', 'Any career'],
+      ['Become a Better Android Developer', 9, 2018, 'Article', 'https://medium.com/mindorks/a-roadmap-to-become-a-better-android-developer-3038cf7f8c8d', 'Step-by-step Android path.', 'Mobile Developer'],
+      ['AI Agents in Depth', 9, 2025, 'Book', 'https://github.com/bojieli/ai-agent-book', 'Context, tools, evals, multi-agent.', 'AI Agent Engineer'],
+      ['Backend Developer Roadmap', 9, 2025, 'Article', 'https://www.geeksforgeeks.org/websites-apps/backend-developer-roadmap/', 'Web basics to frameworks.', 'Backend Developer'],
+      ['Building Effective Agents', 9, 2024, 'Article', 'https://www.anthropic.com/engineering/building-effective-agents', 'Workflow and agent patterns.', 'AI Agent Engineer'],
+      ['Cybersecurity Roadmap', 9, 2026, 'Article', 'https://www.geeksforgeeks.org/cybersecurity/cybersecurity-roadmap/', 'Career paths and a staged plan.', 'SOC Analyst'],
+      ['Data Analytics Roadmap', 9, 2025, 'Article', 'https://www.appliedaicourse.com/blog/data-analytics-roadmap/', 'Skills and tooling.', 'Data Analyst'],
+      ['Effective Context Engineering', 9, 2025, 'Article', 'https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents', 'Context for long-running agents.', 'AI Agent Engineer'],
+      ['Frontend Framework Interview Prep', 9, 2026, 'Article', 'https://frontendatlas.com/guides/framework-prep', '7, 14 and 30-day plans.', 'Frontend Developer'],
+      ['Full Stack Developer Roadmap', 9, 2026, 'Article', 'https://www.geeksforgeeks.org/blogs/full-stack-developer-roadmap/', 'Frontend, backend, data, projects.', 'Full Stack Developer'],
+      ['Java Full Stack Developer Roadmap', 9, 2025, 'Article', 'https://www.scaler.com/blog/java-full-stack-developer-roadmap/', 'Java full-stack learning path.', 'Full Stack Developer'],
+      ['SQL Roadmap', 9, 2025, 'Article', 'https://www.geeksforgeeks.org/blogs/sql-roadmap/', 'Basics to advanced querying.', 'Data Analyst'],
+      ['The VM Lifecycle', 9, 2023, 'Article', 'https://www.rapid7.com/blog/post/2022/03/16/the-vm-lifecycle-how-we-got-here-and-where-were-going/', 'Vulnerability management phases.', 'DevSecOps']
+    ];
+  }
+  renderVals() {
+    const s = this.state || {};
+    const theme = s.theme || this.props.theme || 'light';
+    const CATS = [['Languages', 't-blue'], ['Web', 't-cyan'], ['Mobile', 't-teal'], ['Infrastructure', 't-orange'], ['Game dev', 't-gold'], ['AI / Data', 't-violet'], ['Security', 't-pink'], ['Misc', 't-pearl'], ['Tools', 't-pearl'], ['Articles & books', 't-pearl']];
+    const PT = { 'Backend Developer': 't-blue', 'Frontend Developer': 't-blue', 'Full Stack Developer': 't-blue', 'Mobile Developer': 't-blue', 'Game Developer': 't-blue', 'Embedded & IoT': 't-blue', 'QA / SDET': 't-blue', 'Software Architect': 't-blue', 'Cloud Engineer': 't-orange', 'DevOps Engineer': 't-orange', 'Platform Engineer': 't-orange', 'AI Agent Engineer': 't-violet', 'Gen AI Engineer': 't-violet', 'ML Engineer': 't-violet', 'AI Research Scientist': 't-violet', 'NLP Engineer': 't-violet', 'Data Analyst': 't-teal', 'Data Engineer': 't-teal', 'Data Scientist': 't-teal', 'SOC Analyst': 't-pink', 'Penetration Tester': 't-pink', 'DevSecOps': 't-pink', 'UX / UI Designer': 't-gold', 'Forward Deployed Engineer': 't-cyan', 'Any career': 't-pearl' };
+    const D = (s.extra || []).concat(this.data());
+    const cat = s.cat == null ? -1 : s.cat;
+    const f = s.form || {};
+    const fr = s.fresh || 'all';
+    const pl = s.planet || '';
+    const isFresh = (y) => y != null && y >= 2025;
+    const items = D.filter((r) => (cat < 0 || r[1] === cat) && (fr === 'all' || (fr === 'fresh' ? isFresh(r[2]) : r[2] == null || r[2] < 2025)) && (!pl || r[6] === pl));
+    const counts = {}; D.forEach((r) => { counts[r[6]] = (counts[r[6]] || 0) + 1; });
+    const top = Object.keys(counts).filter((k) => k !== 'Any career').sort((a, b) => counts[b] - counts[a]).slice(0, 6);
+    const yearStyle = (y) => y == null ? 'background:var(--surface-2);color:var(--ink-3)' : y >= 2025 ? 'background:var(--fresh-bg);color:var(--fresh)' : y >= 2021 ? 'background:var(--ok-bg);color:var(--ok)' : 'background:var(--old-bg);color:var(--old)';
+    const lib = s.lib || {};
+    const ST = { imported: ['FULL ROADMAP', 'background:var(--fresh-bg);color:var(--fresh)'], visual: ['VISUAL MAP', 'background:#e0ecff;color:#1d4ed8'], thin: ['SHORT GUIDE', 'background:var(--surface-2);color:var(--ink-2)'], 'permission-needed': ['OUR VERSION', 'background:var(--accent-soft);color:var(--accent-text)'], article: ['OUR VERSION', 'background:var(--accent-soft);color:var(--accent-text)'] };
+    const det = s.open ? D.find((r) => r[4] === s.open) : null;
+    const info = det ? (lib[det[4]] || { s: det[7] ? 'review' : 'loading', g: [] }) : null;
+    let dv = { dOpen: false };
+    if (det) {
+      const ptint = PT[det[6]] || 't-pearl';
+      const st = info.s;
+      const useOurs = st === 'permission-needed' || st === 'article' || st === 'review' || !(info.g && info.g.length);
+      const stages = useOurs ? this.ours(ptint).map((x) => ({ t: x[0], k: x[1], r: [] })) : info.g;
+      const di = Math.min(s.dStage || 0, stages.length - 1);
+      const cur = stages[di] || { t: '', k: [], r: [] };
+      const host = (u) => { const m = /^https?:\/\/([^/]+)/.exec(u); return m ? m[1].replace('www.', '') : ''; };
+      const notes = {
+        imported: ['Full roadmap, inside Career Galaxy.', 'Tick topics as you go; your progress saves here.'],
+        visual: ['Visual roadmap.', 'The author drew this one as a map, so it opens in the image viewer. Key sections are listed alongside.'],
+        thin: ['Short guide.', 'This source is brief, so we fill the gaps with our ' + det[6] + ' roadmap.'],
+        'permission-needed': ['Our version.', 'The author hasn’t published a licence, so we can’t copy their content. You’re seeing our ' + det[6] + ' roadmap on the same path.'],
+        article: ['Our version.', 'This is an article, so we show our ' + det[6] + ' roadmap on the same topic.'],
+        review: ['Waiting for review.', 'Showing our ' + det[6] + ' roadmap until your import is approved.'],
+        loading: ['Loading…', '']
+      };
+      const yearStyle = (y) => y == null ? 'background:var(--surface-2);color:var(--ink-3)' : y >= 2025 ? 'background:var(--fresh-bg);color:var(--fresh)' : y >= 2021 ? 'background:var(--ok-bg);color:var(--ok)' : 'background:var(--old-bg);color:var(--old)';
+      dv = {
+        dOpen: true, dTitle: det[0], dCat: CATS[det[1]][0], dTint: CATS[det[1]][1], dPlanet: det[6], dPtint: ptint,
+        dYear: det[2] == null ? 'UNDATED' : String(det[2]), dYearStyle: yearStyle(det[2]), dFmt: det[3].toUpperCase(), dStars: info.st ? String(info.st) : '',
+        dStatusText: (notes[st] || notes.loading)[0], dNote: (notes[st] || notes.loading)[1],
+        dNoteBg: st === 'imported' ? 'var(--fresh-bg)' : 'var(--accent-soft)',
+        dIsVisual: st === 'visual', dCanAsk: st === 'permission-needed',
+        dStageCount: (useOurs ? 'CAREER GALAXY ROADMAP · ' : '') + stages.length + (stages.length === 1 ? ' STAGE' : ' STAGES'),
+        dStages: stages.map((g, i) => ({ name: g.t, cls: i === di ? 'dstage on' : 'dstage', tint: i < di ? 't-gold' : i === di ? 't-violet' : 't-pearl', go: () => this.setState({ dStage: i }) })),
+        dStageTitle: cur.t, dTopics: cur.k || [], dHasTopics: !!(cur.k && cur.k.length),
+        dRes: (cur.r || []).map((x) => ({ t: x.t, u: x.u, host: host(x.u) })), dHasRes: !!(cur.r && cur.r.length),
+        dCredit: useOurs ? 'Career Galaxy roadmap · inspired by the original' : 'Credit: adapted from ' + (info.a || 'the author') + (info.l ? ' · ' + info.l + ' licence' : ''),
+        dByLine: info.a ? 'By ' + info.a + (info.l ? ' · ' + info.l + ' licence' : ' · no licence published') : 'Original by ' + host(det[4]),
+        dSrc: det[4],
+        dSrcLabel: /github\.com/.test(det[4]) ? 'View on GitHub' : 'View original',
+        dSrcShort: det[4].replace(/^https?:\/\/(www\.)?/, '').replace(/\/blob\/.*$/, '').slice(0, 60),
+        closeDetail: () => this.setState({ open: null }), closeBg: () => this.setState({ open: null }), stop: (e) => e.stopPropagation()
+      };
+    }
+    return Object.assign(dv, {
+      theme: theme, themeLabel: theme === 'dark' ? 'Light' : 'Dark',
+      toggleTheme: () => this.setState({ theme: theme === 'dark' ? 'light' : 'dark' }),
+      total: D.length,
+      adding: !!s.adding, toast: s.toast || '',
+      openAdd: () => this.setState({ adding: true, toast: '' }),
+      closeAdd: () => this.setState({ adding: false }),
+      setUrl: (e) => this.setState({ form: Object.assign({}, f, { url: e.target.value }) }),
+      setTitle: (e) => this.setState({ form: Object.assign({}, f, { title: e.target.value }) }),
+      setCat: (e) => this.setState({ form: Object.assign({}, f, { cat: Number(e.target.value) }) }),
+      setPlanet: (e) => this.setState({ form: Object.assign({}, f, { planet: e.target.value }) }),
+      submitAdd: () => { const t = f.title || 'Context Engineering Roadmap'; const item = [t, f.cat == null ? 5 : f.cat, 2026, 'Repo', f.url || '#', 'Added by you · waiting for review.', f.planet || 'AI Agent Engineer', true]; this.setState({ extra: [item].concat(s.extra || []), adding: false, form: {}, cat: -1, fresh: 'all', planet: '', toast: t + ' added to the library' }); },
+      cats: [{ name: 'All', tint: 't-violet', n: D.length, cls: cat < 0 ? 'chip on' : 'chip', go: () => this.setState({ cat: -1 }) }].concat(CATS.map((c, i) => ({ name: c[0], tint: c[1], n: D.filter((r) => r[1] === i).length, cls: cat === i ? 'chip on' : 'chip', go: () => this.setState({ cat: i }) }))),
+      fresh: [['all', 'Any year'], ['fresh', '2025 – 2026'], ['older', 'Older or undated']].map((f) => ({ name: f[1], cls: fr === f[0] ? 'chip on' : 'chip', go: () => this.setState({ fresh: f[0] }) })),
+      planets: top.map((p) => ({ name: p, tint: PT[p], n: counts[p], cls: pl === p ? 'chip on' : 'chip', go: () => this.setState({ planet: pl === p ? '' : p }) })),
+      shown: 'Showing ' + items.length + ' of ' + D.length + (pl ? ' · linked to ' + pl : ''),
+      items: items.map((r) => ({ title: r[0], cat: CATS[r[1]][0], tint: CATS[r[1]][1], year: r[2] == null ? 'UNDATED' : String(r[2]), yearStyle: yearStyle(r[2]), fmt: r[3].toUpperCase(), url: r[4], desc: r[5], planet: r[6], ptint: PT[r[6]] || 't-pearl', isNew: !!r[7], aria: 'Open ' + r[0], stLabel: lib[r[4]] && ST[lib[r[4]].s] ? ST[lib[r[4]].s][0] : '', stStyle: lib[r[4]] && ST[lib[r[4]].s] ? ST[lib[r[4]].s][1] : '', open: () => this.setState({ open: r[4], dStage: 0 }) }))
+    });
+  }
+}
+</script>
+</body>
+</html>

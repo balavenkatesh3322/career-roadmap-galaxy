@@ -1,0 +1,158 @@
+{
+  "id": "ml-engineer",
+  "title": "ML Engineer",
+  "domain": "ai",
+  "status": "stable",
+  "summary": "Trains, evaluates and ships machine learning models to production.",
+  "duration": "9–12 months",
+  "whatYouDo": [
+    "Train, evaluate and ship models",
+    "Build feature and training pipelines",
+    "Serve models reliably in production"
+  ],
+  "skills": [
+    "Python",
+    "Machine Learning",
+    "Deep Learning",
+    "Statistics",
+    "Math",
+    "Docker",
+    "Cloud",
+    "SQL"
+  ],
+  "next": [
+    "mlops",
+    "gen-ai-engineer",
+    "ai-research-scientist"
+  ],
+  "updated": "2026-11-15",
+  "stages": [
+    {
+      "title": "Python & maths",
+      "duration": "5 weeks",
+      "goal": "Code fluently and know the maths behind ML.",
+      "topics": [
+        "Python",
+        "NumPy & pandas",
+        "Linear algebra",
+        "Probability & statistics",
+        "Calculus basics"
+      ],
+      "resources": [
+        {
+          "title": "The Python Tutorial",
+          "url": "https://docs.python.org/3/tutorial/"
+        },
+        {
+          "title": "3Blue1Brown: Linear algebra",
+          "url": "https://www.3blue1brown.com/topics/linear-algebra"
+        }
+      ],
+      "project": "Implement linear regression from scratch"
+    },
+    {
+      "title": "Classical ML",
+      "duration": "5 weeks",
+      "goal": "Train and evaluate classic models properly.",
+      "topics": [
+        "Machine learning",
+        "Supervised learning",
+        "Model evaluation",
+        "Feature engineering",
+        "scikit-learn",
+        "Cross-validation"
+      ],
+      "resources": [
+        {
+          "title": "scikit-learn user guide",
+          "url": "https://scikit-learn.org/stable/user_guide.html"
+        },
+        {
+          "title": "Kaggle Learn",
+          "url": "https://www.kaggle.com/learn"
+        }
+      ],
+      "project": "A tuned model on a Kaggle dataset"
+    },
+    {
+      "title": "Deep learning",
+      "duration": "6 weeks",
+      "goal": "Build neural networks for real tasks.",
+      "topics": [
+        "Deep learning",
+        "PyTorch",
+        "CNNs",
+        "Transformers",
+        "Training tricks",
+        "GPUs"
+      ],
+      "resources": [
+        {
+          "title": "PyTorch tutorials",
+          "url": "https://pytorch.org/tutorials/"
+        },
+        {
+          "title": "Practical Deep Learning (fast.ai)",
+          "url": "https://course.fast.ai/"
+        }
+      ],
+      "project": "An image classifier with transfer learning"
+    },
+    {
+      "title": "Data & features",
+      "duration": "4 weeks",
+      "goal": "Feed models with good data.",
+      "topics": [
+        "SQL",
+        "Data pipelines",
+        "Feature stores",
+        "Data validation",
+        "Labelling"
+      ],
+      "resources": [],
+      "project": "A reproducible training dataset pipeline"
+    },
+    {
+      "title": "Serving & MLOps",
+      "duration": "5 weeks",
+      "goal": "Ship models and keep them healthy.",
+      "topics": [
+        "Model serving",
+        "Docker",
+        "Experiment tracking",
+        "Model monitoring",
+        "CI/CD for ML"
+      ],
+      "resources": [
+        {
+          "title": "MLflow docs",
+          "url": "https://mlflow.org/docs/latest/"
+        },
+        {
+          "title": "Made With ML",
+          "url": "https://madewithml.com/"
+        }
+      ],
+      "project": "Serve your model behind an API with monitoring"
+    },
+    {
+      "title": "Professional",
+      "duration": "4 weeks",
+      "goal": "Design ML systems and show your work.",
+      "topics": [
+        "ML system design",
+        "Cost & latency",
+        "Responsible AI",
+        "Portfolio",
+        "Interview practice"
+      ],
+      "resources": [
+        {
+          "title": "Designing ML systems: reading list (Chip Huyen)",
+          "url": "https://huyenchip.com/blog/"
+        }
+      ],
+      "project": "An end-to-end ML project write-up"
+    }
+  ]
+}

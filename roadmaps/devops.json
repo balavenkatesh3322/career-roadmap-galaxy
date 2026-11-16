@@ -1,0 +1,155 @@
+{
+  "id": "devops",
+  "title": "DevOps Engineer",
+  "domain": "infra",
+  "status": "stable",
+  "summary": "Automates build, test, release and infrastructure.",
+  "duration": "6–8 months",
+  "whatYouDo": [
+    "Automate build, test and release",
+    "Run infrastructure as code",
+    "Keep systems observable"
+  ],
+  "skills": [
+    "Linux",
+    "Git",
+    "Docker",
+    "Kubernetes",
+    "CI/CD",
+    "Cloud",
+    "Monitoring",
+    "Networking",
+    "Python"
+  ],
+  "next": [
+    "sre",
+    "platform-engineer",
+    "cloud-engineer",
+    "devsecops"
+  ],
+  "updated": "2026-11-15",
+  "stages": [
+    {
+      "title": "Linux & scripting",
+      "duration": "4 weeks",
+      "goal": "Live in the terminal.",
+      "topics": [
+        "Linux",
+        "Bash scripting",
+        "Processes & services",
+        "Permissions",
+        "Python for automation"
+      ],
+      "resources": [
+        {
+          "title": "The Linux Command Line (book)",
+          "url": "https://linuxcommand.org/tlcl.php"
+        }
+      ],
+      "project": "Automate a server setup with scripts"
+    },
+    {
+      "title": "Networking & Git",
+      "duration": "3 weeks",
+      "goal": "Understand how traffic flows.",
+      "topics": [
+        "Networking",
+        "DNS & HTTP",
+        "TLS",
+        "Load balancers",
+        "Git workflows"
+      ],
+      "resources": [
+        {
+          "title": "Pro Git book",
+          "url": "https://git-scm.com/book/en/v2"
+        }
+      ],
+      "project": "Host a site with TLS behind a reverse proxy"
+    },
+    {
+      "title": "Containers",
+      "duration": "3 weeks",
+      "goal": "Package apps consistently.",
+      "topics": [
+        "Docker",
+        "Images & layers",
+        "Compose",
+        "Registries",
+        "Container security"
+      ],
+      "resources": [
+        {
+          "title": "Docker: Get started",
+          "url": "https://docs.docker.com/get-started/"
+        }
+      ],
+      "project": "Containerise a three-service app"
+    },
+    {
+      "title": "CI/CD",
+      "duration": "3 weeks",
+      "goal": "Ship on every commit.",
+      "topics": [
+        "CI/CD",
+        "GitHub Actions",
+        "Testing in pipelines",
+        "Artifacts & versioning",
+        "Deployment strategies"
+      ],
+      "resources": [
+        {
+          "title": "GitHub Actions docs",
+          "url": "https://docs.github.com/en/actions"
+        }
+      ],
+      "project": "A pipeline that tests and deploys on merge"
+    },
+    {
+      "title": "Infrastructure as code & cloud",
+      "duration": "5 weeks",
+      "goal": "Provision everything from code.",
+      "topics": [
+        "Cloud",
+        "Terraform",
+        "Configuration management",
+        "Kubernetes",
+        "Secrets management"
+      ],
+      "resources": [
+        {
+          "title": "Terraform tutorials",
+          "url": "https://developer.hashicorp.com/terraform/tutorials"
+        },
+        {
+          "title": "Kubernetes tutorials",
+          "url": "https://kubernetes.io/docs/tutorials/"
+        }
+      ],
+      "project": "Provision a cluster and deploy with Terraform"
+    },
+    {
+      "title": "Observability & reliability",
+      "duration": "4 weeks",
+      "goal": "See and fix problems fast.",
+      "topics": [
+        "Monitoring",
+        "Logging",
+        "Tracing",
+        "Alerting",
+        "Incident response"
+      ],
+      "resources": [
+        {
+          "title": "Prometheus docs",
+          "url": "https://prometheus.io/docs/introduction/overview/"
+        },
+        {
+          "title": "Google SRE books",
+          "url": "https://sre.google/books/"
+        }
+      ],
+      "project": "Dashboards and alerts for your app"
+    }
+  ]
+}

@@ -1,0 +1,143 @@
+{
+  "id": "data-scientist",
+  "title": "Data Scientist",
+  "domain": "data",
+  "status": "stable",
+  "summary": "Uses statistics and ML to explain, predict and experiment.",
+  "duration": "8–10 months",
+  "whatYouDo": [
+    "Frame business problems as data problems",
+    "Build and evaluate models",
+    "Run experiments and explain results"
+  ],
+  "skills": [
+    "Python",
+    "SQL",
+    "Statistics",
+    "Machine Learning",
+    "Math",
+    "Data Visualization",
+    "Communication"
+  ],
+  "next": [
+    "ml-engineer",
+    "ai-research-scientist",
+    "nlp-engineer"
+  ],
+  "updated": "2026-11-15",
+  "stages": [
+    {
+      "title": "Python & data",
+      "duration": "4 weeks",
+      "goal": "Wrangle data with code.",
+      "topics": [
+        "Python",
+        "NumPy",
+        "pandas",
+        "SQL",
+        "Notebooks"
+      ],
+      "resources": [
+        {
+          "title": "The Python Tutorial",
+          "url": "https://docs.python.org/3/tutorial/"
+        },
+        {
+          "title": "Kaggle Learn",
+          "url": "https://www.kaggle.com/learn"
+        }
+      ],
+      "project": "Clean and explore a messy dataset"
+    },
+    {
+      "title": "Maths & statistics",
+      "duration": "5 weeks",
+      "goal": "Build intuition for models.",
+      "topics": [
+        "Statistics",
+        "Probability",
+        "Linear algebra",
+        "Calculus basics",
+        "Hypothesis testing"
+      ],
+      "resources": [
+        {
+          "title": "Khan Academy: Statistics",
+          "url": "https://www.khanacademy.org/math/statistics-probability"
+        },
+        {
+          "title": "3Blue1Brown: Linear algebra",
+          "url": "https://www.3blue1brown.com/topics/linear-algebra"
+        }
+      ],
+      "project": "Explain a statistical test with simulations"
+    },
+    {
+      "title": "Machine learning",
+      "duration": "6 weeks",
+      "goal": "Train and evaluate classic models.",
+      "topics": [
+        "Machine learning",
+        "Regression & classification",
+        "Trees & ensembles",
+        "Model evaluation",
+        "Feature engineering",
+        "scikit-learn"
+      ],
+      "resources": [
+        {
+          "title": "scikit-learn user guide",
+          "url": "https://scikit-learn.org/stable/user_guide.html"
+        }
+      ],
+      "project": "Predict churn with a well-evaluated model"
+    },
+    {
+      "title": "Experiments & causality",
+      "duration": "3 weeks",
+      "goal": "Measure what changes outcomes.",
+      "topics": [
+        "A/B testing",
+        "Power analysis",
+        "Causal inference basics",
+        "Metrics design",
+        "Pitfalls"
+      ],
+      "resources": [],
+      "project": "Design and analyse an experiment end to end"
+    },
+    {
+      "title": "Deep learning intro",
+      "duration": "4 weeks",
+      "goal": "Know when neural nets help.",
+      "topics": [
+        "Deep learning",
+        "PyTorch",
+        "Embeddings",
+        "Transfer learning",
+        "LLMs for analysis"
+      ],
+      "resources": [
+        {
+          "title": "Practical Deep Learning (fast.ai)",
+          "url": "https://course.fast.ai/"
+        }
+      ],
+      "project": "Fine-tune a small text classifier"
+    },
+    {
+      "title": "Communicate & ship",
+      "duration": "3 weeks",
+      "goal": "Make work matter.",
+      "topics": [
+        "Data visualization",
+        "Storytelling",
+        "Model deployment basics",
+        "Portfolio",
+        "Interview practice"
+      ],
+      "resources": [],
+      "project": "A published analysis with an interactive demo"
+    }
+  ]
+}

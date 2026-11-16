@@ -1,0 +1,139 @@
+{
+  "id": "game-dev",
+  "title": "Game Developer",
+  "domain": "software",
+  "status": "stable",
+  "summary": "Builds games with engines like Unity, Unreal and Godot.",
+  "duration": "8–12 months",
+  "whatYouDo": [
+    "Build gameplay systems and tools",
+    "Make games feel good and run fast",
+    "Ship builds to players"
+  ],
+  "skills": [
+    "C/C++",
+    "Math",
+    "Git",
+    "Testing"
+  ],
+  "next": [
+    "ar-vr",
+    "mobile",
+    "robotics"
+  ],
+  "updated": "2026-11-15",
+  "stages": [
+    {
+      "title": "Programming & maths",
+      "duration": "6 weeks",
+      "goal": "Code comfortably and handle the maths games need.",
+      "topics": [
+        "C# or C++",
+        "Vectors & matrices",
+        "Trigonometry",
+        "Git & GitHub",
+        "Debugging"
+      ],
+      "resources": [
+        {
+          "title": "Learn C# (Microsoft)",
+          "url": "https://learn.microsoft.com/en-us/dotnet/csharp/"
+        }
+      ],
+      "project": "Pong from scratch"
+    },
+    {
+      "title": "An engine",
+      "duration": "6 weeks",
+      "goal": "Learn one engine end to end.",
+      "topics": [
+        "Unity or Godot or Unreal",
+        "Scenes & game objects",
+        "Physics",
+        "Input",
+        "UI"
+      ],
+      "resources": [
+        {
+          "title": "Godot docs",
+          "url": "https://docs.godotengine.org/en/stable/"
+        },
+        {
+          "title": "Unity Learn",
+          "url": "https://learn.unity.com/"
+        },
+        {
+          "title": "Unreal Engine docs",
+          "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine"
+        }
+      ],
+      "project": "A 2D platformer with three levels"
+    },
+    {
+      "title": "Gameplay systems",
+      "duration": "5 weeks",
+      "goal": "Build the systems that make games tick.",
+      "topics": [
+        "Game loop",
+        "State machines",
+        "AI & pathfinding",
+        "Animation",
+        "Save systems"
+      ],
+      "resources": [
+        {
+          "title": "Game Programming Patterns",
+          "url": "https://gameprogrammingpatterns.com/"
+        }
+      ],
+      "project": "Enemies with patrol and chase AI"
+    },
+    {
+      "title": "Graphics & feel",
+      "duration": "4 weeks",
+      "goal": "Make it look and feel great.",
+      "topics": [
+        "Shaders basics",
+        "Particles",
+        "Lighting",
+        "Audio",
+        "Game feel & juice"
+      ],
+      "resources": [
+        {
+          "title": "The Book of Shaders",
+          "url": "https://thebookofshaders.com/"
+        }
+      ],
+      "project": "Add effects and polish to your platformer"
+    },
+    {
+      "title": "Performance & shipping",
+      "duration": "4 weeks",
+      "goal": "Hit frame rate and release.",
+      "topics": [
+        "Profiling",
+        "Memory",
+        "Build pipelines",
+        "Platforms & stores",
+        "Playtesting"
+      ],
+      "resources": [],
+      "project": "Release a game on itch.io"
+    },
+    {
+      "title": "Professional",
+      "duration": "4 weeks",
+      "goal": "Join a team and show your work.",
+      "topics": [
+        "Game jams",
+        "Version control for teams",
+        "Portfolio",
+        "Specialise: tools, graphics, gameplay",
+        "Interview practice"
+      ],
+      "resources": [],
+      "project": "Complete a 48-hour game jam"
+    }
+  ]
+}

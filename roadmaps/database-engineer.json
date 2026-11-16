@@ -1,0 +1,127 @@
+{
+  "id": "database-engineer",
+  "title": "Database Engineer",
+  "domain": "data",
+  "status": "stable",
+  "summary": "Designs, tunes and protects the databases everything depends on.",
+  "duration": "6–8 months",
+  "whatYouDo": [
+    "Design schemas and indexes",
+    "Keep databases fast, available and safe",
+    "Plan backups, upgrades and scale"
+  ],
+  "skills": [
+    "SQL",
+    "Linux",
+    "Cloud",
+    "Security",
+    "Monitoring",
+    "System Design"
+  ],
+  "next": [
+    "data-engineer",
+    "sre",
+    "platform-engineer"
+  ],
+  "updated": "2026-11-15",
+  "stages": [
+    {
+      "title": "SQL & relational theory",
+      "duration": "4 weeks",
+      "goal": "Master SQL and the relational model.",
+      "topics": [
+        "SQL",
+        "Normalization",
+        "Keys & constraints",
+        "Transactions & ACID",
+        "Isolation levels"
+      ],
+      "resources": [
+        {
+          "title": "PostgreSQL tutorial",
+          "url": "https://www.postgresql.org/docs/current/tutorial.html"
+        },
+        {
+          "title": "Use The Index, Luke",
+          "url": "https://use-the-index-luke.com/"
+        }
+      ],
+      "project": "Model and query a library system"
+    },
+    {
+      "title": "Performance",
+      "duration": "4 weeks",
+      "goal": "Make queries fast.",
+      "topics": [
+        "Indexes",
+        "Query plans",
+        "Statistics & vacuum",
+        "Connection pooling",
+        "Caching"
+      ],
+      "resources": [],
+      "project": "Speed up five slow queries and explain why"
+    },
+    {
+      "title": "Operations",
+      "duration": "4 weeks",
+      "goal": "Run databases safely.",
+      "topics": [
+        "Linux",
+        "Backups & restore",
+        "Replication",
+        "Upgrades",
+        "Monitoring"
+      ],
+      "resources": [
+        {
+          "title": "PostgreSQL docs",
+          "url": "https://www.postgresql.org/docs/current/"
+        }
+      ],
+      "project": "Set up replication and a restore drill"
+    },
+    {
+      "title": "Scale & availability",
+      "duration": "4 weeks",
+      "goal": "Grow beyond one node.",
+      "topics": [
+        "Partitioning & sharding",
+        "High availability",
+        "Failover",
+        "Read replicas",
+        "System design"
+      ],
+      "resources": [],
+      "project": "Design a failover plan with an RPO and RTO"
+    },
+    {
+      "title": "Beyond relational",
+      "duration": "3 weeks",
+      "goal": "Pick the right store.",
+      "topics": [
+        "Key-value stores",
+        "Document databases",
+        "Search engines",
+        "Time-series",
+        "Vector databases"
+      ],
+      "resources": [],
+      "project": "Compare three stores for one workload"
+    },
+    {
+      "title": "Cloud & security",
+      "duration": "3 weeks",
+      "goal": "Managed services and safety.",
+      "topics": [
+        "Cloud",
+        "Managed databases",
+        "Security",
+        "Encryption & access",
+        "Cost control"
+      ],
+      "resources": [],
+      "project": "Migrate a database to a managed service"
+    }
+  ]
+}

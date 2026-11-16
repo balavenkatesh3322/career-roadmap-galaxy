@@ -1,0 +1,130 @@
+{
+  "id": "blockchain",
+  "title": "Blockchain / Web3 Developer",
+  "domain": "frontier",
+  "status": "stable",
+  "summary": "Builds smart contracts and decentralised apps.",
+  "duration": "6–8 months",
+  "whatYouDo": [
+    "Write and audit smart contracts",
+    "Build decentralised apps",
+    "Keep user funds safe"
+  ],
+  "skills": [
+    "JavaScript",
+    "Security",
+    "Git",
+    "Testing",
+    "APIs"
+  ],
+  "next": [
+    "backend",
+    "devsecops"
+  ],
+  "updated": "2026-11-15",
+  "stages": [
+    {
+      "title": "Foundations",
+      "duration": "4 weeks",
+      "goal": "Code and crypto basics.",
+      "topics": [
+        "JavaScript or TypeScript",
+        "Cryptography basics",
+        "Hashing & signatures",
+        "Git & GitHub",
+        "How blockchains work"
+      ],
+      "resources": [
+        {
+          "title": "ethereum.org developer docs",
+          "url": "https://ethereum.org/en/developers/docs/"
+        }
+      ],
+      "project": "A toy blockchain in code"
+    },
+    {
+      "title": "Smart contracts",
+      "duration": "5 weeks",
+      "goal": "Write contracts in Solidity.",
+      "topics": [
+        "Solidity",
+        "EVM basics",
+        "Tokens (ERC-20, ERC-721)",
+        "Gas",
+        "Development frameworks"
+      ],
+      "resources": [
+        {
+          "title": "Solidity docs",
+          "url": "https://docs.soliditylang.org/"
+        }
+      ],
+      "project": "A token and an NFT contract with tests"
+    },
+    {
+      "title": "Testing & security",
+      "duration": "4 weeks",
+      "goal": "Contracts are hard to fix later.",
+      "topics": [
+        "Testing",
+        "Common vulnerabilities",
+        "Reentrancy",
+        "Auditing basics",
+        "Security"
+      ],
+      "resources": [
+        {
+          "title": "Ethernaut challenges",
+          "url": "https://ethernaut.openzeppelin.com/"
+        },
+        {
+          "title": "OpenZeppelin docs",
+          "url": "https://docs.openzeppelin.com/"
+        }
+      ],
+      "project": "Audit and fix a vulnerable contract"
+    },
+    {
+      "title": "dApps",
+      "duration": "4 weeks",
+      "goal": "Connect users to contracts.",
+      "topics": [
+        "Wallets",
+        "Frontend integration",
+        "Indexing & events",
+        "Storage (IPFS)",
+        "APIs"
+      ],
+      "resources": [],
+      "project": "A dApp with wallet connect"
+    },
+    {
+      "title": "Protocols & scaling",
+      "duration": "3 weeks",
+      "goal": "Understand the wider ecosystem.",
+      "topics": [
+        "DeFi basics",
+        "Layer 2s",
+        "Oracles",
+        "Governance",
+        "Other chains"
+      ],
+      "resources": [],
+      "project": "Compare two Layer 2s for one use case"
+    },
+    {
+      "title": "Professional",
+      "duration": "3 weeks",
+      "goal": "Ship and get hired.",
+      "topics": [
+        "Mainnet deployment",
+        "Monitoring",
+        "Audit contests",
+        "Portfolio",
+        "Interview practice"
+      ],
+      "resources": [],
+      "project": "Deploy a verified contract to a testnet"
+    }
+  ]
+}

@@ -1,0 +1,150 @@
+{
+  "id": "full-stack",
+  "title": "Full Stack Developer",
+  "domain": "software",
+  "status": "stable",
+  "summary": "Ships whole features, from database to button.",
+  "duration": "8–10 months",
+  "whatYouDo": [
+    "Own features from database to button",
+    "Pick the right tool for each layer",
+    "Ship, measure and iterate"
+  ],
+  "skills": [
+    "JavaScript",
+    "TypeScript",
+    "React",
+    "HTML & CSS",
+    "SQL",
+    "APIs",
+    "Git",
+    "Docker",
+    "Testing"
+  ],
+  "next": [
+    "software-architect",
+    "engineering-manager",
+    "forward-deployed"
+  ],
+  "updated": "2026-11-15",
+  "stages": [
+    {
+      "title": "Web foundations",
+      "duration": "4 weeks",
+      "goal": "Get comfortable with HTML, CSS, JavaScript and Git.",
+      "topics": [
+        "Semantic HTML",
+        "CSS layout",
+        "JavaScript",
+        "Git & GitHub",
+        "Browser DevTools"
+      ],
+      "resources": [
+        {
+          "title": "MDN: Learn web development",
+          "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development"
+        },
+        {
+          "title": "Pro Git book",
+          "url": "https://git-scm.com/book/en/v2"
+        }
+      ],
+      "project": "A responsive landing page"
+    },
+    {
+      "title": "Frontend apps",
+      "duration": "5–6 weeks",
+      "goal": "Build interactive UIs with a framework.",
+      "topics": [
+        "React",
+        "State & hooks",
+        "Routing",
+        "Forms",
+        "TypeScript"
+      ],
+      "resources": [
+        {
+          "title": "React docs: Learn",
+          "url": "https://react.dev/learn"
+        }
+      ],
+      "project": "A recipe app with search and favourites"
+    },
+    {
+      "title": "Backend & APIs",
+      "duration": "5–6 weeks",
+      "goal": "Serve data through a secure API.",
+      "topics": [
+        "Node.js",
+        "HTTP & APIs",
+        "REST design",
+        "Authentication",
+        "Validation"
+      ],
+      "resources": [
+        {
+          "title": "Node.js: Learn",
+          "url": "https://nodejs.org/en/learn"
+        }
+      ],
+      "project": "An API for your recipe app with accounts"
+    },
+    {
+      "title": "Data",
+      "duration": "4 weeks",
+      "goal": "Store and query data well.",
+      "topics": [
+        "SQL",
+        "Schema design",
+        "ORMs & migrations",
+        "Indexes",
+        "File storage"
+      ],
+      "resources": [
+        {
+          "title": "PostgreSQL tutorial",
+          "url": "https://www.postgresql.org/docs/current/tutorial.html"
+        }
+      ],
+      "project": "Move the app to Postgres with migrations"
+    },
+    {
+      "title": "Ship it",
+      "duration": "4 weeks",
+      "goal": "Deploy, test and observe a full app.",
+      "topics": [
+        "Docker",
+        "CI/CD",
+        "Testing",
+        "Hosting & domains",
+        "Monitoring"
+      ],
+      "resources": [
+        {
+          "title": "Docker: Get started",
+          "url": "https://docs.docker.com/get-started/"
+        }
+      ],
+      "project": "Deploy with CI, tests and error tracking"
+    },
+    {
+      "title": "Grow",
+      "duration": "4 weeks",
+      "goal": "Think in systems and present your work.",
+      "topics": [
+        "System design",
+        "Performance",
+        "Security basics",
+        "Portfolio",
+        "Interview practice"
+      ],
+      "resources": [
+        {
+          "title": "System Design Primer",
+          "url": "https://github.com/donnemartin/system-design-primer"
+        }
+      ],
+      "project": "A SaaS-style side project with real users"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+name: New field / career
+description: Propose a career that isn't in the galaxy yet
+title: "New field: "
+labels: [new-field]
+body:
+  - type: input
+    id: role
+    attributes: { label: Role title, placeholder: Context Engineer }
+    validations: { required: true }
+  - type: dropdown
+    id: domain
+    attributes:
+      label: Domain
+      options: [ai, data, software, infra, security, product, frontier]
+    validations: { required: true }
+  - type: textarea
+    id: what
+    attributes: { label: What do they do day to day? }
+    validations: { required: true }
+  - type: textarea
+    id: evidence
+    attributes: { label: Evidence — 3 or more job postings (links) }
+    validations: { required: true }
+  - type: dropdown
+    id: status
+    attributes: { label: Status, options: [emerging, stable] }
+  - type: checkboxes
+    id: help
+    attributes:
+      label: Can you help?
+      options:
+        - label: I can write the roadmap JSON (npm run new …)

@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Add a new field — Career Galaxy</title>
+  <meta name="description" content="New job titles appear every year. Add a career to Career Galaxy with one JSON file.">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <script>try{var t=localStorage.getItem('cg-theme');document.documentElement.dataset.theme=t||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light')}catch(e){document.documentElement.dataset.theme='light'}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800;900&family=Roboto:wght@400;500;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header id="site-header"></header>
+  <main id="main" class="wrap" style="padding-top:44px;padding-bottom:60px">
+    <p class="eyebrow">Contribute</p>
+    <h1 class="big" style="font-size:clamp(2.4rem,1.4rem + 3.4vw,3.8rem)">Discovered a new planet?</h1>
+    <p class="lede" style="max-width:680px">New job titles appear every year. Put one on the map in three steps, and it joins the galaxy with a full learning path.</p>
+    <div class="row" style="margin-top:32px">
+      <form class="card" id="propose" style="flex:1 1 340px;min-width:0;padding:26px;display:flex;flex-direction:column;gap:14px">
+        <div style="display:flex;align-items:center;gap:12px"><span class="b accent" style="width:36px;height:36px;display:flex;align-items:center;justify-content:center;font:700 16px var(--font-display);border-radius:50%">1</span><h2 class="h3" style="font-size:24px">Propose it</h2></div>
+        <label class="fl">Role title<input class="in" name="title" value="Context Engineer" required></label>
+        <label class="fl">Domain<select class="in" name="domain" id="domain"></select></label>
+        <label class="fl">What do they do?<textarea class="in" name="summary" rows="3" style="resize:vertical">Designs what goes into a model's context: retrieval, memory, tool results and instructions, under a token budget.</textarea></label>
+        <label class="fl">Evidence: 3+ job postings<textarea class="in" name="evidence" rows="2" placeholder="Paste links, one per line"></textarea></label>
+        <label class="fl"><span><input type="checkbox" name="emerging" checked> Emerging role (reviewed every 3 months)</span></label>
+        <button type="submit" class="btn btn-p plain btn-sm" style="margin-top:auto">Open issue on GitHub</button>
+      </form>
+      <section class="card" style="flex:1 1 360px;min-width:0;padding:26px;display:flex;flex-direction:column;gap:14px">
+        <div style="display:flex;align-items:center;gap:12px"><span class="b accent" style="width:36px;height:36px;display:flex;align-items:center;justify-content:center;font:700 16px var(--font-display);border-radius:50%">2</span><h2 class="h3" style="font-size:24px">Scaffold &amp; fill</h2></div>
+        <p class="muted" style="margin:0;line-height:1.55">One command creates the file with the standard six-stage arc. Reuse skill and topic names other careers use, and links appear on their own.</p>
+        <pre class="code" id="cmd"></pre>
+        <pre class="code" id="json" style="flex:1;max-height:340px"></pre>
+      </section>
+      <section class="card" style="flex:1 1 340px;min-width:0;padding:26px;display:flex;flex-direction:column;gap:14px">
+        <div style="display:flex;align-items:center;gap:12px"><span class="b accent" style="width:36px;height:36px;display:flex;align-items:center;justify-content:center;font:700 16px var(--font-display);border-radius:50%">3</span><h2 class="h3" style="font-size:24px">Watch it appear</h2></div>
+        <div id="checks"></div>
+        <div class="space" style="position:relative;flex:1;min-height:240px;border-radius:20px" id="preview"><div class="twinkle"></div></div>
+        <p class="muted" style="margin:0;font-size:14px">Run <code>npm run validate</code> locally — CI runs the same checks on every pull request.</p>
+      </section>
+    </div>
+    <div class="card" style="margin-top:20px;display:flex;flex-wrap:wrap;gap:28px;align-items:center;padding:18px 24px;font-size:15px;color:var(--ink-2)">
+      <strong style="font:700 16px var(--font-display);color:var(--ink)">Kept fresh</strong>
+      <span><strong style="color:var(--ink)">Emerging</strong> roles reviewed every 3 months</span>
+      <span><strong style="color:var(--ink)">Stable</strong> roles every 12 months</span>
+      <a id="guide" style="text-decoration:underline">Read the contributing guide</a>
+    </div>
+  </main>
+  <footer id="site-footer"></footer>
+  <script type="module" src="/src/pages/contribute.js"></script>
+</body>
+</html>

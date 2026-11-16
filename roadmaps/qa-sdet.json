@@ -1,0 +1,134 @@
+{
+  "id": "qa-sdet",
+  "title": "QA / SDET",
+  "domain": "software",
+  "status": "stable",
+  "summary": "Designs test strategy and automation so teams ship with confidence.",
+  "duration": "5–7 months",
+  "whatYouDo": [
+    "Design test strategy for a product",
+    "Automate tests at the right levels",
+    "Keep pipelines green and fast"
+  ],
+  "skills": [
+    "Testing",
+    "JavaScript",
+    "Python",
+    "APIs",
+    "Git",
+    "CI/CD",
+    "SQL"
+  ],
+  "next": [
+    "devops",
+    "backend",
+    "sre"
+  ],
+  "updated": "2026-11-15",
+  "stages": [
+    {
+      "title": "Testing fundamentals",
+      "duration": "3 weeks",
+      "goal": "Think like a tester.",
+      "topics": [
+        "Test types & levels",
+        "Test design techniques",
+        "Bug reports",
+        "Exploratory testing",
+        "Agile & QA"
+      ],
+      "resources": [
+        {
+          "title": "ISTQB glossary",
+          "url": "https://glossary.istqb.org/"
+        }
+      ],
+      "project": "A test plan for a real web app"
+    },
+    {
+      "title": "Programming",
+      "duration": "4 weeks",
+      "goal": "Code well enough to automate anything.",
+      "topics": [
+        "Python or JavaScript",
+        "Git & GitHub",
+        "SQL",
+        "HTTP & APIs",
+        "Debugging"
+      ],
+      "resources": [
+        {
+          "title": "The Python Tutorial",
+          "url": "https://docs.python.org/3/tutorial/"
+        }
+      ],
+      "project": "Scripts that seed and verify test data"
+    },
+    {
+      "title": "UI automation",
+      "duration": "4 weeks",
+      "goal": "Automate browser tests that stay stable.",
+      "topics": [
+        "Playwright or Cypress",
+        "Selectors & waits",
+        "Page objects",
+        "Visual testing",
+        "Flaky test fixes"
+      ],
+      "resources": [
+        {
+          "title": "Playwright docs",
+          "url": "https://playwright.dev/docs/intro"
+        }
+      ],
+      "project": "An end-to-end suite for a demo shop"
+    },
+    {
+      "title": "API & contract testing",
+      "duration": "3 weeks",
+      "goal": "Test services directly.",
+      "topics": [
+        "API testing",
+        "Schema validation",
+        "Contract testing",
+        "Mocks & stubs",
+        "Test data management"
+      ],
+      "resources": [],
+      "project": "An API test suite with schema checks"
+    },
+    {
+      "title": "CI & performance",
+      "duration": "3 weeks",
+      "goal": "Run tests everywhere, fast.",
+      "topics": [
+        "CI/CD",
+        "Parallel runs",
+        "Reporting",
+        "Load testing",
+        "Test environments"
+      ],
+      "resources": [
+        {
+          "title": "k6 docs",
+          "url": "https://grafana.com/docs/k6/latest/"
+        }
+      ],
+      "project": "Run your suites in CI with reports"
+    },
+    {
+      "title": "Quality leadership",
+      "duration": "3 weeks",
+      "goal": "Own quality across a team.",
+      "topics": [
+        "Test strategy",
+        "Risk-based testing",
+        "Metrics",
+        "Accessibility testing",
+        "Interview practice"
+      ],
+      "resources": [],
+      "project": "A quality strategy document for a product"
+    }
+  ]
+}

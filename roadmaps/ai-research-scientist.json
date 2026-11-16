@@ -1,0 +1,142 @@
+{
+  "id": "ai-research-scientist",
+  "title": "AI Research Scientist",
+  "domain": "ai",
+  "status": "stable",
+  "summary": "Invents and tests new model architectures and training methods.",
+  "duration": "12–18 months",
+  "whatYouDo": [
+    "Invent and test new models and methods",
+    "Run careful experiments at scale",
+    "Publish and share results"
+  ],
+  "skills": [
+    "Python",
+    "Math",
+    "Deep Learning",
+    "Machine Learning",
+    "Statistics",
+    "LLMs",
+    "Writing"
+  ],
+  "next": [
+    "ml-engineer",
+    "ai-red-teaming"
+  ],
+  "updated": "2026-11-15",
+  "stages": [
+    {
+      "title": "Mathematics",
+      "duration": "8 weeks",
+      "goal": "Get the maths fluent.",
+      "topics": [
+        "Linear algebra",
+        "Probability",
+        "Multivariable calculus",
+        "Optimisation",
+        "Information theory"
+      ],
+      "resources": [
+        {
+          "title": "Mathematics for Machine Learning (book)",
+          "url": "https://mml-book.github.io/"
+        }
+      ],
+      "project": "Derive and implement backpropagation"
+    },
+    {
+      "title": "ML foundations",
+      "duration": "6 weeks",
+      "goal": "Know classic ML deeply.",
+      "topics": [
+        "Machine learning",
+        "Statistical learning",
+        "Generalisation",
+        "Bayesian methods",
+        "Kernel methods"
+      ],
+      "resources": [
+        {
+          "title": "scikit-learn user guide",
+          "url": "https://scikit-learn.org/stable/user_guide.html"
+        }
+      ],
+      "project": "Reproduce a classic ML paper result"
+    },
+    {
+      "title": "Deep learning",
+      "duration": "8 weeks",
+      "goal": "Master modern architectures.",
+      "topics": [
+        "Deep learning",
+        "PyTorch",
+        "Transformers",
+        "Optimisers & schedules",
+        "Scaling laws"
+      ],
+      "resources": [
+        {
+          "title": "PyTorch tutorials",
+          "url": "https://pytorch.org/tutorials/"
+        },
+        {
+          "title": "Stanford CS224N",
+          "url": "https://web.stanford.edu/class/cs224n/"
+        }
+      ],
+      "project": "Train a small transformer from scratch"
+    },
+    {
+      "title": "Research skills",
+      "duration": "6 weeks",
+      "goal": "Read, reproduce and extend papers.",
+      "topics": [
+        "Reading papers",
+        "Reproducing results",
+        "Experiment design",
+        "Ablations",
+        "Statistics for experiments"
+      ],
+      "resources": [
+        {
+          "title": "Papers with Code",
+          "url": "https://paperswithcode.com/"
+        }
+      ],
+      "project": "Reproduce and extend a recent paper"
+    },
+    {
+      "title": "Frontier topics",
+      "duration": "8 weeks",
+      "goal": "Pick an area and go deep.",
+      "topics": [
+        "LLMs",
+        "Reinforcement learning",
+        "Interpretability",
+        "Multimodal models",
+        "Efficiency"
+      ],
+      "resources": [
+        {
+          "title": "Spinning Up in Deep RL",
+          "url": "https://spinningup.openai.com/"
+        }
+      ],
+      "project": "A small original experiment with a write-up"
+    },
+    {
+      "title": "Publishing & community",
+      "duration": "ongoing",
+      "goal": "Share and collaborate.",
+      "topics": [
+        "Writing",
+        "Open-source code",
+        "Peer review",
+        "Talks",
+        "Interview practice"
+      ],
+      "resources": [],
+      "project": "A workshop paper or detailed blog post"
+    }
+  ]
+}

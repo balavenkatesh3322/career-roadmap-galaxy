@@ -1,0 +1,127 @@
+{
+  "id": "ar-vr",
+  "title": "AR / VR (XR) Developer",
+  "domain": "frontier",
+  "status": "stable",
+  "summary": "Builds immersive experiences for headsets and phones.",
+  "duration": "7–9 months",
+  "whatYouDo": [
+    "Build immersive experiences for headsets and phones",
+    "Design comfortable 3D interaction",
+    "Optimise for tight performance budgets"
+  ],
+  "skills": [
+    "C/C++",
+    "Math",
+    "Mobile",
+    "Git",
+    "Testing"
+  ],
+  "next": [
+    "game-dev",
+    "robotics",
+    "computer-vision"
+  ],
+  "updated": "2026-11-15",
+  "stages": [
+    {
+      "title": "Programming & 3D maths",
+      "duration": "5 weeks",
+      "goal": "Code and think in 3D.",
+      "topics": [
+        "C# or C++",
+        "Vectors & matrices",
+        "Quaternions",
+        "Coordinate spaces",
+        "Git & GitHub"
+      ],
+      "resources": [],
+      "project": "A 3D scene you can fly through"
+    },
+    {
+      "title": "An engine",
+      "duration": "5 weeks",
+      "goal": "Learn Unity or Unreal for XR.",
+      "topics": [
+        "Unity or Unreal",
+        "Scenes & prefabs",
+        "Physics",
+        "Lighting",
+        "Asset pipelines"
+      ],
+      "resources": [
+        {
+          "title": "Unity Learn",
+          "url": "https://learn.unity.com/"
+        }
+      ],
+      "project": "A small interactive 3D room"
+    },
+    {
+      "title": "XR fundamentals",
+      "duration": "5 weeks",
+      "goal": "Build for headsets.",
+      "topics": [
+        "OpenXR",
+        "Tracking & input",
+        "Locomotion",
+        "Hand tracking",
+        "Comfort & motion sickness"
+      ],
+      "resources": [
+        {
+          "title": "OpenXR (Khronos)",
+          "url": "https://www.khronos.org/openxr/"
+        }
+      ],
+      "project": "A VR experience with two locomotion modes"
+    },
+    {
+      "title": "Augmented reality",
+      "duration": "4 weeks",
+      "goal": "Blend digital and real.",
+      "topics": [
+        "ARKit or ARCore",
+        "Plane detection",
+        "Anchors",
+        "Occlusion",
+        "WebXR"
+      ],
+      "resources": [
+        {
+          "title": "WebXR docs (MDN)",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/API/WebXR_Device_API"
+        }
+      ],
+      "project": "An AR app that places objects on a table"
+    },
+    {
+      "title": "Performance",
+      "duration": "3 weeks",
+      "goal": "Hit frame rate on device.",
+      "topics": [
+        "Profiling",
+        "Draw calls & batching",
+        "Level of detail",
+        "Shaders basics",
+        "Testing on device"
+      ],
+      "resources": [],
+      "project": "Hit 72 fps on a standalone headset"
+    },
+    {
+      "title": "Professional",
+      "duration": "3 weeks",
+      "goal": "Design and ship.",
+      "topics": [
+        "Spatial UX design",
+        "Store submission",
+        "Accessibility in XR",
+        "Portfolio",
+        "Interview practice"
+      ],
+      "resources": [],
+      "project": "Publish an XR demo with a video walkthrough"
+    }
+  ]
+}

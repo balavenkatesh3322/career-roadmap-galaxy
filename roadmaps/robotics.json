@@ -1,0 +1,128 @@
+{
+  "id": "robotics",
+  "title": "Robotics Engineer",
+  "domain": "frontier",
+  "status": "stable",
+  "summary": "Builds robots that sense, plan and move.",
+  "duration": "9–12 months",
+  "whatYouDo": [
+    "Build robots that sense, plan and move",
+    "Integrate sensors, control and software",
+    "Test in simulation and the real world"
+  ],
+  "skills": [
+    "C/C++",
+    "Python",
+    "Math",
+    "Linux",
+    "Hardware",
+    "Deep Learning"
+  ],
+  "next": [
+    "computer-vision",
+    "embedded-iot",
+    "ar-vr"
+  ],
+  "updated": "2026-11-15",
+  "stages": [
+    {
+      "title": "Programming & maths",
+      "duration": "6 weeks",
+      "goal": "Code and maths for robots.",
+      "topics": [
+        "Python",
+        "C++",
+        "Linear algebra",
+        "Calculus",
+        "Linux"
+      ],
+      "resources": [
+        {
+          "title": "The Python Tutorial",
+          "url": "https://docs.python.org/3/tutorial/"
+        }
+      ],
+      "project": "A 2D robot simulator in Python"
+    },
+    {
+      "title": "ROS",
+      "duration": "5 weeks",
+      "goal": "Use the robot operating system.",
+      "topics": [
+        "ROS 2 concepts",
+        "Nodes, topics & services",
+        "Launch files",
+        "TF transforms",
+        "Simulation (Gazebo)"
+      ],
+      "resources": [
+        {
+          "title": "ROS 2 docs",
+          "url": "https://docs.ros.org/en/rolling/"
+        }
+      ],
+      "project": "A simulated robot you drive with ROS 2"
+    },
+    {
+      "title": "Kinematics & control",
+      "duration": "5 weeks",
+      "goal": "Make robots move precisely.",
+      "topics": [
+        "Kinematics",
+        "PID control",
+        "Dynamics basics",
+        "Motion planning",
+        "State estimation"
+      ],
+      "resources": [
+        {
+          "title": "Modern Robotics (Northwestern)",
+          "url": "https://modernrobotics.northwestern.edu/"
+        }
+      ],
+      "project": "A tuned PID line follower"
+    },
+    {
+      "title": "Perception",
+      "duration": "5 weeks",
+      "goal": "Let robots see.",
+      "topics": [
+        "Sensors: cameras, lidar, IMU",
+        "Computer vision basics",
+        "Sensor fusion",
+        "SLAM",
+        "Deep learning for perception"
+      ],
+      "resources": [],
+      "project": "Map a room with SLAM in simulation"
+    },
+    {
+      "title": "Hardware",
+      "duration": "4 weeks",
+      "goal": "Real robots.",
+      "topics": [
+        "Electronics basics",
+        "Motors & drivers",
+        "Microcontrollers",
+        "Embedded communication",
+        "Safety"
+      ],
+      "resources": [],
+      "project": "Build and drive a small physical robot"
+    },
+    {
+      "title": "Professional",
+      "duration": "4 weeks",
+      "goal": "Integrate and show it.",
+      "topics": [
+        "Testing in sim & real",
+        "Robot learning intro",
+        "Teamwork & competitions",
+        "Portfolio",
+        "Interview practice"
+      ],
+      "resources": [],
+      "project": "A full robot project video and write-up"
+    }
+  ]
+}

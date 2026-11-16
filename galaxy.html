@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Galaxy explorer — Career Galaxy</title>
+  <meta name="description" content="Fly around every tech career. Pick a domain, see its careers as moons, and open any roadmap.">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <script>try{var t=localStorage.getItem('cg-theme');document.documentElement.dataset.theme=t||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light')}catch(e){document.documentElement.dataset.theme='light'}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800;900&family=Roboto:wght@400;500;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header id="site-header"></header>
+  <main id="main" class="app">
+    <aside class="side" aria-label="Domains">
+      <label class="ibtn" style="width:100%;justify-content:flex-start;margin-top:10px;cursor:text"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><span class="sr-only">Search careers</span><input id="search" type="search" placeholder="Search careers or skills" style="border:0;outline:0;background:transparent;flex:1;min-width:0"></label>
+      <div id="search-results"></div>
+      <p class="lab">Domains</p>
+      <div id="domain-list"></div>
+      <p class="lab">Your climbs</p>
+      <div id="climbs"></div>
+    </aside>
+    <section class="scene space" id="scene" aria-label="3D galaxy">
+      <div class="twinkle" aria-hidden="true"></div>
+      <p class="scene-top">drag to orbit · scroll to zoom · click a planet or moon</p>
+      <div class="legend"><span><i style="width:18px;height:2px;background:#c4b0ff"></i>shared skills</span><span><span class="sphere t-pearl s10"></span>career moon</span><span>planet size = careers</span></div>
+    </section>
+    <aside class="panel" aria-label="Details" aria-live="polite">
+      <div style="display:flex;align-items:center;gap:14px"><span class="sphere s48" id="d-tint"></span><div><div class="cat">Domain</div><h1 class="h3" id="d-name" style="font-size:26px"></h1></div></div>
+      <div id="role-list" style="display:flex;flex-direction:column;gap:6px;margin-top:16px"></div>
+      <div id="role-detail" class="card" style="margin-top:14px;padding:18px;background:var(--surface-2)"></div>
+    </aside>
+  </main>
+  <script type="module" src="/src/pages/galaxy.js"></script>
+</body>
+</html>

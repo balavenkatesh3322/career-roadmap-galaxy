@@ -1,0 +1,142 @@
+{
+  "id": "cloud-engineer",
+  "title": "Cloud Engineer",
+  "domain": "infra",
+  "status": "stable",
+  "summary": "Designs and runs systems on AWS, Azure or Google Cloud.",
+  "duration": "6–8 months",
+  "whatYouDo": [
+    "Design and run systems on AWS, Azure or Google Cloud",
+    "Automate infrastructure",
+    "Balance cost, security and performance"
+  ],
+  "skills": [
+    "Cloud",
+    "Linux",
+    "Networking",
+    "Docker",
+    "Security",
+    "Python",
+    "CI/CD"
+  ],
+  "next": [
+    "devops",
+    "platform-engineer",
+    "devsecops"
+  ],
+  "updated": "2026-11-15",
+  "stages": [
+    {
+      "title": "Foundations",
+      "duration": "4 weeks",
+      "goal": "Linux, networking and scripting.",
+      "topics": [
+        "Linux",
+        "Networking",
+        "DNS & HTTP",
+        "Python or Bash",
+        "Git & GitHub"
+      ],
+      "resources": [],
+      "project": "A small web server you manage yourself"
+    },
+    {
+      "title": "Core cloud services",
+      "duration": "5 weeks",
+      "goal": "Learn one cloud deeply.",
+      "topics": [
+        "Cloud",
+        "Compute",
+        "Storage",
+        "Managed databases",
+        "Identity & access"
+      ],
+      "resources": [
+        {
+          "title": "AWS Skill Builder",
+          "url": "https://skillbuilder.aws/"
+        },
+        {
+          "title": "Microsoft Learn: Azure",
+          "url": "https://learn.microsoft.com/en-us/training/azure/"
+        },
+        {
+          "title": "Google Cloud Skills Boost",
+          "url": "https://www.cloudskillsboost.google/"
+        }
+      ],
+      "project": "Host a three-tier app on one cloud"
+    },
+    {
+      "title": "Networking in the cloud",
+      "duration": "3 weeks",
+      "goal": "Design secure networks.",
+      "topics": [
+        "VPCs & subnets",
+        "Load balancing",
+        "VPN & peering",
+        "CDN",
+        "Security groups"
+      ],
+      "resources": [],
+      "project": "A private network with a public load balancer"
+    },
+    {
+      "title": "Infrastructure as code",
+      "duration": "4 weeks",
+      "goal": "Never click twice.",
+      "topics": [
+        "Terraform",
+        "CI/CD",
+        "Modules & state",
+        "Policy as code",
+        "Secrets"
+      ],
+      "resources": [
+        {
+          "title": "Terraform tutorials",
+          "url": "https://developer.hashicorp.com/terraform/tutorials"
+        }
+      ],
+      "project": "Rebuild your app with Terraform and CI"
+    },
+    {
+      "title": "Containers & serverless",
+      "duration": "4 weeks",
+      "goal": "Pick the right compute.",
+      "topics": [
+        "Docker",
+        "Kubernetes",
+        "Serverless functions",
+        "Event-driven design",
+        "Queues"
+      ],
+      "resources": [
+        {
+          "title": "Docker: Get started",
+          "url": "https://docs.docker.com/get-started/"
+        }
+      ],
+      "project": "A serverless image pipeline"
+    },
+    {
+      "title": "Well-architected",
+      "duration": "3 weeks",
+      "goal": "Operate it well.",
+      "topics": [
+        "Security",
+        "Cost optimisation",
+        "Monitoring",
+        "Disaster recovery",
+        "Certification prep"
+      ],
+      "resources": [
+        {
+          "title": "AWS Well-Architected",
+          "url": "https://aws.amazon.com/architecture/well-architected/"
+        }
+      ],
+      "project": "A well-architected review of your setup"
+    }
+  ]
+}

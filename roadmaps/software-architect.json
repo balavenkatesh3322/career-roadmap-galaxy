@@ -1,0 +1,132 @@
+{
+  "id": "software-architect",
+  "title": "Software Architect",
+  "domain": "software",
+  "status": "stable",
+  "summary": "Shapes how large systems are split, connected and evolved.",
+  "duration": "12+ months (experienced devs)",
+  "whatYouDo": [
+    "Shape how systems are split and connected",
+    "Make and document trade-offs",
+    "Guide teams toward a target architecture"
+  ],
+  "skills": [
+    "System Design",
+    "Cloud",
+    "APIs",
+    "Docker",
+    "Kubernetes",
+    "Security",
+    "Communication"
+  ],
+  "next": [
+    "engineering-manager",
+    "platform-engineer"
+  ],
+  "updated": "2026-11-15",
+  "stages": [
+    {
+      "title": "Design fundamentals",
+      "duration": "6 weeks",
+      "goal": "Write maintainable code and name the patterns.",
+      "topics": [
+        "SOLID & clean code",
+        "Design patterns",
+        "Refactoring",
+        "Domain modelling",
+        "Testing strategy"
+      ],
+      "resources": [
+        {
+          "title": "Refactoring.Guru",
+          "url": "https://refactoring.guru/"
+        },
+        {
+          "title": "Martin Fowler: Architecture",
+          "url": "https://martinfowler.com/architecture/"
+        }
+      ],
+      "project": "Refactor a legacy module with tests first"
+    },
+    {
+      "title": "Architecture styles",
+      "duration": "6 weeks",
+      "goal": "Know when to use which style.",
+      "topics": [
+        "Monolith vs microservices",
+        "Event-driven architecture",
+        "Domain-driven design",
+        "Hexagonal architecture",
+        "Serverless"
+      ],
+      "resources": [],
+      "project": "Compare two styles for one product in a short paper"
+    },
+    {
+      "title": "Distributed systems",
+      "duration": "6 weeks",
+      "goal": "Reason about failure and scale.",
+      "topics": [
+        "System design",
+        "CAP & consistency",
+        "Messaging & queues",
+        "Caching",
+        "Resilience patterns"
+      ],
+      "resources": [
+        {
+          "title": "System Design Primer",
+          "url": "https://github.com/donnemartin/system-design-primer"
+        }
+      ],
+      "project": "Design doc for a chat system at scale"
+    },
+    {
+      "title": "Cloud & platforms",
+      "duration": "5 weeks",
+      "goal": "Use the cloud well.",
+      "topics": [
+        "Cloud",
+        "Docker",
+        "Kubernetes",
+        "Infrastructure as code",
+        "Cost awareness"
+      ],
+      "resources": [],
+      "project": "Reference architecture on one cloud"
+    },
+    {
+      "title": "Quality attributes",
+      "duration": "4 weeks",
+      "goal": "Design for security, performance and change.",
+      "topics": [
+        "Security",
+        "Observability",
+        "Performance budgets",
+        "Data architecture",
+        "Evolutionary architecture"
+      ],
+      "resources": [],
+      "project": "A fitness-function checklist for your system"
+    },
+    {
+      "title": "Leading architecture",
+      "duration": "4 weeks",
+      "goal": "Bring people with you.",
+      "topics": [
+        "Architecture decision records",
+        "C4 diagrams",
+        "Communication",
+        "Stakeholder management",
+        "Mentoring"
+      ],
+      "resources": [
+        {
+          "title": "C4 model",
+          "url": "https://c4model.com/"
+        }
+      ],
+      "project": "Run an architecture review with ADRs"
+    }
+  ]
+}

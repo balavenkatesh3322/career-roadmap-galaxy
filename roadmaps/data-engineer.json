@@ -1,0 +1,147 @@
+{
+  "id": "data-engineer",
+  "title": "Data Engineer",
+  "domain": "data",
+  "status": "stable",
+  "summary": "Builds pipelines and warehouses that move and model data reliably.",
+  "duration": "7–9 months",
+  "whatYouDo": [
+    "Build pipelines that move and model data",
+    "Run warehouses and lakes",
+    "Make data reliable and fast"
+  ],
+  "skills": [
+    "Python",
+    "SQL",
+    "Data Pipelines",
+    "Cloud",
+    "Docker",
+    "Linux",
+    "Git"
+  ],
+  "next": [
+    "mlops",
+    "platform-engineer",
+    "database-engineer"
+  ],
+  "updated": "2026-11-15",
+  "stages": [
+    {
+      "title": "Foundations",
+      "duration": "4 weeks",
+      "goal": "Code and query comfortably.",
+      "topics": [
+        "Python",
+        "SQL",
+        "Linux & Bash",
+        "Git & GitHub",
+        "Data structures"
+      ],
+      "resources": [
+        {
+          "title": "The Python Tutorial",
+          "url": "https://docs.python.org/3/tutorial/"
+        },
+        {
+          "title": "PostgreSQL tutorial",
+          "url": "https://www.postgresql.org/docs/current/tutorial.html"
+        }
+      ],
+      "project": "Scripts that load CSVs into Postgres"
+    },
+    {
+      "title": "Data modelling & warehouses",
+      "duration": "4 weeks",
+      "goal": "Design analytical storage.",
+      "topics": [
+        "Dimensional modelling",
+        "Data warehouses",
+        "Columnar storage",
+        "dbt",
+        "Data quality tests"
+      ],
+      "resources": [
+        {
+          "title": "dbt docs",
+          "url": "https://docs.getdbt.com/docs/introduction"
+        }
+      ],
+      "project": "A dbt project on a public dataset"
+    },
+    {
+      "title": "Pipelines & orchestration",
+      "duration": "4 weeks",
+      "goal": "Schedule and monitor ETL/ELT.",
+      "topics": [
+        "Data pipelines",
+        "ETL vs ELT",
+        "Airflow or Dagster",
+        "Idempotency & backfills",
+        "Data contracts"
+      ],
+      "resources": [
+        {
+          "title": "Apache Airflow docs",
+          "url": "https://airflow.apache.org/docs/"
+        },
+        {
+          "title": "Data Engineering Zoomcamp",
+          "url": "https://github.com/DataTalksClub/data-engineering-zoomcamp"
+        }
+      ],
+      "project": "A daily pipeline with retries and alerts"
+    },
+    {
+      "title": "Big data & streaming",
+      "duration": "5 weeks",
+      "goal": "Handle volume and speed.",
+      "topics": [
+        "Apache Spark",
+        "Parquet & lakehouses",
+        "Kafka",
+        "Stream processing",
+        "Partitioning"
+      ],
+      "resources": [
+        {
+          "title": "Spark docs",
+          "url": "https://spark.apache.org/docs/latest/"
+        }
+      ],
+      "project": "Process a large dataset with Spark"
+    },
+    {
+      "title": "Cloud & infrastructure",
+      "duration": "4 weeks",
+      "goal": "Run it all in the cloud.",
+      "topics": [
+        "Cloud",
+        "Docker",
+        "Infrastructure as code",
+        "Cost control",
+        "Security & access"
+      ],
+      "resources": [
+        {
+          "title": "Docker: Get started",
+          "url": "https://docs.docker.com/get-started/"
+        }
+      ],
+      "project": "Deploy your pipeline to a cloud provider"
+    },
+    {
+      "title": "Professional",
+      "duration": "3 weeks",
+      "goal": "Operate and grow.",
+      "topics": [
+        "Observability for data",
+        "Data governance",
+        "System design for data",
+        "Portfolio",
+        "Interview practice"
+      ],
+      "resources": [],
+      "project": "An end-to-end data platform write-up"
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+{
+  "id": "computer-vision",
+  "title": "Computer Vision Engineer",
+  "domain": "ai",
+  "status": "stable",
+  "summary": "Teaches machines to understand images and video.",
+  "duration": "8–10 months",
+  "whatYouDo": [
+    "Build models that understand images and video",
+    "Train detection, segmentation and tracking systems",
+    "Deploy vision models to servers and devices"
+  ],
+  "skills": [
+    "Python",
+    "Deep Learning",
+    "Machine Learning",
+    "Math",
+    "Docker",
+    "C/C++"
+  ],
+  "next": [
+    "robotics",
+    "ar-vr",
+    "ml-engineer"
+  ],
+  "updated": "2026-11-15",
+  "stages": [
+    {
+      "title": "Foundations",
+      "duration": "4 weeks",
+      "goal": "Code, maths and image basics.",
+      "topics": [
+        "Python",
+        "NumPy",
+        "Linear algebra",
+        "Image formation",
+        "OpenCV basics"
+      ],
+      "resources": [
+        {
+          "title": "OpenCV tutorials",
+          "url": "https://docs.opencv.org/4.x/d9/df8/tutorial_root.html"
+        }
+      ],
+      "project": "Image filters and edge detection with OpenCV"
+    },
+    {
+      "title": "Classical vision",
+      "duration": "4 weeks",
+      "goal": "Know the pre-deep-learning toolkit.",
+      "topics": [
+        "Features & matching",
+        "Geometry & cameras",
+        "Homographies",
+        "Optical flow",
+        "Stereo"
+      ],
+      "resources": [],
+      "project": "Panorama stitching"
+    },
+    {
+      "title": "Deep learning for vision",
+      "duration": "6 weeks",
+      "goal": "Train CNNs and vision transformers.",
+      "topics": [
+        "Deep learning",
+        "CNNs",
+        "Vision transformers",
+        "Transfer learning",
+        "Data augmentation"
+      ],
+      "resources": [
+        {
+          "title": "Stanford CS231n notes",
+          "url": "https://cs231n.github.io/"
+        },
+        {
+          "title": "PyTorch tutorials",
+          "url": "https://pytorch.org/tutorials/"
+        }
+      ],
+      "project": "Fine-tune a classifier on your own dataset"
+    },
+    {
+      "title": "Detection & segmentation",
+      "duration": "5 weeks",
+      "goal": "Find and outline objects.",
+      "topics": [
+        "Object detection",
+        "Segmentation",
+        "Tracking",
+        "Evaluation metrics",
+        "Labelling tools"
+      ],
+      "resources": [],
+      "project": "A custom object detector"
+    },
+    {
+      "title": "Multimodal & 3D",
+      "duration": "4 weeks",
+      "goal": "Go beyond 2D.",
+      "topics": [
+        "Vision-language models",
+        "Depth estimation",
+        "3D reconstruction",
+        "Video understanding",
+        "Generative image models"
+      ],
+      "resources": [
+        {
+          "title": "Hugging Face Learn",
+          "url": "https://huggingface.co/learn"
+        }
+      ],
+      "project": "Visual question answering demo"
+    },
+    {
+      "title": "Deployment",
+      "duration": "4 weeks",
+      "goal": "Run models fast, anywhere.",
+      "topics": [
+        "Model optimisation",
+        "Quantisation",
+        "Edge devices",
+        "Docker",
+        "Monitoring"
+      ],
+      "resources": [],
+      "project": "Run a detector in real time on a laptop or board"
+    }
+  ]
+}

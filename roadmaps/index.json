@@ -1,0 +1,358 @@
+{
+  "version": 1,
+  "domains": [
+    {
+      "id": "software",
+      "name": "Software Engineering",
+      "short": "Software",
+      "color": "#3b82f6"
+    },
+    {
+      "id": "data",
+      "name": "Data",
+      "short": "Data",
+      "color": "#14b8a6"
+    },
+    {
+      "id": "ai",
+      "name": "AI / ML",
+      "short": "AI / ML",
+      "color": "#8b5cf6"
+    },
+    {
+      "id": "infra",
+      "name": "Infrastructure",
+      "short": "Infra",
+      "color": "#f59e0b"
+    },
+    {
+      "id": "security",
+      "name": "Security",
+      "short": "Security",
+      "color": "#f43f5e"
+    },
+    {
+      "id": "product",
+      "name": "Product & Design",
+      "short": "Product",
+      "color": "#eab308"
+    },
+    {
+      "id": "frontier",
+      "name": "Frontier Tech",
+      "short": "Frontier",
+      "color": "#06b6d4"
+    }
+  ],
+  "skills": [
+    "APIs",
+    "C/C++",
+    "CI/CD",
+    "Cloud",
+    "Communication",
+    "Data Pipelines",
+    "Data Visualization",
+    "Deep Learning",
+    "Docker",
+    "Excel",
+    "Git",
+    "Go",
+    "HTML & CSS",
+    "Hardware",
+    "JavaScript",
+    "Kubernetes",
+    "LLMs",
+    "Linux",
+    "Machine Learning",
+    "Math",
+    "Mobile",
+    "Monitoring",
+    "Networking",
+    "Product Sense",
+    "Python",
+    "React",
+    "SQL",
+    "Security",
+    "Statistics",
+    "System Design",
+    "Testing",
+    "TypeScript",
+    "UX Research",
+    "Writing"
+  ],
+  "roles": [
+    {
+      "id": "frontend",
+      "title": "Frontend Developer",
+      "domain": "software",
+      "status": "stable",
+      "summary": "Builds the interfaces people click, type and scroll in the browser."
+    },
+    {
+      "id": "backend",
+      "title": "Backend Developer",
+      "domain": "software",
+      "status": "stable",
+      "summary": "Builds the APIs, databases and services behind every app."
+    },
+    {
+      "id": "full-stack",
+      "title": "Full Stack Developer",
+      "domain": "software",
+      "status": "stable",
+      "summary": "Ships whole features, from database to button."
+    },
+    {
+      "id": "mobile",
+      "title": "Mobile Developer",
+      "domain": "software",
+      "status": "stable",
+      "summary": "Builds iOS and Android apps, native or cross-platform."
+    },
+    {
+      "id": "game-dev",
+      "title": "Game Developer",
+      "domain": "software",
+      "status": "stable",
+      "summary": "Builds games with engines like Unity, Unreal and Godot."
+    },
+    {
+      "id": "embedded-iot",
+      "title": "Embedded & IoT Engineer",
+      "domain": "software",
+      "status": "stable",
+      "summary": "Writes software for microcontrollers and connected devices."
+    },
+    {
+      "id": "qa-sdet",
+      "title": "QA / SDET",
+      "domain": "software",
+      "status": "stable",
+      "summary": "Designs test strategy and automation so teams ship with confidence."
+    },
+    {
+      "id": "software-architect",
+      "title": "Software Architect",
+      "domain": "software",
+      "status": "stable",
+      "summary": "Shapes how large systems are split, connected and evolved."
+    },
+    {
+      "id": "data-analyst",
+      "title": "Data Analyst",
+      "domain": "data",
+      "status": "stable",
+      "summary": "Turns raw data into answers, dashboards and decisions."
+    },
+    {
+      "id": "bi-analyst",
+      "title": "BI Analyst",
+      "domain": "data",
+      "status": "stable",
+      "summary": "Builds the metrics layer and reporting a business runs on."
+    },
+    {
+      "id": "data-engineer",
+      "title": "Data Engineer",
+      "domain": "data",
+      "status": "stable",
+      "summary": "Builds pipelines and warehouses that move and model data reliably."
+    },
+    {
+      "id": "data-scientist",
+      "title": "Data Scientist",
+      "domain": "data",
+      "status": "stable",
+      "summary": "Uses statistics and ML to explain, predict and experiment."
+    },
+    {
+      "id": "database-engineer",
+      "title": "Database Engineer",
+      "domain": "data",
+      "status": "stable",
+      "summary": "Designs, tunes and protects the databases everything depends on."
+    },
+    {
+      "id": "ml-engineer",
+      "title": "ML Engineer",
+      "domain": "ai",
+      "status": "stable",
+      "summary": "Trains, evaluates and ships machine learning models to production."
+    },
+    {
+      "id": "mlops",
+      "title": "MLOps Engineer",
+      "domain": "ai",
+      "status": "stable",
+      "summary": "Builds the platforms that train, deploy and monitor models."
+    },
+    {
+      "id": "gen-ai-engineer",
+      "title": "Gen AI Engineer",
+      "domain": "ai",
+      "status": "stable",
+      "summary": "Builds products on LLMs: prompting, RAG, fine-tuning and evals."
+    },
+    {
+      "id": "ai-agent-engineer",
+      "title": "AI Agent Engineer",
+      "domain": "ai",
+      "status": "emerging",
+      "summary": "Builds agents that plan, call tools and act, safely and observably."
+    },
+    {
+      "id": "ai-research-scientist",
+      "title": "AI Research Scientist",
+      "domain": "ai",
+      "status": "stable",
+      "summary": "Invents and tests new model architectures and training methods."
+    },
+    {
+      "id": "computer-vision",
+      "title": "Computer Vision Engineer",
+      "domain": "ai",
+      "status": "stable",
+      "summary": "Teaches machines to understand images and video."
+    },
+    {
+      "id": "nlp-engineer",
+      "title": "NLP Engineer",
+      "domain": "ai",
+      "status": "stable",
+      "summary": "Builds systems that read, classify and generate language."
+    },
+    {
+      "id": "ai-red-teaming",
+      "title": "AI Red Teaming & Safety",
+      "domain": "ai",
+      "status": "emerging",
+      "summary": "Finds how AI systems fail or can be misused, and helps fix it."
+    },
+    {
+      "id": "devops",
+      "title": "DevOps Engineer",
+      "domain": "infra",
+      "status": "stable",
+      "summary": "Automates build, test, release and infrastructure."
+    },
+    {
+      "id": "sre",
+      "title": "Site Reliability Engineer",
+      "domain": "infra",
+      "status": "stable",
+      "summary": "Keeps production fast and available using software and SLOs."
+    },
+    {
+      "id": "cloud-engineer",
+      "title": "Cloud Engineer",
+      "domain": "infra",
+      "status": "stable",
+      "summary": "Designs and runs systems on AWS, Azure or Google Cloud."
+    },
+    {
+      "id": "platform-engineer",
+      "title": "Platform Engineer",
+      "domain": "infra",
+      "status": "stable",
+      "summary": "Builds the internal platform other engineers ship on."
+    },
+    {
+      "id": "network-engineer",
+      "title": "Network Engineer",
+      "domain": "infra",
+      "status": "stable",
+      "summary": "Designs and secures the networks that connect everything."
+    },
+    {
+      "id": "soc-analyst",
+      "title": "Cybersecurity (SOC) Analyst",
+      "domain": "security",
+      "status": "stable",
+      "summary": "Detects, investigates and responds to security incidents."
+    },
+    {
+      "id": "penetration-tester",
+      "title": "Penetration Tester",
+      "domain": "security",
+      "status": "stable",
+      "summary": "Breaks into systems, with permission, to find weaknesses first."
+    },
+    {
+      "id": "devsecops",
+      "title": "DevSecOps / Cloud Security",
+      "domain": "security",
+      "status": "stable",
+      "summary": "Builds security into pipelines, cloud and code."
+    },
+    {
+      "id": "ux-ui-designer",
+      "title": "UX / UI Designer",
+      "domain": "product",
+      "status": "stable",
+      "summary": "Researches users and designs products that are clear and usable."
+    },
+    {
+      "id": "product-manager",
+      "title": "Product Manager",
+      "domain": "product",
+      "status": "stable",
+      "summary": "Decides what to build and why, and gets it shipped."
+    },
+    {
+      "id": "engineering-manager",
+      "title": "Engineering Manager",
+      "domain": "product",
+      "status": "stable",
+      "summary": "Grows engineers and teams that deliver."
+    },
+    {
+      "id": "technical-writer",
+      "title": "Technical Writer",
+      "domain": "product",
+      "status": "stable",
+      "summary": "Writes the docs and guides developers learn from."
+    },
+    {
+      "id": "developer-relations",
+      "title": "Developer Relations",
+      "domain": "product",
+      "status": "stable",
+      "summary": "Helps developers succeed with a product through content and community."
+    },
+    {
+      "id": "blockchain",
+      "title": "Blockchain / Web3 Developer",
+      "domain": "frontier",
+      "status": "stable",
+      "summary": "Builds smart contracts and decentralised apps."
+    },
+    {
+      "id": "ar-vr",
+      "title": "AR / VR (XR) Developer",
+      "domain": "frontier",
+      "status": "stable",
+      "summary": "Builds immersive experiences for headsets and phones."
+    },
+    {
+      "id": "quantum",
+      "title": "Quantum Computing Engineer",
+      "domain": "frontier",
+      "status": "emerging",
+      "summary": "Writes and tests algorithms for quantum hardware."
+    },
+    {
+      "id": "robotics",
+      "title": "Robotics Engineer",
+      "domain": "frontier",
+      "status": "stable",
+      "summary": "Builds robots that sense, plan and move."
+    },
+    {
+      "id": "forward-deployed",
+      "title": "Forward Deployed Engineer",
+      "domain": "frontier",
+      "status": "emerging",
+      "summary": "Embeds with customers to build and deploy AI solutions on site."
+    }
+  ]
+}

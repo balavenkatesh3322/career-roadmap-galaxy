@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pivot &amp; self-check — Career Galaxy</title>
+  <meta name="description" content="Switch careers without starting over: see what carries over, where to start, and test yourself with flashcards.">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <script>try{var t=localStorage.getItem('cg-theme');document.documentElement.dataset.theme=t||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light')}catch(e){document.documentElement.dataset.theme='light'}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800;900&family=Roboto:wght@400;500;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header id="site-header"></header>
+  <main id="main" class="wrap" style="padding-top:36px;padding-bottom:60px">
+    <div class="row">
+      <section class="card" aria-labelledby="pv-h" style="flex:1.25 1 520px;min-width:0;padding:28px;overflow:hidden">
+        <p class="eyebrow">Pivot</p>
+        <h1 class="h2" id="pv-h">Plot a transfer orbit</h1>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-top:18px">
+          <label class="fl">I am a<select class="in" id="from"></select></label>
+          <label class="fl">I want to be<select class="in" id="to"></select></label>
+        </div>
+        <div class="space" style="position:relative;height:340px;margin-top:18px;border-radius:22px" id="transfer">
+          <div class="twinkle" aria-hidden="true"></div>
+          <svg viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true" style="position:absolute;inset:0;width:100%;height:100%"><path d="M14 66 C 30 8, 70 8, 86 66" fill="none" stroke="rgba(200,185,255,.55)" stroke-width="1.2" stroke-dasharray="4 5" vector-effect="non-scaling-stroke"/></svg>
+          <div id="transfer-items"></div>
+        </div>
+        <div id="pv-summary" style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin-top:18px" aria-live="polite"></div>
+      </section>
+
+      <section class="card" id="recall" aria-labelledby="sc-h" style="flex:1 1 380px;min-width:0;padding:28px;display:flex;flex-direction:column">
+        <p class="eyebrow" id="sc-eyebrow">Self-check</p>
+        <h2 class="h2" id="sc-h">Recall before you climb</h2>
+        <label class="fl" style="margin-top:14px">Stage<select class="in" id="sc-stage"></select></label>
+        <div style="display:flex;gap:6px;margin-top:16px" id="dots" aria-hidden="true"></div>
+        <div class="flash" style="min-height:250px"><div class="back"></div><div class="front"><span class="sphere t-cyan" style="position:absolute;right:-30px;top:-30px;width:120px;height:120px;opacity:.55" aria-hidden="true"></span><span class="mono" style="position:relative;font-size:12px;letter-spacing:.16em;opacity:.9" id="fc-meta"></span><p id="fc-text" aria-live="polite"></p><button type="button" id="fc-flip">Show hint</button></div></div>
+        <div class="rate-row"><button type="button" class="ibtn" data-rate="again">Again<small>see it soon</small></button><button type="button" class="ibtn" data-rate="good">Good<small>in 3 days</small></button><button type="button" class="ibtn" data-rate="easy" style="border-color:#22a55a">Easy ✓<small>ticks the topic</small></button></div>
+        <p class="mono" id="tally" style="margin:14px 0 0;text-align:center;font-size:12px;letter-spacing:.1em;color:var(--ink-3)"></p>
+      </section>
+    </div>
+  </main>
+  <footer id="site-footer"></footer>
+  <script type="module" src="/src/pages/pivot.js"></script>
+</body>
+</html>

@@ -1,0 +1,131 @@
+{
+  "id": "nlp-engineer",
+  "title": "NLP Engineer",
+  "domain": "ai",
+  "status": "stable",
+  "summary": "Builds systems that read, classify and generate language.",
+  "duration": "8–10 months",
+  "whatYouDo": [
+    "Build systems that read, classify and generate language",
+    "Fine-tune and evaluate language models",
+    "Ship text features to products"
+  ],
+  "skills": [
+    "Python",
+    "Machine Learning",
+    "Deep Learning",
+    "LLMs",
+    "Statistics",
+    "Docker"
+  ],
+  "next": [
+    "gen-ai-engineer",
+    "ai-research-scientist"
+  ],
+  "updated": "2026-11-15",
+  "stages": [
+    {
+      "title": "Foundations",
+      "duration": "4 weeks",
+      "goal": "Code and text-processing basics.",
+      "topics": [
+        "Python",
+        "Regular expressions",
+        "Tokenisation",
+        "Text cleaning",
+        "Statistics basics"
+      ],
+      "resources": [
+        {
+          "title": "The Python Tutorial",
+          "url": "https://docs.python.org/3/tutorial/"
+        }
+      ],
+      "project": "A text analytics notebook on reviews"
+    },
+    {
+      "title": "Classic NLP",
+      "duration": "4 weeks",
+      "goal": "Know the classic methods.",
+      "topics": [
+        "Bag of words & TF-IDF",
+        "Naive Bayes & logistic regression",
+        "Sequence labelling",
+        "Language models (n-grams)",
+        "Evaluation metrics"
+      ],
+      "resources": [
+        {
+          "title": "Speech and Language Processing (Jurafsky & Martin)",
+          "url": "https://web.stanford.edu/~jurafsky/slp3/"
+        }
+      ],
+      "project": "A sentiment classifier baseline"
+    },
+    {
+      "title": "Neural NLP",
+      "duration": "6 weeks",
+      "goal": "Use embeddings and transformers.",
+      "topics": [
+        "Embeddings",
+        "RNNs & attention",
+        "Transformers",
+        "Hugging Face Transformers",
+        "Fine-tuning"
+      ],
+      "resources": [
+        {
+          "title": "Hugging Face Learn",
+          "url": "https://huggingface.co/learn"
+        },
+        {
+          "title": "Stanford CS224N",
+          "url": "https://web.stanford.edu/class/cs224n/"
+        }
+      ],
+      "project": "Fine-tune a transformer classifier"
+    },
+    {
+      "title": "LLMs",
+      "duration": "5 weeks",
+      "goal": "Build with large language models.",
+      "topics": [
+        "LLMs",
+        "Prompt engineering",
+        "RAG",
+        "Instruction tuning",
+        "LLM evaluation"
+      ],
+      "resources": [],
+      "project": "A domain Q&A system with evaluation"
+    },
+    {
+      "title": "Specialisations",
+      "duration": "4 weeks",
+      "goal": "Go deeper in one direction.",
+      "topics": [
+        "Information extraction",
+        "Machine translation",
+        "Speech basics",
+        "Multilingual NLP",
+        "Summarisation"
+      ],
+      "resources": [],
+      "project": "An entity extraction pipeline for documents"
+    },
+    {
+      "title": "Production",
+      "duration": "3 weeks",
+      "goal": "Ship text features.",
+      "topics": [
+        "Docker",
+        "Latency & cost",
+        "Monitoring",
+        "Bias & safety",
+        "Interview practice"
+      ],
+      "resources": [],
+      "project": "Deploy your NLP model behind an API"
+    }
+  ]
+}

@@ -1,0 +1,130 @@
+{
+  "id": "forward-deployed",
+  "title": "Forward Deployed Engineer",
+  "domain": "frontier",
+  "status": "emerging",
+  "summary": "Embeds with customers to build and deploy AI solutions on site.",
+  "duration": "6–9 months",
+  "whatYouDo": [
+    "Embed with customers to solve real problems",
+    "Build and deploy AI solutions on their systems",
+    "Bring field lessons back to the product"
+  ],
+  "skills": [
+    "Python",
+    "LLMs",
+    "APIs",
+    "SQL",
+    "Cloud",
+    "Communication",
+    "Product Sense",
+    "Docker"
+  ],
+  "next": [
+    "ai-agent-engineer",
+    "product-manager",
+    "software-architect"
+  ],
+  "updated": "2026-11-15",
+  "stages": [
+    {
+      "title": "Engineering foundations",
+      "duration": "5 weeks",
+      "goal": "Be a capable full-stack engineer.",
+      "topics": [
+        "Python",
+        "HTTP & APIs",
+        "SQL",
+        "Git & GitHub",
+        "Frontend basics"
+      ],
+      "resources": [
+        {
+          "title": "The Python Tutorial",
+          "url": "https://docs.python.org/3/tutorial/"
+        }
+      ],
+      "project": "A small internal tool with a UI and API"
+    },
+    {
+      "title": "AI application skills",
+      "duration": "5 weeks",
+      "goal": "Build with LLMs.",
+      "topics": [
+        "LLMs",
+        "Prompt engineering",
+        "RAG",
+        "Tool use & agents",
+        "LLM evaluation"
+      ],
+      "resources": [
+        {
+          "title": "Claude documentation",
+          "url": "https://docs.claude.com/"
+        }
+      ],
+      "project": "A document assistant with evaluation"
+    },
+    {
+      "title": "Enterprise integration",
+      "duration": "4 weeks",
+      "goal": "Work inside customer systems.",
+      "topics": [
+        "Authentication & SSO",
+        "Data access & privacy",
+        "Integrations & ETL",
+        "Cloud",
+        "Docker"
+      ],
+      "resources": [],
+      "project": "Connect an assistant to a sample CRM securely"
+    },
+    {
+      "title": "Customer skills",
+      "duration": "4 weeks",
+      "goal": "Earn trust in the field.",
+      "topics": [
+        "Discovery calls",
+        "Scoping & estimates",
+        "Communication",
+        "Demos",
+        "Managing expectations"
+      ],
+      "resources": [],
+      "project": "A scoped proposal for a customer problem"
+    },
+    {
+      "title": "Deploy & support",
+      "duration": "3 weeks",
+      "goal": "Ship and keep it working.",
+      "topics": [
+        "Deployment",
+        "Monitoring",
+        "Change management",
+        "Training users",
+        "Feedback to product"
+      ],
+      "resources": [
+        {
+          "title": "Forward Deployed Engineer roadmap",
+          "url": "https://github.com/thecoder8890/forward-deployed-engineer-roadmap"
+        }
+      ],
+      "project": "Deploy, monitor and hand over a pilot"
+    },
+    {
+      "title": "Professional",
+      "duration": "3 weeks",
+      "goal": "Grow the role.",
+      "topics": [
+        "Product sense",
+        "Case studies",
+        "Travel & on-site practice",
+        "Portfolio",
+        "Interview practice"
+      ],
+      "resources": [],
+      "project": "A customer case study write-up"
+    }
+  ]
+}

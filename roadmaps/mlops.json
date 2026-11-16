@@ -1,0 +1,138 @@
+{
+  "id": "mlops",
+  "title": "MLOps Engineer",
+  "domain": "ai",
+  "status": "stable",
+  "summary": "Builds the platforms that train, deploy and monitor models.",
+  "duration": "7–9 months",
+  "whatYouDo": [
+    "Build platforms that train and deploy models",
+    "Automate ML pipelines",
+    "Monitor models in production"
+  ],
+  "skills": [
+    "Python",
+    "Docker",
+    "Kubernetes",
+    "Cloud",
+    "CI/CD",
+    "Monitoring",
+    "Machine Learning",
+    "Linux"
+  ],
+  "next": [
+    "platform-engineer",
+    "ml-engineer",
+    "sre"
+  ],
+  "updated": "2026-11-15",
+  "stages": [
+    {
+      "title": "Foundations",
+      "duration": "4 weeks",
+      "goal": "Code, Linux and ML basics.",
+      "topics": [
+        "Python",
+        "Linux & Bash",
+        "Git & GitHub",
+        "Machine learning basics",
+        "APIs"
+      ],
+      "resources": [
+        {
+          "title": "The Python Tutorial",
+          "url": "https://docs.python.org/3/tutorial/"
+        }
+      ],
+      "project": "Package a model as a Python library"
+    },
+    {
+      "title": "Containers & cloud",
+      "duration": "4 weeks",
+      "goal": "Run anything anywhere.",
+      "topics": [
+        "Docker",
+        "Cloud",
+        "Kubernetes",
+        "Infrastructure as code",
+        "GPUs in the cloud"
+      ],
+      "resources": [
+        {
+          "title": "Docker: Get started",
+          "url": "https://docs.docker.com/get-started/"
+        },
+        {
+          "title": "Kubernetes tutorials",
+          "url": "https://kubernetes.io/docs/tutorials/"
+        }
+      ],
+      "project": "Deploy a model container on Kubernetes"
+    },
+    {
+      "title": "Pipelines & tracking",
+      "duration": "4 weeks",
+      "goal": "Make training reproducible.",
+      "topics": [
+        "Experiment tracking",
+        "Data versioning",
+        "Workflow orchestration",
+        "Model registry",
+        "Feature stores"
+      ],
+      "resources": [
+        {
+          "title": "MLflow docs",
+          "url": "https://mlflow.org/docs/latest/"
+        },
+        {
+          "title": "MLOps Zoomcamp",
+          "url": "https://github.com/DataTalksClub/mlops-zoomcamp"
+        }
+      ],
+      "project": "A tracked, versioned training pipeline"
+    },
+    {
+      "title": "Serving",
+      "duration": "4 weeks",
+      "goal": "Serve models fast and safely.",
+      "topics": [
+        "Batch vs online inference",
+        "Model servers",
+        "Autoscaling",
+        "A/B & canary releases",
+        "LLM serving"
+      ],
+      "resources": [],
+      "project": "Canary-release a new model version"
+    },
+    {
+      "title": "Monitoring",
+      "duration": "3 weeks",
+      "goal": "Catch problems before users do.",
+      "topics": [
+        "Monitoring",
+        "Data & concept drift",
+        "Alerting",
+        "Observability",
+        "Cost tracking"
+      ],
+      "resources": [],
+      "project": "Drift dashboard with alerts"
+    },
+    {
+      "title": "Platform thinking",
+      "duration": "3 weeks",
+      "goal": "Serve many teams.",
+      "topics": [
+        "CI/CD for ML",
+        "Governance & lineage",
+        "Security",
+        "Self-service platforms",
+        "Interview practice"
+      ],
+      "resources": [],
+      "project": "A platform design doc for a team of 20 data scientists"
+    }
+  ]
+}

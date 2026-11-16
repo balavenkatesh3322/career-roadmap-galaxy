@@ -1,0 +1,123 @@
+{
+  "id": "developer-relations",
+  "title": "Developer Relations",
+  "domain": "product",
+  "status": "stable",
+  "summary": "Helps developers succeed with a product through content and community.",
+  "duration": "5–7 months",
+  "whatYouDo": [
+    "Help developers succeed with a product",
+    "Create tutorials, talks and samples",
+    "Bring developer feedback to the product team"
+  ],
+  "skills": [
+    "Communication",
+    "Writing",
+    "JavaScript",
+    "Python",
+    "APIs",
+    "Git"
+  ],
+  "next": [
+    "product-manager",
+    "technical-writer",
+    "forward-deployed"
+  ],
+  "updated": "2026-11-15",
+  "stages": [
+    {
+      "title": "Technical foundations",
+      "duration": "5 weeks",
+      "goal": "Be a credible developer.",
+      "topics": [
+        "JavaScript or Python",
+        "HTTP & APIs",
+        "Git & GitHub",
+        "Building sample apps",
+        "Debugging"
+      ],
+      "resources": [
+        {
+          "title": "MDN: Learn web development",
+          "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development"
+        }
+      ],
+      "project": "A sample app using a public API"
+    },
+    {
+      "title": "Content",
+      "duration": "4 weeks",
+      "goal": "Teach through writing and video.",
+      "topics": [
+        "Writing",
+        "Tutorials",
+        "Video & livestreams",
+        "Code samples",
+        "Content strategy"
+      ],
+      "resources": [
+        {
+          "title": "Google Technical Writing courses",
+          "url": "https://developers.google.com/tech-writing"
+        }
+      ],
+      "project": "A tutorial series of three posts"
+    },
+    {
+      "title": "Community",
+      "duration": "4 weeks",
+      "goal": "Grow a healthy community.",
+      "topics": [
+        "Community management",
+        "Forums & Discord",
+        "Open source",
+        "Events & meetups",
+        "Codes of conduct"
+      ],
+      "resources": [],
+      "project": "Run an online meetup"
+    },
+    {
+      "title": "Speaking",
+      "duration": "3 weeks",
+      "goal": "Present with confidence.",
+      "topics": [
+        "Talk proposals",
+        "Slides & live demos",
+        "Workshops",
+        "Communication",
+        "Handling Q&A"
+      ],
+      "resources": [],
+      "project": "Give a talk at a local meetup"
+    },
+    {
+      "title": "Product feedback",
+      "duration": "3 weeks",
+      "goal": "Close the loop with the product.",
+      "topics": [
+        "Developer experience",
+        "Friction logs",
+        "Feedback programs",
+        "Metrics",
+        "Working with product teams"
+      ],
+      "resources": [],
+      "project": "A friction log for a developer product"
+    },
+    {
+      "title": "Professional",
+      "duration": "3 weeks",
+      "goal": "Build your presence.",
+      "topics": [
+        "Personal brand",
+        "Portfolio",
+        "Program planning",
+        "Measuring DevRel",
+        "Interview practice"
+      ],
+      "resources": [],
+      "project": "A DevRel plan for a product launch"
+    }
+  ]
+}

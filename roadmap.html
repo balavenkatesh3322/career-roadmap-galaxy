@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Roadmap — Career Galaxy</title>
+  <meta name="description" content="Climb a career roadmap stage by stage: topics, free resources, build projects and self-checks.">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <script>try{var t=localStorage.getItem('cg-theme');document.documentElement.dataset.theme=t||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light')}catch(e){document.documentElement.dataset.theme='light'}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800;900&family=Roboto:wght@400;500;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header id="site-header"></header>
+  <main id="main" class="app">
+    <section class="scene space" id="scene" aria-label="3D roadmap climb">
+      <div class="twinkle" aria-hidden="true"></div>
+      <div class="legend" style="top:16px;bottom:auto"><span><span class="gem t-gold" style="width:12px;height:14px"></span>stage done</span><span><span class="sphere t-green s10"></span>topic learned</span><span><span class="sphere t-pearl s10"></span>to learn</span></div>
+      <nav class="stepper" id="stepper" aria-label="Stages"></nav>
+    </section>
+    <aside class="panel" aria-label="Stage details" style="flex-basis:420px">
+      <a class="ibtn" id="back-link" href="galaxy.html"><span data-icon="back"></span>Galaxy</a>
+      <div style="display:flex;align-items:center;gap:12px;margin-top:16px"><span class="sphere s28" id="r-tint"></span><h1 class="h3" id="r-title" style="font-size:26px"></h1></div>
+      <div style="display:flex;align-items:center;gap:10px;margin-top:12px"><div class="progress" style="flex:1"><i id="r-bar" style="width:0"></i></div><b id="r-pct" style="font:700 15px var(--font-display)">0%</b><span class="mono" id="r-count" style="font-size:12px;color:var(--ink-3)"></span></div>
+      <hr style="border:0;border-top:1px solid var(--line);margin:18px 0">
+      <div id="stage" aria-live="polite"></div>
+    </aside>
+  </main>
+  <script type="module" src="/src/pages/roadmap.js"></script>
+</body>
+</html>

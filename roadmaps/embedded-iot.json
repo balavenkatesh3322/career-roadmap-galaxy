@@ -1,0 +1,130 @@
+{
+  "id": "embedded-iot",
+  "title": "Embedded & IoT Engineer",
+  "domain": "software",
+  "status": "stable",
+  "summary": "Writes software for microcontrollers and connected devices.",
+  "duration": "8–10 months",
+  "whatYouDo": [
+    "Write firmware for microcontrollers",
+    "Talk to sensors and actuators",
+    "Connect devices securely"
+  ],
+  "skills": [
+    "C/C++",
+    "Hardware",
+    "Linux",
+    "Networking",
+    "Git"
+  ],
+  "next": [
+    "robotics",
+    "network-engineer"
+  ],
+  "updated": "2026-11-15",
+  "stages": [
+    {
+      "title": "C & electronics",
+      "duration": "6 weeks",
+      "goal": "Write C for small machines and read a circuit.",
+      "topics": [
+        "C programming",
+        "Pointers & memory",
+        "Bitwise operations",
+        "Ohm’s law & basic circuits",
+        "Reading datasheets"
+      ],
+      "resources": [
+        {
+          "title": "Arduino docs",
+          "url": "https://docs.arduino.cc/"
+        }
+      ],
+      "project": "Blink and dim LEDs with PWM"
+    },
+    {
+      "title": "Microcontrollers",
+      "duration": "5 weeks",
+      "goal": "Program MCUs at register and HAL level.",
+      "topics": [
+        "GPIO",
+        "Timers & interrupts",
+        "UART, I2C, SPI",
+        "ADC",
+        "Debugging with a probe"
+      ],
+      "resources": [],
+      "project": "A sensor logger over I2C"
+    },
+    {
+      "title": "Real-time systems",
+      "duration": "4 weeks",
+      "goal": "Schedule tasks with an RTOS.",
+      "topics": [
+        "RTOS concepts",
+        "FreeRTOS or Zephyr",
+        "Concurrency",
+        "Low-power design",
+        "Watchdogs"
+      ],
+      "resources": [
+        {
+          "title": "FreeRTOS docs",
+          "url": "https://www.freertos.org/Documentation/00-Overview"
+        },
+        {
+          "title": "Zephyr docs",
+          "url": "https://docs.zephyrproject.org/latest/"
+        }
+      ],
+      "project": "A multi-task data logger on an RTOS"
+    },
+    {
+      "title": "Connectivity",
+      "duration": "4 weeks",
+      "goal": "Get devices online safely.",
+      "topics": [
+        "Networking",
+        "Wi-Fi & BLE",
+        "MQTT",
+        "OTA updates",
+        "Device security"
+      ],
+      "resources": [],
+      "project": "Stream sensor data to a dashboard over MQTT"
+    },
+    {
+      "title": "Embedded Linux",
+      "duration": "4 weeks",
+      "goal": "Work on bigger boards.",
+      "topics": [
+        "Linux",
+        "Cross-compiling",
+        "Device trees",
+        "Yocto or Buildroot basics",
+        "Drivers intro"
+      ],
+      "resources": [
+        {
+          "title": "Raspberry Pi docs",
+          "url": "https://www.raspberrypi.com/documentation/"
+        }
+      ],
+      "project": "A Raspberry Pi gateway service"
+    },
+    {
+      "title": "Professional",
+      "duration": "3 weeks",
+      "goal": "Quality and portfolio.",
+      "topics": [
+        "Unit testing firmware",
+        "Code standards (MISRA)",
+        "Hardware bring-up",
+        "Portfolio",
+        "Interview practice"
+      ],
+      "resources": [],
+      "project": "Document a full device project end to end"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Roadmap library — Career Galaxy</title>
+  <meta name="description" content="72 community roadmaps, readable inside Career Galaxy and mapped to the careers they help you climb.">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <script>try{var t=localStorage.getItem('cg-theme');document.documentElement.dataset.theme=t||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light')}catch(e){document.documentElement.dataset.theme='light'}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800;900&family=Roboto:wght@400;500;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header id="site-header"></header>
+  <main id="main" class="wrap" style="padding-top:40px;padding-bottom:60px">
+    <p class="eyebrow">Roadmap library</p>
+    <div style="display:flex;flex-wrap:wrap;gap:24px;align-items:flex-end;justify-content:space-between">
+      <h1 class="big" style="font-size:clamp(2.2rem,1.4rem + 3vw,3.6rem);max-width:780px" id="lib-title">Community roadmaps, mapped onto the galaxy</h1>
+      <button type="button" class="btn btn-p plain btn-sm" id="open-add"><span data-icon="plus"></span>Add a roadmap</button>
+    </div>
+    <form class="card" id="add-form" hidden style="margin-top:22px;padding:22px;border-color:var(--accent)">
+      <div style="display:flex;justify-content:space-between;align-items:center;gap:12px"><h2 class="h3" style="font-size:22px">Add a roadmap in one step</h2><button type="button" class="ibtn icon" id="close-add" aria-label="Close">✕</button></div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-top:16px">
+        <label class="fl">Link<input class="in" name="url" type="url" required placeholder="https://github.com/…"></label>
+        <label class="fl">Title<input class="in" name="title" required placeholder="Context Engineering Roadmap"></label>
+        <label class="fl">Section<select class="in" name="section" id="add-section"></select></label>
+        <label class="fl">Helps you climb<select class="in" name="role" id="add-role"></select></label>
+      </div>
+      <div style="display:flex;flex-wrap:wrap;align-items:center;gap:14px;margin-top:16px"><button type="submit" class="btn btn-p plain btn-sm">Add to library</button><span class="muted" style="font-size:14px">It shows here right away with a NEW badge, and opens a pre-filled GitHub issue so it can join the shared library.</span></div>
+    </form>
+    <div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:26px" role="group" aria-label="Section" id="f-section"></div>
+    <div style="display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-top:12px">
+      <span class="cat" style="margin-right:6px">Updated</span><span id="f-fresh" style="display:contents"></span>
+      <span class="spacer"></span><span class="cat">Career</span><span id="f-role" style="display:contents"></span>
+    </div>
+    <p class="mono" id="shown" style="margin:20px 0 14px;font-size:13px;letter-spacing:.1em;color:var(--ink-3)" aria-live="polite"></p>
+    <div class="lib-grid" id="grid"></div>
+  </main>
+  <div id="drawer-host"></div>
+  <footer id="site-footer"></footer>
+  <script type="module" src="/src/pages/library.js"></script>
+</body>
+</html>

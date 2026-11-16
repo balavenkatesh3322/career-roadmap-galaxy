@@ -1,0 +1,135 @@
+{
+  "id": "mobile",
+  "title": "Mobile Developer",
+  "domain": "software",
+  "status": "stable",
+  "summary": "Builds iOS and Android apps, native or cross-platform.",
+  "duration": "6–8 months",
+  "whatYouDo": [
+    "Build apps for iOS and Android",
+    "Handle offline, performance and device features",
+    "Release through the app stores"
+  ],
+  "skills": [
+    "Mobile",
+    "JavaScript",
+    "APIs",
+    "Git",
+    "Testing",
+    "HTML & CSS"
+  ],
+  "next": [
+    "full-stack",
+    "ar-vr",
+    "game-dev"
+  ],
+  "updated": "2026-11-15",
+  "stages": [
+    {
+      "title": "Programming foundations",
+      "duration": "4 weeks",
+      "goal": "Learn a mobile language well.",
+      "topics": [
+        "Kotlin or Swift (or Dart)",
+        "OOP & functional basics",
+        "Git & GitHub",
+        "Debugging",
+        "Data structures"
+      ],
+      "resources": [
+        {
+          "title": "Kotlin docs",
+          "url": "https://kotlinlang.org/docs/home.html"
+        },
+        {
+          "title": "Swift: The Basics",
+          "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/thebasics/"
+        }
+      ],
+      "project": "A console quiz game"
+    },
+    {
+      "title": "UI on device",
+      "duration": "5 weeks",
+      "goal": "Build screens with a modern declarative UI toolkit.",
+      "topics": [
+        "Jetpack Compose or SwiftUI or Flutter",
+        "Layouts & navigation",
+        "State management",
+        "Lists & images",
+        "Accessibility"
+      ],
+      "resources": [
+        {
+          "title": "Android Developers: Courses",
+          "url": "https://developer.android.com/courses"
+        },
+        {
+          "title": "SwiftUI tutorials",
+          "url": "https://developer.apple.com/tutorials/swiftui"
+        },
+        {
+          "title": "Flutter docs",
+          "url": "https://docs.flutter.dev/"
+        }
+      ],
+      "project": "A multi-screen habit tracker"
+    },
+    {
+      "title": "Data & networking",
+      "duration": "4 weeks",
+      "goal": "Fetch, cache and store data reliably.",
+      "topics": [
+        "HTTP & APIs",
+        "JSON parsing",
+        "Local database",
+        "Offline first",
+        "Background work"
+      ],
+      "resources": [],
+      "project": "Sync the habit tracker with a backend"
+    },
+    {
+      "title": "Device features",
+      "duration": "3 weeks",
+      "goal": "Use what makes phones special.",
+      "topics": [
+        "Permissions",
+        "Notifications",
+        "Camera & sensors",
+        "Location",
+        "Deep links"
+      ],
+      "resources": [],
+      "project": "Add reminders and a home-screen widget"
+    },
+    {
+      "title": "Quality & release",
+      "duration": "3–4 weeks",
+      "goal": "Test, profile and publish.",
+      "topics": [
+        "Unit & UI testing",
+        "Performance profiling",
+        "Crash reporting",
+        "App store release",
+        "CI for mobile"
+      ],
+      "resources": [],
+      "project": "Publish to a store or a public beta"
+    },
+    {
+      "title": "Grow",
+      "duration": "3 weeks",
+      "goal": "Cross-platform depth and a portfolio.",
+      "topics": [
+        "Architecture patterns",
+        "Cross-platform trade-offs",
+        "Analytics",
+        "Portfolio",
+        "Interview practice"
+      ],
+      "resources": [],
+      "project": "A case study of your published app"
+    }
+  ]
+}

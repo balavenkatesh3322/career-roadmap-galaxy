@@ -1,0 +1,137 @@
+{
+  "id": "penetration-tester",
+  "title": "Penetration Tester",
+  "domain": "security",
+  "status": "stable",
+  "summary": "Breaks into systems, with permission, to find weaknesses first.",
+  "duration": "8–10 months",
+  "whatYouDo": [
+    "Break into systems with permission",
+    "Find weaknesses before attackers do",
+    "Write clear, actionable reports"
+  ],
+  "skills": [
+    "Networking",
+    "Linux",
+    "Security",
+    "Python",
+    "APIs",
+    "Writing"
+  ],
+  "next": [
+    "ai-red-teaming",
+    "devsecops",
+    "soc-analyst"
+  ],
+  "updated": "2026-11-15",
+  "stages": [
+    {
+      "title": "Foundations",
+      "duration": "5 weeks",
+      "goal": "Networks, Linux and scripting.",
+      "topics": [
+        "Networking",
+        "Linux",
+        "Windows basics",
+        "Python",
+        "How the web works"
+      ],
+      "resources": [
+        {
+          "title": "OverTheWire wargames",
+          "url": "https://overthewire.org/wargames/"
+        }
+      ],
+      "project": "Set up a legal practice lab"
+    },
+    {
+      "title": "Recon & scanning",
+      "duration": "3 weeks",
+      "goal": "Map a target.",
+      "topics": [
+        "OSINT",
+        "Port scanning",
+        "Service enumeration",
+        "Vulnerability scanning",
+        "Rules of engagement"
+      ],
+      "resources": [],
+      "project": "Full recon of a practice lab"
+    },
+    {
+      "title": "Web application testing",
+      "duration": "5 weeks",
+      "goal": "Find web vulnerabilities.",
+      "topics": [
+        "OWASP Top 10",
+        "Burp Suite",
+        "Injection",
+        "Authentication flaws",
+        "APIs testing"
+      ],
+      "resources": [
+        {
+          "title": "PortSwigger Web Security Academy",
+          "url": "https://portswigger.net/web-security"
+        },
+        {
+          "title": "OWASP Top 10",
+          "url": "https://owasp.org/www-project-top-ten/"
+        }
+      ],
+      "project": "Complete the core Web Security Academy labs"
+    },
+    {
+      "title": "Exploitation",
+      "duration": "5 weeks",
+      "goal": "Gain and expand access.",
+      "topics": [
+        "Exploitation basics",
+        "Privilege escalation",
+        "Active Directory attacks",
+        "Password attacks",
+        "Pivoting"
+      ],
+      "resources": [
+        {
+          "title": "Hack The Box",
+          "url": "https://www.hackthebox.com/"
+        }
+      ],
+      "project": "Root ten practice machines"
+    },
+    {
+      "title": "Reporting",
+      "duration": "2 weeks",
+      "goal": "Make findings useful.",
+      "topics": [
+        "Writing",
+        "Severity scoring (CVSS)",
+        "Evidence & reproduction",
+        "Remediation advice",
+        "Ethics & legality"
+      ],
+      "resources": [],
+      "project": "A professional pentest report for a lab"
+    },
+    {
+      "title": "Professional",
+      "duration": "4 weeks",
+      "goal": "Specialise and certify.",
+      "topics": [
+        "Certifications (OSCP, PNPT)",
+        "Cloud pentesting",
+        "Bug bounties",
+        "Portfolio",
+        "Interview practice"
+      ],
+      "resources": [
+        {
+          "title": "TryHackMe",
+          "url": "https://tryhackme.com/"
+        }
+      ],
+      "project": "A disclosed bug bounty or detailed lab write-ups"
+    }
+  ]
+}

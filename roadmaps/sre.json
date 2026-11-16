@@ -1,0 +1,129 @@
+{
+  "id": "sre",
+  "title": "Site Reliability Engineer",
+  "domain": "infra",
+  "status": "stable",
+  "summary": "Keeps production fast and available using software and SLOs.",
+  "duration": "8–10 months",
+  "whatYouDo": [
+    "Keep production fast and available",
+    "Define SLOs and error budgets",
+    "Lead incident response and postmortems"
+  ],
+  "skills": [
+    "Linux",
+    "Monitoring",
+    "Kubernetes",
+    "Cloud",
+    "Python",
+    "Networking",
+    "System Design",
+    "CI/CD"
+  ],
+  "next": [
+    "platform-engineer",
+    "software-architect"
+  ],
+  "updated": "2026-11-15",
+  "stages": [
+    {
+      "title": "Systems foundations",
+      "duration": "5 weeks",
+      "goal": "Know how computers and networks behave.",
+      "topics": [
+        "Linux",
+        "Networking",
+        "Operating systems internals",
+        "Python or Go",
+        "Git & GitHub"
+      ],
+      "resources": [
+        {
+          "title": "Linux Performance (Brendan Gregg)",
+          "url": "https://www.brendangregg.com/linuxperf.html"
+        }
+      ],
+      "project": "Debug a slow server with Linux tools"
+    },
+    {
+      "title": "Containers & orchestration",
+      "duration": "4 weeks",
+      "goal": "Run services at scale.",
+      "topics": [
+        "Docker",
+        "Kubernetes",
+        "Service discovery",
+        "Autoscaling",
+        "Cloud"
+      ],
+      "resources": [
+        {
+          "title": "Kubernetes tutorials",
+          "url": "https://kubernetes.io/docs/tutorials/"
+        }
+      ],
+      "project": "Run a resilient service on Kubernetes"
+    },
+    {
+      "title": "Observability",
+      "duration": "4 weeks",
+      "goal": "Measure what users feel.",
+      "topics": [
+        "Monitoring",
+        "SLIs & SLOs",
+        "Error budgets",
+        "Logging & tracing",
+        "Alert design"
+      ],
+      "resources": [
+        {
+          "title": "Google SRE books",
+          "url": "https://sre.google/books/"
+        }
+      ],
+      "project": "SLO dashboard with burn-rate alerts"
+    },
+    {
+      "title": "Reliability engineering",
+      "duration": "4 weeks",
+      "goal": "Design for failure.",
+      "topics": [
+        "Redundancy & failover",
+        "Load shedding & rate limiting",
+        "Capacity planning",
+        "Chaos engineering",
+        "Disaster recovery"
+      ],
+      "resources": [],
+      "project": "Run a game day and fix what breaks"
+    },
+    {
+      "title": "Incidents",
+      "duration": "3 weeks",
+      "goal": "Respond calmly and learn.",
+      "topics": [
+        "Incident command",
+        "On-call practices",
+        "Blameless postmortems",
+        "Runbooks",
+        "Toil reduction"
+      ],
+      "resources": [],
+      "project": "Write a postmortem for a simulated outage"
+    },
+    {
+      "title": "Automation & design",
+      "duration": "4 weeks",
+      "goal": "Engineer reliability in.",
+      "topics": [
+        "CI/CD",
+        "Infrastructure as code",
+        "System design",
+        "Performance engineering",
+        "Interview practice"
+      ],
+      "resources": [],
+      "project": "Automate a manual runbook end to end"
+    }
+  ]
+}

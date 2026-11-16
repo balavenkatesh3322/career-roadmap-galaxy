@@ -1,0 +1,650 @@
+[
+ {
+  "title": "C++ Developer Roadmap",
+  "section": "Languages",
+  "year": 2024,
+  "format": "Repo",
+  "url": "https://github.com/salmer/CppDeveloperRoadmap",
+  "desc": "Articles, visual maps and resources for C++.",
+  "role": "backend"
+ },
+ {
+  "title": "Go Developer Roadmap",
+  "section": "Languages",
+  "year": 2020,
+  "format": "Repo",
+  "url": "https://github.com/darius-khll/golang-developer-roadmap",
+  "desc": "Language, tooling and backend topics.",
+  "role": "backend"
+ },
+ {
+  "title": "Java Developer Roadmap",
+  "section": "Languages",
+  "year": 2026,
+  "format": "Repo",
+  "url": "https://github.com/s4kibs4mi/java-developer-roadmap",
+  "desc": "Current visual plan and practice topics.",
+  "role": "backend"
+ },
+ {
+  "title": "Node.js Developer Roadmap",
+  "section": "Languages",
+  "year": 2019,
+  "format": "Repo",
+  "url": "https://github.com/aliyr/Nodejs-Developer-Roadmap",
+  "desc": "Fundamentals, tooling and backend concepts.",
+  "role": "backend"
+ },
+ {
+  "title": "PHP Developer Roadmap",
+  "section": "Languages",
+  "year": 2021,
+  "format": "Repo",
+  "url": "https://github.com/thecodeholic/php-developer-roadmap",
+  "desc": "Visual map with companion videos.",
+  "role": "backend"
+ },
+ {
+  "title": "Rust Web Developer Roadmap",
+  "section": "Languages",
+  "year": 2022,
+  "format": "Repo",
+  "url": "https://github.com/anshulrgoyal/rust-web-developer-roadmap",
+  "desc": "Basics, frameworks and deployment.",
+  "role": "backend"
+ },
+ {
+  "title": "Angular Developer Roadmap",
+  "section": "Web",
+  "year": 2018,
+  "format": "Repo",
+  "url": "https://github.com/sulco/angular-developer-roadmap",
+  "desc": "Core concepts, RxJS, state, testing.",
+  "role": "frontend"
+ },
+ {
+  "title": "Angular Developer Roadmap (Alt)",
+  "section": "Web",
+  "year": 2024,
+  "format": "Repo",
+  "url": "https://github.com/saifaustcse/angular-developer-roadmap",
+  "desc": "What to learn next across Angular.",
+  "role": "frontend"
+ },
+ {
+  "title": "ASP.NET Core Developer Roadmap",
+  "section": "Web",
+  "year": 2026,
+  "format": "Repo",
+  "url": "https://github.com/MoienTajik/AspNetCore-Developer-Roadmap",
+  "desc": "Maintained visual path, multilingual.",
+  "role": "backend"
+ },
+ {
+  "title": "Developer Roadmap",
+  "section": "Web",
+  "year": 2022,
+  "format": "Repo",
+  "url": "https://github.com/nilbuild/developer-roadmap",
+  "desc": "Interactive roadmaps and guides.",
+  "role": "full-stack"
+ },
+ {
+  "title": "DevRoadmaps",
+  "section": "Web",
+  "year": 2026,
+  "format": "Repo",
+  "url": "https://github.com/rudra496/devroadmaps",
+  "desc": "17 paths, 800+ topics, offline PWA.",
+  "role": "full-stack"
+ },
+ {
+  "title": "Frontend Developer Roadmap",
+  "section": "Web",
+  "year": 2025,
+  "format": "Repo",
+  "url": "https://github.com/Yousha/Frontend-Developer-Roadmap",
+  "desc": "Core web tech, frameworks, tooling.",
+  "role": "frontend"
+ },
+ {
+  "title": "Frontend Development Roadmap",
+  "section": "Web",
+  "year": 2024,
+  "format": "PDF",
+  "url": "https://github.com/sadanandpai/frontend-learning-kit/blob/main/public/2024_FE_roadmap.pdf",
+  "desc": "Interview checklist as a PDF.",
+  "role": "frontend"
+ },
+ {
+  "title": "Laravel Developer Roadmap",
+  "section": "Web",
+  "year": 2024,
+  "format": "Repo",
+  "url": "https://github.com/Hasnayeen/laravel-developer-roadmap",
+  "desc": "Prerequisites, core and ecosystem.",
+  "role": "backend"
+ },
+ {
+  "title": "React Developer Roadmap",
+  "section": "Web",
+  "year": 2019,
+  "format": "Repo",
+  "url": "https://github.com/adam-golab/react-developer-roadmap",
+  "desc": "React and its surrounding ecosystem.",
+  "role": "frontend"
+ },
+ {
+  "title": "Vue Developer Roadmap",
+  "section": "Web",
+  "year": 2019,
+  "format": "Repo",
+  "url": "https://github.com/flaviocopes/vue-developer-roadmap",
+  "desc": "A well-rounded Vue skill set.",
+  "role": "frontend"
+ },
+ {
+  "title": "Android Developer Roadmap",
+  "section": "Mobile",
+  "year": 2020,
+  "format": "Repo",
+  "url": "https://github.com/mobile-roadmap/android-developer-roadmap",
+  "desc": "Visual maps and study notes.",
+  "role": "mobile"
+ },
+ {
+  "title": "Android Developer Roadmap (Alt)",
+  "section": "Mobile",
+  "year": null,
+  "format": "Repo",
+  "url": "https://github.com/skydoves/android-developer-roadmap",
+  "desc": "Paths across the Android ecosystem.",
+  "role": "mobile"
+ },
+ {
+  "title": "Flutter Developer Roadmap",
+  "section": "Mobile",
+  "year": 2024,
+  "format": "Repo",
+  "url": "https://github.com/olexale/flutter_roadmap",
+  "desc": "App development, tooling, workflow.",
+  "role": "mobile"
+ },
+ {
+  "title": "iOS Developer Roadmap",
+  "section": "Mobile",
+  "year": 2018,
+  "format": "Repo",
+  "url": "https://github.com/BohdanOrlov/iOS-Developer-Roadmap",
+  "desc": "Main iOS topics and tools.",
+  "role": "mobile"
+ },
+ {
+  "title": "Cloud Engineer Roadmap",
+  "section": "Infrastructure",
+  "year": null,
+  "format": "Website",
+  "url": "https://ciphemicacademia.in/roadmaps/cloud-engineer/",
+  "desc": "Project-based AWS path, IaC to DR.",
+  "role": "cloud-engineer"
+ },
+ {
+  "title": "DevOps Roadmap",
+  "section": "Infrastructure",
+  "year": 2026,
+  "format": "Repo",
+  "url": "https://github.com/milanm/DevOps-Roadmap",
+  "desc": "Git, Linux, containers, CI/CD, cloud.",
+  "role": "devops"
+ },
+ {
+  "title": "Platform Engineering Roadmap",
+  "section": "Infrastructure",
+  "year": null,
+  "format": "Website",
+  "url": "https://github.com/mbianchidev/platform-engineering-roadmap",
+  "desc": "Interactive site backed by a repo.",
+  "role": "platform-engineer"
+ },
+ {
+  "title": "Wyrcan Engineering Roadmap",
+  "section": "Infrastructure",
+  "year": 2026,
+  "format": "Repo",
+  "url": "https://github.com/Wyrcan-io/roadmap",
+  "desc": "12 stages from systems to MLOps.",
+  "role": "devops"
+ },
+ {
+  "title": "Game Developer Roadmap",
+  "section": "Game dev",
+  "year": 2022,
+  "format": "Repo",
+  "url": "https://github.com/utilForever/game-developer-roadmap",
+  "desc": "Foundations, tools and specialties.",
+  "role": "game-dev"
+ },
+ {
+  "title": "Game Programming Roadmap",
+  "section": "Game dev",
+  "year": 2019,
+  "format": "Repo",
+  "url": "https://github.com/miloyip/game-programmer",
+  "desc": "Core engineering for game programmers.",
+  "role": "game-dev"
+ },
+ {
+  "title": "Agent Engineering Roadmap",
+  "section": "AI / Data",
+  "year": null,
+  "format": "Repo",
+  "url": "https://github.com/audi0417/agent-engineering-roadmap",
+  "desc": "MCP, memory, RAG, evals, safety.",
+  "role": "ai-agent-engineer"
+ },
+ {
+  "title": "Agent Learning",
+  "section": "AI / Data",
+  "year": null,
+  "format": "Repo",
+  "url": "https://github.com/Haozhe-Xing/agent_learning",
+  "desc": "Agents, tools, MCP, agentic RL.",
+  "role": "ai-agent-engineer"
+ },
+ {
+  "title": "Agentic AI Roadmap",
+  "section": "AI / Data",
+  "year": 2026,
+  "format": "Repo",
+  "url": "https://github.com/AdilShamim8/Agentic-AI-Roadmap-with-Notes-and-Projects",
+  "desc": "LangGraph systems with projects.",
+  "role": "ai-agent-engineer"
+ },
+ {
+  "title": "Agentic Engineering Handbook",
+  "section": "AI / Data",
+  "year": null,
+  "format": "Repo",
+  "url": "https://github.com/keyuchen21/agentic-engineering-handbook",
+  "desc": "Harnesses, evals, coding agents.",
+  "role": "ai-agent-engineer"
+ },
+ {
+  "title": "AI Engineer Roadmap",
+  "section": "AI / Data",
+  "year": null,
+  "format": "Repo",
+  "url": "https://github.com/dswh/ai-engineer-roadmap",
+  "desc": "LLM apps, RAG, agents, LLMOps.",
+  "role": "gen-ai-engineer"
+ },
+ {
+  "title": "AI Expert Roadmap",
+  "section": "AI / Data",
+  "year": 2022,
+  "format": "Repo",
+  "url": "https://github.com/AMAI-GmbH/AI-Expert-Roadmap",
+  "desc": "Theory, tools and hands-on practice.",
+  "role": "ml-engineer"
+ },
+ {
+  "title": "AI for Beginners",
+  "section": "AI / Data",
+  "year": null,
+  "format": "Course",
+  "url": "https://github.com/microsoft/AI-For-Beginners",
+  "desc": "12 weeks, 24 lessons, labs.",
+  "role": "ml-engineer"
+ },
+ {
+  "title": "AI, Governance & GTM Roadmaps",
+  "section": "AI / Data",
+  "year": 2026,
+  "format": "Repo",
+  "url": "https://github.com/Hardik-369/ROADMAP",
+  "desc": "AI Engineer, Governance, GTM.",
+  "role": "gen-ai-engineer"
+ },
+ {
+  "title": "Data Analyst Roadmap",
+  "section": "AI / Data",
+  "year": null,
+  "format": "Repo",
+  "url": "https://github.com/mtahiraslan/data-analyst-roadmap",
+  "desc": "Stats, Excel, SQL, BI, Python.",
+  "role": "data-analyst"
+ },
+ {
+  "title": "Data Engineer Roadmap",
+  "section": "AI / Data",
+  "year": 2021,
+  "format": "Repo",
+  "url": "https://github.com/datastacktv/data-engineer-roadmap",
+  "desc": "Study guide for the modern data stack.",
+  "role": "data-engineer"
+ },
+ {
+  "title": "Data Science Roadmap",
+  "section": "AI / Data",
+  "year": 2020,
+  "format": "Repo",
+  "url": "https://github.com/boringPpl/data-science-roadmap",
+  "desc": "Paths used across big tech.",
+  "role": "data-scientist"
+ },
+ {
+  "title": "Data Scientist Roadmap",
+  "section": "AI / Data",
+  "year": 2024,
+  "format": "Repo",
+  "url": "https://github.com/MrMimic/data-scientist-roadmap",
+  "desc": "Tutorials for a visual roadmap.",
+  "role": "data-scientist"
+ },
+ {
+  "title": "Deep Learning Reading Roadmap",
+  "section": "AI / Data",
+  "year": 2022,
+  "format": "Repo",
+  "url": "https://github.com/floodsung/Deep-Learning-Papers-Reading-Roadmap",
+  "desc": "Influential papers, in order.",
+  "role": "ai-research-scientist"
+ },
+ {
+  "title": "Deep Learning Roadmap",
+  "section": "AI / Data",
+  "year": 2020,
+  "format": "Repo",
+  "url": "https://github.com/instillai/deep-learning-roadmap",
+  "desc": "Curated references and explanations.",
+  "role": "ml-engineer"
+ },
+ {
+  "title": "Forward Deployed Engineer Roadmap",
+  "section": "AI / Data",
+  "year": 2026,
+  "format": "Repo",
+  "url": "https://github.com/thecoder8890/forward-deployed-engineer-roadmap",
+  "desc": "Build and deploy with customers.",
+  "role": "forward-deployed"
+ },
+ {
+  "title": "Hugging Face Agents Course",
+  "section": "AI / Data",
+  "year": null,
+  "format": "Course",
+  "url": "https://huggingface.co/learn/agents-course/unit0/introduction",
+  "desc": "smolagents, LangGraph, evals.",
+  "role": "ai-agent-engineer"
+ },
+ {
+  "title": "LLM Course",
+  "section": "AI / Data",
+  "year": null,
+  "format": "Repo",
+  "url": "https://github.com/mlabonne/llm-course",
+  "desc": "Roadmap with Colab notebooks.",
+  "role": "gen-ai-engineer"
+ },
+ {
+  "title": "LLM Systems Engineering Roadmap",
+  "section": "AI / Data",
+  "year": null,
+  "format": "Repo",
+  "url": "https://github.com/h9-tec/llm-systems-engineering-roadmap",
+  "desc": "Inference, RAG, agents, production.",
+  "role": "gen-ai-engineer"
+ },
+ {
+  "title": "Machine Learning Roadmap",
+  "section": "AI / Data",
+  "year": 2026,
+  "format": "Article",
+  "url": "https://quiddityml.com/blog/how-to-learn-machine-learning-roadmap/",
+  "desc": "Python, maths, PyTorch, study times.",
+  "role": "ml-engineer"
+ },
+ {
+  "title": "NLP Roadmap",
+  "section": "AI / Data",
+  "year": 2019,
+  "format": "Repo",
+  "url": "https://github.com/graykode/nlp-roadmap",
+  "desc": "Mind maps and keywords.",
+  "role": "nlp-engineer"
+ },
+ {
+  "title": "Cybersecurity Skills & Career Roadmap",
+  "section": "Security",
+  "year": null,
+  "format": "Repo",
+  "url": "https://github.com/jassics/cybersecurity-roadmap",
+  "desc": "Web, network, cloud, DevSecOps.",
+  "role": "soc-analyst"
+ },
+ {
+  "title": "Awesome QA Roadmap",
+  "section": "Misc",
+  "year": 2021,
+  "format": "Repo",
+  "url": "https://github.com/fityanos/awesome-quality-assurance-roadmap",
+  "desc": "QA and test automation.",
+  "role": "qa-sdet"
+ },
+ {
+  "title": "DFIR Specialist Roadmap",
+  "section": "Misc",
+  "year": 2025,
+  "format": "Repo",
+  "url": "https://github.com/Yousha/DFIR-Specialist-Roadmap",
+  "desc": "Forensics and incident response.",
+  "role": "soc-analyst"
+ },
+ {
+  "title": "Embedded Systems Roadmap",
+  "section": "Misc",
+  "year": null,
+  "format": "Repo",
+  "url": "https://github.com/m3y54m/Embedded-Engineering-Roadmap",
+  "desc": "From beginner to practitioner.",
+  "role": "embedded-iot"
+ },
+ {
+  "title": "FPGA / ASIC Roadmap",
+  "section": "Misc",
+  "year": null,
+  "format": "Repo",
+  "url": "https://github.com/m3y54m/FPGA-ASIC-Roadmap",
+  "desc": "Digital hardware and chip design.",
+  "role": "embedded-iot"
+ },
+ {
+  "title": "Hacker Roadmap",
+  "section": "Misc",
+  "year": 2023,
+  "format": "Archived",
+  "url": "https://github.com/Sundowndev/hacker-roadmap",
+  "desc": "Beginner pentesting tools and refs.",
+  "role": "penetration-tester"
+ },
+ {
+  "title": "Knowledge Navigator",
+  "section": "Misc",
+  "year": 2026,
+  "format": "Website",
+  "url": "https://github.com/MohamedMuneerM/knowledge-navigator",
+  "desc": "Goal-based maps across STEM.",
+  "role": null
+ },
+ {
+  "title": "Mathematics Roadmap",
+  "section": "Misc",
+  "year": null,
+  "format": "Repo",
+  "url": "https://github.com/TalalAlrawajfeh/mathematics-roadmap",
+  "desc": "Foundations to advanced maths.",
+  "role": "ai-research-scientist"
+ },
+ {
+  "title": "Software Architect Roadmap",
+  "section": "Misc",
+  "year": 2018,
+  "format": "Repo",
+  "url": "https://github.com/AlaaAttya/software-architect-roadmap",
+  "desc": "From developer to architect.",
+  "role": "software-architect"
+ },
+ {
+  "title": "Software Design & Architecture",
+  "section": "Misc",
+  "year": 2019,
+  "format": "Repo",
+  "url": "https://github.com/stemmlerjs/software-design-and-architecture-roadmap",
+  "desc": "Design for generalist developers.",
+  "role": "software-architect"
+ },
+ {
+  "title": "System Design Roadmap",
+  "section": "Misc",
+  "year": 2024,
+  "format": "Repo",
+  "url": "https://github.com/moshafiei/system-design-master-plan",
+  "desc": "Large-scale design topics.",
+  "role": "software-architect"
+ },
+ {
+  "title": "UI/UX Designer Roadmap",
+  "section": "Misc",
+  "year": 2017,
+  "format": "Repo",
+  "url": "https://github.com/togiberlin/ui-ux-designer-roadmap",
+  "desc": "Product design skills and disciplines.",
+  "role": "ux-ui-designer"
+ },
+ {
+  "title": "University Degree Roadmap",
+  "section": "Misc",
+  "year": 2024,
+  "format": "Repo",
+  "url": "https://github.com/IlIllII/collecobrary",
+  "desc": "University-level course material.",
+  "role": null
+ },
+ {
+  "title": "TutorialSearch",
+  "section": "Tools",
+  "year": null,
+  "format": "Tool",
+  "url": "https://tutorialsearch.io/?q=roadmaps",
+  "desc": "Search 50,000+ tutorials.",
+  "role": null
+ },
+ {
+  "title": "Become a Better Android Developer",
+  "section": "Articles & books",
+  "year": 2018,
+  "format": "Article",
+  "url": "https://medium.com/mindorks/a-roadmap-to-become-a-better-android-developer-3038cf7f8c8d",
+  "desc": "Step-by-step Android path.",
+  "role": "mobile"
+ },
+ {
+  "title": "AI Agents in Depth",
+  "section": "Articles & books",
+  "year": 2025,
+  "format": "Book",
+  "url": "https://github.com/bojieli/ai-agent-book",
+  "desc": "Context, tools, evals, multi-agent.",
+  "role": "ai-agent-engineer"
+ },
+ {
+  "title": "Backend Developer Roadmap",
+  "section": "Articles & books",
+  "year": 2025,
+  "format": "Article",
+  "url": "https://www.geeksforgeeks.org/websites-apps/backend-developer-roadmap/",
+  "desc": "Web basics to frameworks.",
+  "role": "backend"
+ },
+ {
+  "title": "Building Effective Agents",
+  "section": "Articles & books",
+  "year": 2024,
+  "format": "Article",
+  "url": "https://www.anthropic.com/engineering/building-effective-agents",
+  "desc": "Workflow and agent patterns.",
+  "role": "ai-agent-engineer"
+ },
+ {
+  "title": "Cybersecurity Roadmap",
+  "section": "Articles & books",
+  "year": 2026,
+  "format": "Article",
+  "url": "https://www.geeksforgeeks.org/cybersecurity/cybersecurity-roadmap/",
+  "desc": "Career paths and a staged plan.",
+  "role": "soc-analyst"
+ },
+ {
+  "title": "Data Analytics Roadmap",
+  "section": "Articles & books",
+  "year": 2025,
+  "format": "Article",
+  "url": "https://www.appliedaicourse.com/blog/data-analytics-roadmap/",
+  "desc": "Skills and tooling.",
+  "role": "data-analyst"
+ },
+ {
+  "title": "Effective Context Engineering",
+  "section": "Articles & books",
+  "year": 2025,
+  "format": "Article",
+  "url": "https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents",
+  "desc": "Context for long-running agents.",
+  "role": "ai-agent-engineer"
+ },
+ {
+  "title": "Frontend Framework Interview Prep",
+  "section": "Articles & books",
+  "year": 2026,
+  "format": "Article",
+  "url": "https://frontendatlas.com/guides/framework-prep",
+  "desc": "7, 14 and 30-day plans.",
+  "role": "frontend"
+ },
+ {
+  "title": "Full Stack Developer Roadmap",
+  "section": "Articles & books",
+  "year": 2026,
+  "format": "Article",
+  "url": "https://www.geeksforgeeks.org/blogs/full-stack-developer-roadmap/",
+  "desc": "Frontend, backend, data, projects.",
+  "role": "full-stack"
+ },
+ {
+  "title": "Java Full Stack Developer Roadmap",
+  "section": "Articles & books",
+  "year": 2025,
+  "format": "Article",
+  "url": "https://www.scaler.com/blog/java-full-stack-developer-roadmap/",
+  "desc": "Java full-stack learning path.",
+  "role": "full-stack"
+ },
+ {
+  "title": "SQL Roadmap",
+  "section": "Articles & books",
+  "year": 2025,
+  "format": "Article",
+  "url": "https://www.geeksforgeeks.org/blogs/sql-roadmap/",
+  "desc": "Basics to advanced querying.",
+  "role": "data-analyst"
+ },
+ {
+  "title": "The VM Lifecycle",
+  "section": "Articles & books",
+  "year": 2023,
+  "format": "Article",
+  "url": "https://www.rapid7.com/blog/post/2022/03/16/the-vm-lifecycle-how-we-got-here-and-where-were-going/",
+  "desc": "Vulnerability management phases.",
+  "role": "devsecops"
+ }
+]

@@ -1,0 +1,200 @@
+{
+  "id": "gen-ai-engineer",
+  "title": "Gen AI Engineer",
+  "domain": "ai",
+  "status": "stable",
+  "summary": "Builds products on large language models: prompting, retrieval (RAG), fine-tuning, agents, evaluation and safe deployment.",
+  "duration": "6–9 months at ~10 h/week",
+  "whatYouDo": [
+    "Turn a fuzzy product idea into an LLM feature that works reliably",
+    "Design prompts, retrieval and tool use, then measure quality with evals",
+    "Ship, monitor cost and latency, and keep outputs safe"
+  ],
+  "skills": [
+    "Python",
+    "LLMs",
+    "APIs",
+    "Docker",
+    "Git",
+    "Machine Learning",
+    "Testing"
+  ],
+  "next": [
+    "ai-agent-engineer",
+    "ml-engineer",
+    "mlops"
+  ],
+  "updated": "2026-11-15",
+  "stages": [
+    {
+      "title": "Foundations",
+      "duration": "3–4 weeks",
+      "goal": "Write clean Python, use Git and call web APIs with confidence.",
+      "topics": [
+        "Python",
+        "Git & GitHub",
+        "HTTP & APIs",
+        "JSON",
+        "Virtual environments",
+        "Linux & Bash"
+      ],
+      "resources": [
+        {
+          "title": "The Python Tutorial",
+          "url": "https://docs.python.org/3/tutorial/"
+        },
+        {
+          "title": "Pro Git book",
+          "url": "https://git-scm.com/book/en/v2"
+        }
+      ],
+      "project": "A command-line tool that calls a public API and saves results as JSON."
+    },
+    {
+      "title": "How LLMs work",
+      "duration": "2–3 weeks",
+      "goal": "Explain tokens, context windows, sampling and why models hallucinate.",
+      "topics": [
+        "Tokens & context windows",
+        "Transformers",
+        "Embeddings",
+        "Sampling & temperature",
+        "Model families & pricing",
+        "Hallucinations"
+      ],
+      "resources": [
+        {
+          "title": "Hugging Face LLM Course",
+          "url": "https://huggingface.co/learn"
+        },
+        {
+          "title": "The Illustrated Transformer",
+          "url": "https://jalammar.github.io/illustrated-transformer/"
+        }
+      ],
+      "project": "A notebook comparing three models on the same 20 prompts: quality, speed and cost."
+    },
+    {
+      "title": "Prompting & LLM APIs",
+      "duration": "3–4 weeks",
+      "goal": "Build reliable LLM calls with structured output and streaming.",
+      "topics": [
+        "Prompt engineering",
+        "System prompts",
+        "Structured output",
+        "Streaming",
+        "Tool use / function calling",
+        "Rate limits & retries"
+      ],
+      "resources": [
+        {
+          "title": "Claude documentation",
+          "url": "https://docs.claude.com"
+        },
+        {
+          "title": "OpenAI cookbook",
+          "url": "https://cookbook.openai.com"
+        }
+      ],
+      "project": "A support-ticket triager that returns validated JSON (category, urgency, summary)."
+    },
+    {
+      "title": "RAG & retrieval",
+      "duration": "4–6 weeks",
+      "goal": "Ground model answers in your own documents, with sources users can check.",
+      "topics": [
+        "Embeddings",
+        "Vector databases",
+        "Chunking strategies",
+        "Hybrid search",
+        "Reranking",
+        "RAG evaluation",
+        "Citations & grounding"
+      ],
+      "resources": [
+        {
+          "title": "Hugging Face Learn",
+          "url": "https://huggingface.co/learn"
+        },
+        {
+          "title": "pgvector",
+          "url": "https://github.com/pgvector/pgvector"
+        }
+      ],
+      "project": "Chat with your PDFs: answers over 20+ documents with page citations."
+    },
+    {
+      "title": "Fine-tuning & open models",
+      "duration": "3–5 weeks",
+      "goal": "Know when to fine-tune, and run or adapt an open model yourself.",
+      "topics": [
+        "PyTorch",
+        "Fine-tuning vs prompting",
+        "LoRA / PEFT",
+        "Dataset curation",
+        "Quantization",
+        "Local inference"
+      ],
+      "resources": [
+        {
+          "title": "Hugging Face PEFT docs",
+          "url": "https://huggingface.co/docs/peft"
+        },
+        {
+          "title": "PyTorch tutorials",
+          "url": "https://pytorch.org/tutorials/"
+        }
+      ],
+      "project": "LoRA-tune a small open model on a narrow task and beat its base version on your eval."
+    },
+    {
+      "title": "Agents & tools",
+      "duration": "4–5 weeks",
+      "goal": "Build agents that plan, call tools and recover from mistakes.",
+      "topics": [
+        "Agent loops",
+        "Tool design",
+        "Model Context Protocol (MCP)",
+        "Memory",
+        "Multi-agent patterns",
+        "Guardrails"
+      ],
+      "resources": [
+        {
+          "title": "Model Context Protocol",
+          "url": "https://modelcontextprotocol.io"
+        },
+        {
+          "title": "Claude documentation: tool use",
+          "url": "https://docs.claude.com"
+        }
+      ],
+      "project": "A research agent that searches, reads and writes a cited brief, with a step log."
+    },
+    {
+      "title": "Production & evals",
+      "duration": "4–6 weeks",
+      "goal": "Ship LLM features that are measured, monitored, affordable and safe.",
+      "topics": [
+        "LLM evaluation",
+        "Observability",
+        "Caching & cost control",
+        "Latency",
+        "Prompt injection",
+        "Docker",
+        "CI/CD"
+      ],
+      "resources": [
+        {
+          "title": "OWASP Top 10 for LLM Applications",
+          "url": "https://genai.owasp.org"
+        },
+        {
+          "title": "Docker get started",
+          "url": "https://docs.docker.com/get-started/"
+        }
+      ],
+      "project": "Deploy your RAG app with an eval suite in CI, tracing, and a cost dashboard."
+    }
+  ]
+}

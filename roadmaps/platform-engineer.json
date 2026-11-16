@@ -1,0 +1,144 @@
+{
+  "id": "platform-engineer",
+  "title": "Platform Engineer",
+  "domain": "infra",
+  "status": "stable",
+  "summary": "Builds the internal platform other engineers ship on.",
+  "duration": "8–10 months",
+  "whatYouDo": [
+    "Build the internal platform engineers ship on",
+    "Create golden paths and self-service tools",
+    "Treat the platform as a product"
+  ],
+  "skills": [
+    "Kubernetes",
+    "Cloud",
+    "CI/CD",
+    "Docker",
+    "Go",
+    "Linux",
+    "Monitoring",
+    "Security"
+  ],
+  "next": [
+    "software-architect",
+    "sre"
+  ],
+  "updated": "2026-11-15",
+  "stages": [
+    {
+      "title": "Foundations",
+      "duration": "4 weeks",
+      "goal": "Systems and a systems language.",
+      "topics": [
+        "Linux",
+        "Networking",
+        "Go or Python",
+        "Git & GitHub",
+        "APIs"
+      ],
+      "resources": [
+        {
+          "title": "A Tour of Go",
+          "url": "https://go.dev/tour/"
+        }
+      ],
+      "project": "A CLI that automates a dev task"
+    },
+    {
+      "title": "Containers & Kubernetes",
+      "duration": "5 weeks",
+      "goal": "Kubernetes in depth.",
+      "topics": [
+        "Docker",
+        "Kubernetes",
+        "Helm",
+        "Operators & CRDs",
+        "Service mesh basics"
+      ],
+      "resources": [
+        {
+          "title": "Kubernetes tutorials",
+          "url": "https://kubernetes.io/docs/tutorials/"
+        }
+      ],
+      "project": "Write a small Kubernetes operator"
+    },
+    {
+      "title": "Delivery",
+      "duration": "4 weeks",
+      "goal": "Fast, safe paths to production.",
+      "topics": [
+        "CI/CD",
+        "GitOps",
+        "Progressive delivery",
+        "Artifact management",
+        "Environments"
+      ],
+      "resources": [
+        {
+          "title": "Argo CD docs",
+          "url": "https://argo-cd.readthedocs.io/en/stable/"
+        }
+      ],
+      "project": "A GitOps setup with Argo CD"
+    },
+    {
+      "title": "Infrastructure as code",
+      "duration": "4 weeks",
+      "goal": "Reusable infrastructure.",
+      "topics": [
+        "Terraform",
+        "Cloud",
+        "Crossplane",
+        "Policy as code",
+        "Secrets management"
+      ],
+      "resources": [
+        {
+          "title": "Terraform tutorials",
+          "url": "https://developer.hashicorp.com/terraform/tutorials"
+        }
+      ],
+      "project": "Self-service database provisioning"
+    },
+    {
+      "title": "Developer experience",
+      "duration": "4 weeks",
+      "goal": "A platform people love.",
+      "topics": [
+        "Internal developer portals",
+        "Golden paths & templates",
+        "Documentation",
+        "Platform as a product",
+        "DORA metrics"
+      ],
+      "resources": [
+        {
+          "title": "Backstage docs",
+          "url": "https://backstage.io/docs/overview/what-is-backstage"
+        }
+      ],
+      "project": "A Backstage software template"
+    },
+    {
+      "title": "Operate & secure",
+      "duration": "3 weeks",
+      "goal": "Reliable and safe by default.",
+      "topics": [
+        "Monitoring",
+        "Security",
+        "Multi-tenancy",
+        "Cost visibility",
+        "Interview practice"
+      ],
+      "resources": [
+        {
+          "title": "Platform engineering roadmap",
+          "url": "https://github.com/mbianchidev/platform-engineering-roadmap"
+        }
+      ],
+      "project": "Platform SLOs and a security baseline"
+    }
+  ]
+}

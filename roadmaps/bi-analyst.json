@@ -1,0 +1,128 @@
+{
+  "id": "bi-analyst",
+  "title": "BI Analyst",
+  "domain": "data",
+  "status": "stable",
+  "summary": "Builds the metrics layer and reporting a business runs on.",
+  "duration": "5–7 months",
+  "whatYouDo": [
+    "Build the metrics layer a business runs on",
+    "Model data for reporting",
+    "Own dashboards and their definitions"
+  ],
+  "skills": [
+    "SQL",
+    "Excel",
+    "Data Visualization",
+    "Statistics",
+    "Communication",
+    "Data Pipelines"
+  ],
+  "next": [
+    "data-engineer",
+    "data-analyst",
+    "product-manager"
+  ],
+  "updated": "2026-11-15",
+  "stages": [
+    {
+      "title": "Business & spreadsheets",
+      "duration": "3 weeks",
+      "goal": "Understand how businesses measure themselves.",
+      "topics": [
+        "KPIs & metrics",
+        "Excel",
+        "Pivot tables",
+        "Financial basics",
+        "Requirements gathering"
+      ],
+      "resources": [],
+      "project": "A KPI tree for a subscription business"
+    },
+    {
+      "title": "SQL",
+      "duration": "4 weeks",
+      "goal": "Query warehouses confidently.",
+      "topics": [
+        "SQL",
+        "Joins & aggregations",
+        "Window functions",
+        "Performance basics",
+        "Data quality checks"
+      ],
+      "resources": [
+        {
+          "title": "SQLBolt",
+          "url": "https://sqlbolt.com/"
+        }
+      ],
+      "project": "Monthly revenue and churn queries"
+    },
+    {
+      "title": "Data modelling",
+      "duration": "4 weeks",
+      "goal": "Model data for reporting.",
+      "topics": [
+        "Star & snowflake schemas",
+        "Dimensional modelling",
+        "Slowly changing dimensions",
+        "dbt basics",
+        "Semantic layers"
+      ],
+      "resources": [
+        {
+          "title": "dbt docs",
+          "url": "https://docs.getdbt.com/docs/introduction"
+        }
+      ],
+      "project": "A star schema for sales data in dbt"
+    },
+    {
+      "title": "BI tools",
+      "duration": "4 weeks",
+      "goal": "Build trustworthy dashboards.",
+      "topics": [
+        "Power BI or Tableau or Looker",
+        "DAX or calculated fields",
+        "Dashboard design",
+        "Row-level security",
+        "Self-service BI"
+      ],
+      "resources": [
+        {
+          "title": "Power BI learning",
+          "url": "https://learn.microsoft.com/en-us/training/powerplatform/power-bi"
+        }
+      ],
+      "project": "An executive dashboard with drill-downs"
+    },
+    {
+      "title": "Pipelines & governance",
+      "duration": "3 weeks",
+      "goal": "Keep data fresh and defined.",
+      "topics": [
+        "Data pipelines",
+        "Scheduling",
+        "Data catalogues",
+        "Metric definitions",
+        "Documentation"
+      ],
+      "resources": [],
+      "project": "A documented metrics catalogue"
+    },
+    {
+      "title": "Professional",
+      "duration": "3 weeks",
+      "goal": "Influence decisions.",
+      "topics": [
+        "Communication",
+        "Storytelling",
+        "Statistics for business",
+        "Portfolio",
+        "Interview practice"
+      ],
+      "resources": [],
+      "project": "Present a quarterly business review deck"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Skill match — Career Galaxy</title>
+  <meta name="description" content="Tick the skills you have and see which tech careers they connect to, what's missing, and the best next skill to learn.">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <script>try{var t=localStorage.getItem('cg-theme');document.documentElement.dataset.theme=t||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light')}catch(e){document.documentElement.dataset.theme='light'}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800;900&family=Roboto:wght@400;500;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header id="site-header"></header>
+  <main id="main" class="app">
+    <aside class="side" aria-label="Your skills" style="flex-basis:300px;padding:22px 20px">
+      <h1 class="h3" style="font-size:28px">What do you already know?</h1>
+      <p class="muted" style="margin:8px 0 14px;font-size:14px;line-height:1.5">Tap skills or start from a preset. Lines show which careers each skill unlocks.</p>
+      <p class="lab" style="margin-top:0">Presets</p>
+      <div id="presets" style="display:flex;flex-wrap:wrap;gap:6px"></div>
+      <p class="lab">My skills · <span id="have-count">0</span></p>
+      <div id="skill-chips" style="display:flex;flex-wrap:wrap;gap:6px"></div>
+    </aside>
+    <section class="scene space" id="graph" aria-label="Skills to careers graph">
+      <div class="twinkle" aria-hidden="true"></div>
+      <div id="nodes" style="position:absolute;inset:0;z-index:5"></div>
+      <p class="scene-top" style="top:auto;bottom:14px">skills → careers · bigger = better match · <span style="color:#4ade80">━ you have</span> · <span style="color:#fb923c">┅ missing</span></p>
+    </section>
+    <aside class="panel" aria-label="Matches" aria-live="polite" style="display:flex;flex-direction:column;gap:8px">
+      <p class="lab" style="margin:0 0 4px">Best matches for you</p>
+      <div id="ranked" style="display:flex;flex-direction:column;gap:8px"></div>
+      <div id="selected" class="card" style="padding:18px;background:var(--surface-2);margin-top:8px"></div>
+      <div id="next-skill" style="padding:14px 16px;border-radius:18px;border:1px dashed var(--accent);font-size:14px;line-height:1.5;color:var(--ink-2)"></div>
+    </aside>
+  </main>
+  <script type="module" src="/src/pages/skills.js"></script>
+</body>
+</html>

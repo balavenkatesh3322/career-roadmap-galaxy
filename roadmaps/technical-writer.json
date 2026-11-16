@@ -1,0 +1,126 @@
+{
+  "id": "technical-writer",
+  "title": "Technical Writer",
+  "domain": "product",
+  "status": "stable",
+  "summary": "Writes the docs and guides developers learn from.",
+  "duration": "4–6 months",
+  "whatYouDo": [
+    "Write the docs developers learn from",
+    "Design information so people find answers",
+    "Keep docs accurate as products change"
+  ],
+  "skills": [
+    "Writing",
+    "Communication",
+    "Git",
+    "APIs",
+    "HTML & CSS"
+  ],
+  "next": [
+    "developer-relations",
+    "product-manager"
+  ],
+  "updated": "2026-11-15",
+  "stages": [
+    {
+      "title": "Writing foundations",
+      "duration": "3 weeks",
+      "goal": "Write clear, plain English.",
+      "topics": [
+        "Writing",
+        "Plain language",
+        "Audience analysis",
+        "Style guides",
+        "Editing"
+      ],
+      "resources": [
+        {
+          "title": "Google Technical Writing courses",
+          "url": "https://developers.google.com/tech-writing"
+        }
+      ],
+      "project": "Rewrite a confusing README"
+    },
+    {
+      "title": "Docs types",
+      "duration": "3 weeks",
+      "goal": "Know the four kinds of docs.",
+      "topics": [
+        "Tutorials",
+        "How-to guides",
+        "Reference",
+        "Explanation",
+        "Information architecture"
+      ],
+      "resources": [
+        {
+          "title": "Diátaxis framework",
+          "url": "https://diataxis.fr/"
+        }
+      ],
+      "project": "A docs plan for an open-source project"
+    },
+    {
+      "title": "Developer tools",
+      "duration": "4 weeks",
+      "goal": "Work like an engineer.",
+      "topics": [
+        "Git & GitHub",
+        "Markdown",
+        "Docs as code",
+        "Static site generators",
+        "Command line"
+      ],
+      "resources": [
+        {
+          "title": "Write the Docs guide",
+          "url": "https://www.writethedocs.org/guide/"
+        }
+      ],
+      "project": "Publish a docs site from a Git repo"
+    },
+    {
+      "title": "API documentation",
+      "duration": "4 weeks",
+      "goal": "Document APIs well.",
+      "topics": [
+        "HTTP & APIs",
+        "OpenAPI",
+        "Code samples",
+        "SDK docs",
+        "Testing examples"
+      ],
+      "resources": [],
+      "project": "Document a public API end to end"
+    },
+    {
+      "title": "Quality & measurement",
+      "duration": "3 weeks",
+      "goal": "Keep docs good over time.",
+      "topics": [
+        "Docs linting",
+        "Review workflows",
+        "Analytics & feedback",
+        "Localisation basics",
+        "Accessibility"
+      ],
+      "resources": [],
+      "project": "Add linting and feedback to your docs site"
+    },
+    {
+      "title": "Professional",
+      "duration": "3 weeks",
+      "goal": "Show your work.",
+      "topics": [
+        "Portfolio",
+        "Open-source contributions",
+        "Working with engineers",
+        "AI-assisted writing",
+        "Interview practice"
+      ],
+      "resources": [],
+      "project": "Three merged docs contributions to open source"
+    }
+  ]
+}
