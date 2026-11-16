@@ -27,7 +27,7 @@
     "cloud-engineer",
     "devsecops"
   ],
-  "updated": "2026-11-15",
+  "updated": "2026-11-16",
   "stages": [
     {
       "title": "Linux & scripting",
@@ -95,15 +95,20 @@
         "GitHub Actions",
         "Testing in pipelines",
         "Artifacts & versioning",
-        "Deployment strategies"
+        "Deployment strategies",
+        "GitOps"
       ],
       "resources": [
         {
           "title": "GitHub Actions docs",
           "url": "https://docs.github.com/en/actions"
+        },
+        {
+          "title": "Argo CD docs (GitOps)",
+          "url": "https://argo-cd.readthedocs.io/en/stable/"
         }
       ],
-      "project": "A pipeline that tests and deploys on merge"
+      "project": "A pipeline that tests on every PR and deploys on merge, with GitOps for the cluster"
     },
     {
       "title": "Infrastructure as code & cloud",
@@ -147,6 +152,10 @@
         {
           "title": "Google SRE books",
           "url": "https://sre.google/books/"
+        },
+        {
+          "title": "OpenTelemetry docs",
+          "url": "https://opentelemetry.io/docs/"
         }
       ],
       "project": "Dashboards and alerts for your app"
