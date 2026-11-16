@@ -26,6 +26,9 @@ for (const f of files) {
   let d;
   try { d = JSON.parse(fs.readFileSync(path.join(dir, f), 'utf8')); } catch (e) { err(f, `invalid JSON: ${e.message}`); continue; }
   const id = f.replace(/\.json$/, '');
+  const raw = JSON.stringify(d);
+  if (/\bTODO\b/.test(raw)) err(f, 'still has TODO placeholders from the scaffold — fill them in');
+  if (raw.includes('https://example.com')) err(f, 'still has the example.com placeholder resource');
   if (d.id !== id) err(f, `"id" must be "${id}"`);
   if (!roleIds.has(id)) err(f, 'not listed in roadmaps/index.json');
   for (const k of ['title', 'domain', 'status', 'summary', 'duration']) if (!d[k] || typeof d[k] !== 'string') err(f, `missing "${k}"`);

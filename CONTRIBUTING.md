@@ -2,6 +2,21 @@
 
 Thanks for helping people find their path. Most contributions are **content**: fixing a roadmap, adding resources, or adding a new career. You don't need to touch the 3D code.
 
+## Learn from example pull requests
+
+Two reference PRs show exactly what a good contribution looks like. Open one, look at **Files changed**, and copy the pattern.
+
+| Example | What it shows | Files touched |
+|---|---|---|
+| [**Add a career: Context Engineer**](https://github.com/balavenkatesh3322/career-roadmap-galaxy/compare/main...example/new-career-context-engineer) | Scaffold with `npm run new`, fill all 6 stages (goal, topics, resources, project), reuse shared skills, add one new skill | `roadmaps/context-engineer.json` (new), `roadmaps/index.json` |
+| [**Edit a roadmap: DevOps**](https://github.com/balavenkatesh3322/career-roadmap-galaxy/compare/main...example/edit-devops-roadmap) | Improve an existing career: add a topic and a free resource to one stage, bump `updated` | `roadmaps/devops.json` |
+
+Steps for your own:
+
+1. Fork the repo and create a branch: `git checkout -b add-<career-id>` or `improve-<career-id>`.
+2. Make the change (see the examples above), then run `npm run validate` and `npm run dev` to see it in the galaxy.
+3. Open a pull request. The template asks for a short summary and a checklist, and CI runs the validator and a build.
+
 ## Add a new career
 
 1. Open a [New field issue](../../issues/new?template=new-field.yml) with the role, what the job involves, and at least 3 job postings as evidence.
