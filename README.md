@@ -151,4 +151,8 @@ Then open a pull request. Please follow our [Code of Conduct](CODE_OF_CONDUCT.md
 - **Library:** entries come from [awesome-roadmaps](https://github.com/liuchong/awesome-roadmaps). Imported content keeps its original licence and credit; see [ATTRIBUTION.md](ATTRIBUTION.md).
 - **Built with** [PixiJS](https://pixijs.com) and [PixiJS 3D](https://pixijs.com/3d). Fonts: Outfit, Roboto and Roboto Mono.
 
-<div align="center"><sub>Made with ✦ by <a href="https://github.com/balavenkatesh3322">Bala Venkatesh</a> and contributors. If it helped you, give it a ⭐.</sub></div>
+## Author
+
+**Bala Venkatesh**: [balavenkatesh.is-a.dev](https://balavenkatesh.is-a.dev) · [GitHub](https://github.com/balavenkatesh3322) · Reach out: [+91 90038 12808](tel:+919003812808)
+
+<div align="center"><sub>Made with ✦ by <a href="https://balavenkatesh.is-a.dev">Bala Venkatesh</a> and contributors. If it helped you, give it a ⭐.</sub></div>

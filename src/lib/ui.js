@@ -68,7 +68,7 @@ export function mountFooter() {
   const f = $('#site-footer');
   if (!f) return;
   f.className = 'site-footer';
-  f.innerHTML = `<span>Career Galaxy · open-source learning atlas · <a href="${REPO}">GitHub</a></span><span>Built with PixiJS 3D · Outfit · Roboto · Roboto Mono</span>`;
+  f.innerHTML = `<span>Career Galaxy · open-source learning atlas · <a href="${REPO}">GitHub</a></span><span>Made by <a href="https://balavenkatesh.is-a.dev" rel="author">Bala Venkatesh</a> · Reach out: <a href="tel:+919003812808">+91 90038 12808</a></span>`;
 }
 
 export function toast(msg) {

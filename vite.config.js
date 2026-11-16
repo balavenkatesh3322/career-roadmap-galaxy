@@ -38,7 +38,7 @@ function seo(siteUrl) {
       operatingSystem: 'Any (web browser with WebGL)',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
       image,
-      author: { '@type': 'Person', name: 'Bala Venkatesh' },
+      author: { '@type': 'Person', name: 'Bala Venkatesh', url: 'https://balavenkatesh.is-a.dev' },
       isAccessibleForFree: true,
       license: 'https://opensource.org/licenses/MIT'
     })}</script>` : '';
@@ -47,6 +47,7 @@ function seo(siteUrl) {
     <meta name="theme-color" content="#0d0c14" media="(prefers-color-scheme: dark)">
     <meta name="theme-color" content="#fbfaff" media="(prefers-color-scheme: light)">
     <meta name="author" content="Bala Venkatesh">
+    <link rel="author" href="https://balavenkatesh.is-a.dev">
     <meta name="keywords" content="tech career roadmap, developer roadmap, data science roadmap, machine learning engineer roadmap, gen ai engineer roadmap, devops roadmap, career switch, learning path, 3d, pixijs">
     <meta name="robots" content="index, follow, max-image-preview:large">
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
