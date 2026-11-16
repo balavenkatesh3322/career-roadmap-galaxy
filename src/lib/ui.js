@@ -1,4 +1,8 @@
 // Small DOM helpers + the shared site header, footer and theme toggle.
+import { inject } from '@vercel/analytics';
+
+// Vercel Web Analytics (no-op outside Vercel deployments)
+try { inject(); } catch { /* ignore */ }
 export const $ = (sel, root = document) => root.querySelector(sel);
 export const $$ = (sel, root = document) => [...root.querySelectorAll(sel)];
 

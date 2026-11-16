@@ -1,6 +1,6 @@
 import '../styles/main.css';
 import { $, $$, esc, ICON, REPO, mountHeader, mountFooter, toast } from '../lib/ui.js';
-import { roadmaps, getRole, styleOf, roleUrl } from '../lib/data.js';
+import { roadmaps, getRole, styleOf, roleUrl, param } from '../lib/data.js';
 import index from '../data/library-index.json';
 import content from '../data/library-content.json';
 
@@ -106,7 +106,8 @@ function renderDrawer() {
         <a class="btn btn-p plain btn-sm" href="${roleUrl(ours.id)}">Climb ${esc(ours.title)} →</a></footer>
     </section>
   </div>`;
-  const close = () => { state.open = null; $('#drawer-host').innerHTML = ''; };
+  history.replaceState(null, '', `?open=${encodeURIComponent(e.url)}`);
+  const close = () => { state.open = null; $('#drawer-host').innerHTML = ''; history.replaceState(null, '', location.pathname); };
   $('#d-close').addEventListener('click', close);
   $('#dbg').addEventListener('click', (ev) => { if (ev.target.id === 'dbg') close(); });
   $$('[data-st]').forEach((b) => b.addEventListener('click', () => { state.stage = +b.dataset.st; renderDrawer(); }));
@@ -135,3 +136,5 @@ $('#add-form').addEventListener('submit', (ev) => {
 
 function render() { renderFilters(); renderGrid(); }
 render();
+// shareable deep link: /library?open=<roadmap url>
+if (param('open') && all().some((e) => e.url === param('open'))) { state.open = param('open'); renderDrawer(); }

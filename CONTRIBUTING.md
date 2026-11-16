@@ -67,3 +67,7 @@ Only repos with an open licence keep their content, always with credit. Repos wi
 - `src/scene/space.js` holds the shared PixiJS 3D setup: transparent `View3D`, glossy materials, and DOM labels pinned to 3D nodes.
 - Keep every 3D action available as a real `<button>` (labels, panels and lists) so keyboard and screen-reader users aren't left out.
 - Respect `prefers-reduced-motion`.
+
+## Community
+
+Please follow the [Code of Conduct](CODE_OF_CONDUCT.md). Report security issues privately; see [SECURITY.md](SECURITY.md).

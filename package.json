@@ -2,7 +2,7 @@
   "name": "career-roadmap-galaxy",
   "version": "0.1.0",
   "private": true,
-  "description": "Every tech career, one galaxy. An interactive 3D atlas of tech career roadmaps built with PixiJS.",
+  "description": "Every tech career, one galaxy. An open-source interactive 3D atlas of tech career roadmaps built with PixiJS 3D.",
   "type": "module",
   "license": "MIT",
   "repository": "github:balavenkatesh3322/career-roadmap-galaxy",
@@ -19,9 +19,28 @@
   },
   "dependencies": {
     "@pixi/3d": "^0.1.0",
+    "@vercel/analytics": "^2.0.1",
     "pixi.js": "^8.23.0"
   },
   "devDependencies": {
     "vite": "^7.3.8"
-  }
+  },
+  "homepage": "https://career-roadmap-galaxy.vercel.app",
+  "author": "Bala Venkatesh (https://github.com/balavenkatesh3322)",
+  "bugs": {
+    "url": "https://github.com/balavenkatesh3322/career-roadmap-galaxy/issues"
+  },
+  "keywords": [
+    "career",
+    "roadmap",
+    "developer-roadmap",
+    "learning-path",
+    "pixijs",
+    "3d",
+    "webgl",
+    "data-science",
+    "machine-learning",
+    "devops",
+    "education"
+  ]
 }

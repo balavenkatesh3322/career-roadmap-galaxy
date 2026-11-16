@@ -1,6 +1,6 @@
 import '../styles/main.css';
 import { $, $$, esc, ICON, mountHeader, mountFooter, reducedMotion } from '../lib/ui.js';
-import { domains, roadmaps, rolesIn, styleOf, getRole, roleUrl } from '../lib/data.js';
+import { domains, roadmaps, rolesIn, styleOf, getRole, roleUrl, param } from '../lib/data.js';
 import { progress } from '../lib/progress.js';
 import { match } from '../lib/match.js';
 import { cardsFor } from '../lib/cards.js';
@@ -90,6 +90,13 @@ createOrbit(hero, { onFocus, onRole, onSpot: showSpot }).then((o) => {
   if (!o) { spotCard.hidden = true; return; }
   o.setPaused(paused);
   requestAnimationFrame(drawSpotLine);
+  // shareable deep links: /?domain=ai&role=gen-ai-engineer
+  const r = getRole(param('role'));
+  const di = domains.findIndex((d) => d.id === (param('domain') || r?.domain));
+  if (di >= 0) {
+    o.focus(di);
+    if (r) { const k = rolesIn(domains[di].id).findIndex((x) => x.id === r.id); if (k >= 0) setTimeout(() => o.pickRole(k), 300); }
+  }
 });
 
 // ---------- climb ----------

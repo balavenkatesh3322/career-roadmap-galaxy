@@ -72,26 +72,24 @@ export async function createOrbit(host, { onFocus, onRole, onSpot } = {}) {
     p.holder.getGlobalPosition(tmp);
     const target = tmp.clone();
     const away = new Vector3(target.x, 0, target.z).normalize();
-    flyTo(new Vector3(target.x + away.x * 7.5, target.y + 1.6, target.z + away.z * 7.5 + 0.01), new Vector3(target.x, target.y + 0.9, target.z));
+    flyTo(new Vector3(target.x + away.x * 13.5, target.y + 1.4, target.z + away.z * 13.5 + 0.01), new Vector3(target.x, target.y + 0.45, target.z));
     buildMoons(p, target, away);
     planets.forEach((q) => { q.label.visible = q === p; });
     onFocus?.(p.domain, p.roles);
   }
   function buildMoons(p, center, away) {
     const n = p.roles.length;
-    const ringR = p.radius + 2.2;
+    const ringR = p.radius + 2.4;
     const side = new Vector3(-away.z, 0, away.x); // perpendicular to view direction, horizontal
     moons = p.roles.map((role, k) => {
       const a = -Math.PI / 2 + ((k + 0.5) / n) * Math.PI * 2;
       const m = new Mesh3D({ geometry: GEO.sphere(), material: glossy(0xf1edff, { emissive: 0.1 }), eventMode: 'static', cursor: 'pointer' });
       m.scale.set(0.24, 0.24, 0.24);
-      m.position.set(center.x + side.x * Math.cos(a) * ringR, center.y + Math.sin(a) * ringR * 0.85, center.z + side.z * Math.cos(a) * ringR);
+      m.position.set(center.x + side.x * Math.cos(a) * ringR, center.y + Math.sin(a) * ringR * 0.55, center.z + side.z * Math.cos(a) * ringR);
       m.role = role; m.k = k;
       m.on('pointertap', (e) => { if (e.button === 0) pickRole(k); });
       moonGroup.addChild(m);
-      const left = Math.cos(a) < -0.2;
-      m.label = s.addLabel({ text: role.title, node: m, offset: [left ? -0.35 : 0.35, -0.12, 0], className: 'sm', onClick: () => pickRole(k) });
-      m.label.el.style.translate = left ? '-50% 0' : '50% 0';
+      m.label = s.addLabel({ text: role.title, node: m, offset: [0, -0.42, 0], className: 'sm', onClick: () => pickRole(k) });
       return m;
     });
   }
@@ -130,6 +128,10 @@ export async function createOrbit(host, { onFocus, onRole, onSpot } = {}) {
       const isSpot = focused < 0 && i === spot;
       const target = p.hover || focused === i ? 0.9 : isSpot ? 1.5 : 0.08;
       p.mat.emissive.strength = lerp(p.mat.emissive.strength, target, Math.min(1, dt * 4));
+      // while a planet is focused, shrink the others so they don't crowd the camera
+      const want = focused >= 0 && focused !== i ? p.radius * 0.3 : p.radius;
+      const sc = lerp(p.holder.scale.x, want, Math.min(1, dt * 4));
+      p.holder.scale.set(sc, sc, sc);
     });
     core.material.emissive.strength = 0.3 + (s.paused ? 0 : Math.sin(performance.now() / 600) * 0.12);
 

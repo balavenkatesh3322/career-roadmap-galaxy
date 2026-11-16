@@ -1,0 +1,19 @@
+name: Bug report
+description: Something looks or works wrong
+title: "Bug: "
+labels: [bug]
+body:
+  - type: input
+    id: page
+    attributes: { label: Page / URL, placeholder: "https://career-roadmap-galaxy.vercel.app/roadmap?role=devops" }
+    validations: { required: true }
+  - type: textarea
+    id: what
+    attributes: { label: What happened, and what did you expect? }
+    validations: { required: true }
+  - type: input
+    id: browser
+    attributes: { label: Browser and device, placeholder: "Chrome 131 on Windows, iPhone Safari…" }
+  - type: textarea
+    id: shot
+    attributes: { label: Screenshot (optional) }
