@@ -29,6 +29,6 @@ for e in L:
             elif not re.match(r'^https?://', t):
                 topics.append(t)
         stages.append({'t': s['title'], 'k': topics[:10], 'r': [{'t': r['t'], 'u': r['u']} for r in res[:6]]})
-    out[e['url']] = {'s': e['status'], 'l': e.get('license'), 'a': e.get('author'), 'st': e.get('stars'), 'n': e.get('stageCount', len(stages)), 'g': stages}
+    out[e['url']] = {'s': e['status'], 'l': e.get('license'), 'a': e.get('author'), 'st': e.get('stars'), 'n': e.get('stageCount', len(stages)), 'g': stages, 'img': e.get('images', [])}
 json.dump(out, open(dst, 'w', encoding='utf-8'), ensure_ascii=False, separators=(',', ':'))
 print('wrote', dst, len(out), 'entries')

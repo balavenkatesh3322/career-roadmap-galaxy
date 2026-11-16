@@ -37,15 +37,22 @@ function shown() {
 }
 
 function draw() {
-  const { ranked, top } = shown();
+  const W = graphEl.clientWidth;
+  const narrow = W < 760;
+  const { ranked, top: allTop } = shown();
   if (!selected || !getRole(selected)) selected = ranked.find((x) => x.pct < 100)?.role.id || ranked[0].role.id;
-  const W = graphEl.clientWidth, H = graphEl.clientHeight;
+  const top = narrow ? allTop.slice(0, 8).concat(allTop.slice(8).filter((r) => r.id === selected)) : allTop;
   const used = new Set(top.flatMap((r) => r.skills || []));
-  const skills = skillList.filter((s) => used.has(s) || have.has(s));
-  const sx = Math.max(150, W * 0.24), cx = Math.min(W * 0.6, W - 280);
+  const skills = skillList.filter((s) => used.has(s) || (!narrow && have.has(s)));
+  // on narrow screens give every row room instead of squeezing into the viewport
+  if (narrow) graphEl.style.height = `${Math.max(520, Math.max(skills.length, top.length) * 34 + 90)}px`;
+  else graphEl.style.height = '';
+  const H = graphEl.clientHeight;
+  const sx = narrow ? Math.round(W * 0.46) : Math.max(150, W * 0.24);
+  const cx = narrow ? Math.round(W * 0.54) : Math.min(W * 0.6, W - 280);
   const sy = (i) => 40 + (i / Math.max(1, skills.length - 1)) * (H - 90);
   const cy = (i) => 46 + (i / Math.max(1, top.length - 1)) * (H - 100);
-  layout = { skills: skills.map((s, i) => ({ s, x: sx, y: sy(i) })), careers: top.map((r, i) => ({ r, x: cx + Math.sin((i / Math.max(1, top.length - 1)) * Math.PI) * W * 0.04, y: cy(i) })) };
+  layout = { skills: skills.map((s, i) => ({ s, x: sx, y: sy(i) })), careers: top.map((r, i) => ({ r, x: narrow ? cx : cx + Math.sin((i / Math.max(1, top.length - 1)) * Math.PI) * W * 0.04, y: cy(i) })) };
 
   // edges (PixiJS)
   if (gfx) {
@@ -78,7 +85,7 @@ function draw() {
 
   // nodes (DOM, accessible)
   $('#nodes').innerHTML = layout.skills.map((n) => `<button type="button" class="lbl sm ${have.has(n.s) ? 'done' : ''}" style="transform:translate(${n.x}px,${n.y}px) translate(-100%,-50%);padding-right:30px" data-skill="${esc(n.s)}" aria-pressed="${have.has(n.s)}">${esc(n.s)}<span class="sphere ${have.has(n.s) ? 't-green' : 't-pearl'} s14" style="position:absolute;right:8px;top:50%;translate:0 -50%"></span></button>`).join('')
-    + layout.careers.map((n) => { const m = match(have, n.r); const sz = Math.round(16 + m.pct * 0.26); return `<button type="button" class="lbl sm ${n.r.id === selected ? 'on' : ''}" style="transform:translate(${n.x}px,${n.y}px) translate(0,-50%);padding-left:${sz + 16}px" data-career="${n.r.id}"><span class="sphere ${styleOf(n.r.domain).tint}" style="position:absolute;left:6px;top:50%;translate:0 -50%;width:${sz}px;height:${sz}px"></span>${esc(n.r.title)} · ${m.pct}%</button>`; }).join('');
+    + layout.careers.map((n) => { const m = match(have, n.r); const sz = narrow ? Math.round(12 + m.pct * 0.1) : Math.round(16 + m.pct * 0.26); return `<button type="button" class="lbl sm ${n.r.id === selected ? 'on' : ''}" style="transform:translate(${n.x}px,${n.y}px) translate(0,-50%);padding-left:${sz + 16}px" data-career="${n.r.id}"><span class="sphere ${styleOf(n.r.domain).tint}" style="position:absolute;left:6px;top:50%;translate:0 -50%;width:${sz}px;height:${sz}px"></span>${esc(narrow ? n.r.title.replace(/ (Developer|Engineer|Analyst)$/, '') : n.r.title)} · ${m.pct}%</button>`; }).join('');
   $$('#nodes [data-skill]').forEach((b) => b.addEventListener('click', () => toggle(b.dataset.skill)));
   $$('#nodes [data-career]').forEach((b) => b.addEventListener('click', () => { selected = b.dataset.career; render(); }));
   renderPanel(ranked);

@@ -4,12 +4,11 @@ The library lists community roadmaps from [liuchong/awesome-roadmaps](https://gi
 
 ## Content shown inside Career Galaxy
 
-These roadmaps have open licences. Their sections and topics are adapted and shown in the app, with credit and a link to the original. Each keeps its original licence.
+These roadmaps have open licences. Their sections, topics and roadmap images are shown in the app with credit and a link to the original. Each keeps its original licence.
 
 | Roadmap | Author | Licence |
 |---|---|---|
 | [Java Developer Roadmap](https://github.com/s4kibs4mi/java-developer-roadmap) | s4kibs4mi | MIT |
-| [DevRoadmaps](https://github.com/rudra496/devroadmaps) | rudra496 | MIT |
 | [Frontend Developer Roadmap](https://github.com/Yousha/Frontend-Developer-Roadmap) | Yousha | CC0-1.0 |
 | [Frontend Development Roadmap](https://github.com/sadanandpai/frontend-learning-kit/blob/main/public/2024_FE_roadmap.pdf) | sadanandpai | MIT |
 | [Laravel Developer Roadmap](https://github.com/Hasnayeen/laravel-developer-roadmap) | Hasnayeen | MIT |
@@ -18,15 +17,11 @@ These roadmaps have open licences. Their sections and topics are adapted and sho
 | [Android Developer Roadmap (Alt)](https://github.com/skydoves/android-developer-roadmap) | skydoves | Apache-2.0 |
 | [Flutter Developer Roadmap](https://github.com/olexale/flutter_roadmap) | olexale | MIT |
 | [DevOps Roadmap](https://github.com/milanm/DevOps-Roadmap) | milanm | Apache-2.0 |
-| [Platform Engineering Roadmap](https://github.com/mbianchidev/platform-engineering-roadmap) | mbianchidev | MIT |
 | [Game Developer Roadmap](https://github.com/utilForever/game-developer-roadmap) | utilForever | MIT |
 | [Agent Engineering Roadmap](https://github.com/audi0417/agent-engineering-roadmap) | audi0417 | MIT |
-| [Agent Learning](https://github.com/Haozhe-Xing/agent_learning) | Haozhe-Xing | MIT |
-| [Agentic AI Roadmap](https://github.com/AdilShamim8/Agentic-AI-Roadmap-with-Notes-and-Projects) | AdilShamim8 | MIT |
 | [Agentic Engineering Handbook](https://github.com/keyuchen21/agentic-engineering-handbook) | keyuchen21 | MIT |
 | [AI Engineer Roadmap](https://github.com/dswh/ai-engineer-roadmap) | dswh | Apache-2.0 |
 | [AI Expert Roadmap](https://github.com/AMAI-GmbH/AI-Expert-Roadmap) | AMAI-GmbH | MIT |
-| [AI for Beginners](https://github.com/microsoft/AI-For-Beginners) | microsoft | MIT |
 | [Data Analyst Roadmap](https://github.com/mtahiraslan/data-analyst-roadmap) | mtahiraslan | MIT |
 | [Data Scientist Roadmap](https://github.com/MrMimic/data-scientist-roadmap) | MrMimic | GPL-3.0 |
 | [Deep Learning Roadmap](https://github.com/instillai/deep-learning-roadmap) | instillai | MIT |
@@ -40,11 +35,10 @@ These roadmaps have open licences. Their sections and topics are adapted and sho
 | [Hacker Roadmap](https://github.com/Sundowndev/hacker-roadmap) | Sundowndev | MIT |
 | [UI/UX Designer Roadmap](https://github.com/togiberlin/ui-ux-designer-roadmap) | togiberlin | MIT |
 | [University Degree Roadmap](https://github.com/IlIllII/collecobrary) | IlIllII | MIT |
-| [AI Agents in Depth](https://github.com/bojieli/ai-agent-book) | bojieli | Apache-2.0 |
 
 ## Linked only
 
-These have no published licence, or are articles or websites. Career Galaxy links to them and shows its own roadmap for the same career. None of their content is copied.
+These have no published licence, are articles or websites, or are apps, courses or books with their own site. Career Galaxy links to them and shows its own roadmap for the same career. None of their content is copied.
 
 - [C++ Developer Roadmap](https://github.com/salmer/CppDeveloperRoadmap) by salmer
 - [Go Developer Roadmap](https://github.com/darius-khll/golang-developer-roadmap) by darius-khll
@@ -55,11 +49,16 @@ These have no published licence, or are articles or websites. Career Galaxy link
 - [Angular Developer Roadmap (Alt)](https://github.com/saifaustcse/angular-developer-roadmap) by saifaustcse
 - [ASP.NET Core Developer Roadmap](https://github.com/MoienTajik/AspNetCore-Developer-Roadmap) by MoienTajik
 - [Developer Roadmap](https://github.com/nilbuild/developer-roadmap) by nilbuild
+- [DevRoadmaps](https://github.com/rudra496/devroadmaps) by rudra496
 - [React Developer Roadmap](https://github.com/adam-golab/react-developer-roadmap) by adam-golab
 - [iOS Developer Roadmap](https://github.com/BohdanOrlov/iOS-Developer-Roadmap) by BohdanOrlov
 - [Cloud Engineer Roadmap](https://ciphemicacademia.in/roadmaps/cloud-engineer/)
+- [Platform Engineering Roadmap](https://github.com/mbianchidev/platform-engineering-roadmap) by mbianchidev
 - [Wyrcan Engineering Roadmap](https://github.com/Wyrcan-io/roadmap) by Wyrcan-io
 - [Game Programming Roadmap](https://github.com/miloyip/game-programmer) by miloyip
+- [Agent Learning](https://github.com/Haozhe-Xing/agent_learning) by Haozhe-Xing
+- [Agentic AI Roadmap](https://github.com/AdilShamim8/Agentic-AI-Roadmap-with-Notes-and-Projects) by AdilShamim8
+- [AI for Beginners](https://github.com/microsoft/AI-For-Beginners) by microsoft
 - [AI, Governance & GTM Roadmaps](https://github.com/Hardik-369/ROADMAP) by Hardik-369
 - [Data Engineer Roadmap](https://github.com/datastacktv/data-engineer-roadmap) by datastacktv
 - [Data Science Roadmap](https://github.com/boringPpl/data-science-roadmap) by boringPpl
@@ -75,6 +74,7 @@ These have no published licence, or are articles or websites. Career Galaxy link
 - [System Design Roadmap](https://github.com/moshafiei/system-design-master-plan) by moshafiei
 - [TutorialSearch](https://tutorialsearch.io/?q=roadmaps)
 - [Become a Better Android Developer](https://medium.com/mindorks/a-roadmap-to-become-a-better-android-developer-3038cf7f8c8d)
+- [AI Agents in Depth](https://github.com/bojieli/ai-agent-book) by bojieli
 - [Backend Developer Roadmap](https://www.geeksforgeeks.org/websites-apps/backend-developer-roadmap/)
 - [Building Effective Agents](https://www.anthropic.com/engineering/building-effective-agents)
 - [Cybersecurity Roadmap](https://www.geeksforgeeks.org/cybersecurity/cybersecurity-roadmap/)

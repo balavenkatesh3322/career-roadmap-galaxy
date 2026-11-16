@@ -10,7 +10,7 @@ $$('[data-icon]').forEach((el) => { el.innerHTML = ICON[el.dataset.icon] || ''; 
 
 const SECTIONS = ['Languages', 'Web', 'Mobile', 'Infrastructure', 'Game dev', 'AI / Data', 'Security', 'Misc', 'Tools', 'Articles & books'];
 const SECTION_TINT = { Languages: 't-blue', Web: 't-cyan', Mobile: 't-teal', Infrastructure: 't-orange', 'Game dev': 't-gold', 'AI / Data': 't-violet', Security: 't-pink' };
-const STATUS = { imported: ['FULL ROADMAP', 'fresh'], visual: ['VISUAL MAP', 'accent'], thin: ['SHORT GUIDE', ''], 'permission-needed': ['OUR VERSION', 'accent'], article: ['OUR VERSION', 'accent'], review: ['IN REVIEW', 'new'] };
+const STATUS = { external: ['OUR VERSION', 'accent'], imported: ['FULL ROADMAP', 'fresh'], visual: ['VISUAL MAP', 'accent'], thin: ['SHORT GUIDE', ''], 'permission-needed': ['OUR VERSION', 'accent'], article: ['OUR VERSION', 'accent'], review: ['IN REVIEW', 'new'] };
 const LOCAL_KEY = 'cg-library-added';
 
 function loadAdded() { try { return JSON.parse(localStorage.getItem(LOCAL_KEY)) || []; } catch { return []; } }
@@ -63,6 +63,7 @@ const NOTES = {
   thin: ['Short guide.', 'This source is brief, so the matching Career Galaxy roadmap is shown with it.'],
   'permission-needed': ['Our version.', 'The author hasn’t published a licence, so we can’t copy their content. Here is our roadmap for the same career.'],
   article: ['Our version.', 'This is an article, so we show our roadmap for the same career.'],
+  external: ['Our version.', 'This project is an app, course or book with its own site, so open the original for the full experience. Here is our roadmap for the same career.'],
   review: ['Waiting for review.', 'Showing our roadmap for this career until your addition is reviewed.']
 };
 
@@ -71,7 +72,8 @@ function renderDrawer() {
   if (!e) { $('#drawer-host').innerHTML = ''; return; }
   const inf = info(e);
   const ours = e.role ? getRole(e.role) : roadmaps[0];
-  const useOurs = !(inf.g && inf.g.length) || ['permission-needed', 'article', 'review'].includes(inf.s);
+  const useOurs = !(inf.g && inf.g.length) || ['permission-needed', 'article', 'review', 'external'].includes(inf.s);
+  const imgs = inf.img || [];
   const stages = useOurs ? ours.stages.map((s) => ({ t: s.title, k: s.topics, r: s.resources.map((x) => ({ t: x.title, u: x.url })) })) : inf.g;
   const i = Math.min(state.stage, stages.length - 1);
   const cur = stages[i] || { t: '', k: [], r: [] };
@@ -96,6 +98,8 @@ function renderDrawer() {
         <nav aria-label="Stages"><div class="cat" style="font-size:11px;padding:0 10px 6px">${useOurs ? 'CAREER GALAXY · ' : ''}${stages.length} ${stages.length === 1 ? 'STAGE' : 'STAGES'}</div>
           ${stages.map((s, k) => `<button type="button" class="dstage" data-st="${k}" ${k === i ? 'aria-current="step"' : ''}><span class="gem ${k < i ? 't-gold' : k === i ? 't-violet' : 't-pearl'}" style="width:16px;height:20px"></span>${esc(s.t)}</button>`).join('')}</nav>
         <div class="content">
+          ${imgs.length ? `<div class="cat" style="font-size:11px;margin-bottom:8px">The author's roadmap ${imgs.length > 1 ? `· ${imgs.length} images` : ''} · click to open full size</div>
+          <div style="display:flex;flex-direction:column;gap:10px;margin-bottom:22px">${imgs.map((u, k) => `<a href="${esc(u)}" target="_blank" rel="noopener" style="display:block;border-radius:16px;overflow:hidden;border:1px solid var(--line-2);background:#fff"><img src="${esc(u)}" alt="${esc(e.title)} — roadmap image ${k + 1}" loading="lazy" referrerpolicy="no-referrer" style="display:block;width:100%;height:auto;max-height:520px;object-fit:contain" onerror="this.closest('a').remove()"></a>`).join('')}</div>` : ''}
           <h3 class="h3" style="font-size:24px">${esc(cur.t)}</h3>
           ${cur.k?.length ? `<div class="cat" style="font-size:11px;margin:18px 0 4px">Learn</div>${cur.k.map((t) => `<div class="ck" style="cursor:default"><span class="sphere t-pearl s14" style="margin-top:3px"></span>${esc(t)}</div>`).join('')}` : ''}
           ${cur.r?.length ? `<div class="cat" style="font-size:11px;margin:18px 0 8px">Resources</div><div style="display:flex;flex-direction:column;gap:6px">${cur.r.map((x) => `<a class="res" href="${esc(x.u)}" target="_blank" rel="noopener"><span style="flex:1;min-width:0">${esc(x.t)}<small>${esc(host(x.u))}</small></span>${ICON.ext}</a>`).join('')}</div>` : ''}
