@@ -153,6 +153,6 @@ Then open a pull request. Please follow our [Code of Conduct](CODE_OF_CONDUCT.md
 
 ## Author
 
-**Bala Venkatesh**: [balavenkatesh.is-a.dev](https://balavenkatesh.is-a.dev) · [GitHub](https://github.com/balavenkatesh3322) · Reach out: [+91 90038 12808](tel:+919003812808)
+**Bala Venkatesh**: [balavenkatesh.is-a.dev](https://balavenkatesh.is-a.dev) · [GitHub](https://github.com/balavenkatesh3322) · Reach out on [WhatsApp +91 90038 12808](https://wa.me/919003812808?text=Hi%20Bala%2C%20I%20found%20Career%20Galaxy%20and%20would%20like%20to%20connect.)
 
 <div align="center"><sub>Made with ✦ by <a href="https://balavenkatesh.is-a.dev">Bala Venkatesh</a> and contributors. If it helped you, give it a ⭐.</sub></div>

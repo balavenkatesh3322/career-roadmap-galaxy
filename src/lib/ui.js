@@ -68,7 +68,7 @@ export function mountFooter() {
   const f = $('#site-footer');
   if (!f) return;
   f.className = 'site-footer';
-  f.innerHTML = `<span>Career Galaxy · open-source learning atlas · <a href="${REPO}">GitHub</a></span><span>Made by <a href="https://balavenkatesh.is-a.dev" rel="author">Bala Venkatesh</a> · Reach out: <a href="tel:+919003812808">+91 90038 12808</a></span>`;
+  f.innerHTML = `<span>Career Galaxy · open-source learning atlas · <a href="${REPO}">GitHub</a></span><span>Made by <a href="https://balavenkatesh.is-a.dev" rel="author">Bala Venkatesh</a> · Reach out on <a href="https://wa.me/919003812808?text=Hi%20Bala%2C%20I%20found%20Career%20Galaxy%20and%20would%20like%20to%20connect." target="_blank" rel="noopener" aria-label="Chat on WhatsApp: +91 90038 12808">WhatsApp +91 90038 12808</a></span>`;
 }
 
 export function toast(msg) {
