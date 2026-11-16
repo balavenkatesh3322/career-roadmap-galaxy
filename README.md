@@ -150,8 +150,8 @@ Two reference PRs show exactly what a good contribution looks like. Open one, lo
 
 | Example | What it shows | Files touched |
 |---|---|---|
-| [**Add a career: Context Engineer**](https://github.com/balavenkatesh3322/career-roadmap-galaxy/compare/main...example/new-career-context-engineer) | Scaffold with `npm run new`, fill all 6 stages (goal, topics, resources, project), reuse shared skills, add one new skill | `roadmaps/context-engineer.json` (new), `roadmaps/index.json` |
-| [**Edit a roadmap: DevOps**](https://github.com/balavenkatesh3322/career-roadmap-galaxy/compare/main...example/edit-devops-roadmap) | Improve an existing career: add a topic and a free resource to one stage, bump `updated` | `roadmaps/devops.json` |
+| [**Add a career: Context Engineer**](https://github.com/balavenkatesh3322/career-roadmap-galaxy/pull/1/files) | Scaffold with `npm run new`, fill all 6 stages (goal, topics, resources, project), reuse shared skills, add one new skill | `roadmaps/context-engineer.json` (new), `roadmaps/index.json` |
+| [**Edit a roadmap: DevOps**](https://github.com/balavenkatesh3322/career-roadmap-galaxy/pull/2/files) | Improve an existing career: add a topic and a free resource to one stage, bump `updated` | `roadmaps/devops.json` |
 
 Steps for your own:
 

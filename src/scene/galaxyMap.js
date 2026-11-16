@@ -75,7 +75,7 @@ export async function createGalaxyMap(host, { onDomain, onRole } = {}) {
       return m;
     });
     // links to related domains
-    links.forEach((l) => l.pivot.destroy?.()); linkGroup.removeChildren(); links = [];
+    linkGroup.removeChildren(); links = []; // rods share one cached geometry, so just detach them
     relatedDomains(id).forEach((rid) => {
       const q = planets.find((x) => x.domain.id === rid);
       links.push({ rod: makeRod(new Vector3(0, 0, 0), q.to, { parent: linkGroup, color: 0xc4b0ff, thickness: 0.025, alpha: 0.5 }), q });
