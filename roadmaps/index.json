@@ -54,15 +54,16 @@
     "Data Visualization",
     "Deep Learning",
     "Docker",
+    "Evaluation",
     "Excel",
     "Git",
     "Go",
-    "HTML & CSS",
     "Hardware",
+    "HTML & CSS",
     "JavaScript",
     "Kubernetes",
-    "LLMs",
     "Linux",
+    "LLMs",
     "Machine Learning",
     "Math",
     "Mobile",
@@ -71,8 +72,8 @@
     "Product Sense",
     "Python",
     "React",
-    "SQL",
     "Security",
+    "SQL",
     "Statistics",
     "System Design",
     "Testing",
@@ -353,6 +354,13 @@
       "domain": "frontier",
       "status": "emerging",
       "summary": "Embeds with customers to build and deploy AI solutions on site."
+    },
+    {
+      "id": "context-engineer",
+      "title": "Context Engineer",
+      "domain": "ai",
+      "status": "emerging",
+      "summary": "Designs what goes into a model's context: retrieval, memory, tool results and instructions."
     }
   ]
 }
