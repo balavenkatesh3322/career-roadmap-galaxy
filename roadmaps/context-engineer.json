@@ -1,0 +1,78 @@
+{
+  "id": "context-engineer",
+  "title": "Context Engineer",
+  "domain": "ai",
+  "status": "emerging",
+  "summary": "Designs what goes into a model's context: retrieval, memory, tool results and instructions, under a token budget.",
+  "duration": "5–7 months",
+  "whatYouDo": [
+    "Decide what information a model sees, in what order and format",
+    "Build retrieval, memory and summarisation that fit a token budget",
+    "Measure how context changes answer quality, cost and latency"
+  ],
+  "skills": ["Python", "LLMs", "APIs", "Evaluation", "Writing", "Testing"],
+  "next": ["ai-agent-engineer", "gen-ai-engineer"],
+  "updated": "2026-11-16",
+  "stages": [
+    {
+      "title": "Foundations",
+      "duration": "3–4 weeks",
+      "goal": "Code comfortably and understand how models read context.",
+      "topics": ["Python", "HTTP & APIs", "Tokens & context windows", "Prompt engineering", "JSON & schemas"],
+      "resources": [
+        { "title": "The Python Tutorial", "url": "https://docs.python.org/3/tutorial/" },
+        { "title": "Claude documentation", "url": "https://docs.claude.com/" }
+      ],
+      "project": "A script that counts tokens and trims a long document to fit a budget"
+    },
+    {
+      "title": "Context anatomy",
+      "duration": "3 weeks",
+      "goal": "Design system prompts, instructions and examples that models follow reliably.",
+      "topics": ["System prompts", "Few-shot examples", "Structured output", "Instruction hierarchy", "Long-context behaviour"],
+      "resources": [
+        { "title": "Effective context engineering for AI agents (Anthropic)", "url": "https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents" }
+      ],
+      "project": "Rewrite one messy prompt into a clear, tested context template"
+    },
+    {
+      "title": "Retrieval",
+      "duration": "4 weeks",
+      "goal": "Fetch only the information that helps the answer.",
+      "topics": ["Embeddings", "Vector databases", "Chunking strategies", "Hybrid search", "Reranking"],
+      "resources": [
+        { "title": "Hugging Face Learn", "url": "https://huggingface.co/learn" }
+      ],
+      "project": "A retrieval pipeline that beats naive chunking on 20 test questions"
+    },
+    {
+      "title": "Memory & tools",
+      "duration": "4 weeks",
+      "goal": "Keep long-running agents on track without overflowing context.",
+      "topics": ["Conversation memory", "Summarisation & compaction", "Tool results formatting", "Model Context Protocol (MCP)", "Sub-agents"],
+      "resources": [
+        { "title": "Model Context Protocol", "url": "https://modelcontextprotocol.io/" },
+        { "title": "Building effective agents (Anthropic)", "url": "https://www.anthropic.com/engineering/building-effective-agents" }
+      ],
+      "project": "An assistant that stays accurate across a 50-turn conversation"
+    },
+    {
+      "title": "Evaluation",
+      "duration": "3–4 weeks",
+      "goal": "Prove a context change made things better, not just different.",
+      "topics": ["LLM evaluation", "Test sets", "A/B comparisons", "Cost & latency budgets", "Failure analysis"],
+      "resources": [
+        { "title": "OWASP Top 10 for LLM Applications", "url": "https://genai.owasp.org/" }
+      ],
+      "project": "An eval suite that scores three context strategies side by side"
+    },
+    {
+      "title": "Professional",
+      "duration": "3 weeks",
+      "goal": "Ship context systems teams can maintain.",
+      "topics": ["Context versioning", "Documentation", "Prompt injection defence", "Portfolio", "Interview practice"],
+      "resources": [],
+      "project": "A write-up of a context system with its eval results"
+    }
+  ]
+}
